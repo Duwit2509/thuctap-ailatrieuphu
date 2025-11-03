@@ -1,0 +1,46 @@
+[
+  {
+    "level": 1,
+    "question": "Con vat nao sau day song duoi nuoc?",
+    "options": [
+      "A. Con meo",
+      "B. Con ca",
+      "C. Con chim",
+      "D. Con lon"
+    ],
+    "answer": "B"
+  },
+  {
+    "level": 1,
+    "question": "Mat troi moc o huong nao?",
+    "options": [
+      "A. Huong Tay",
+      "B. Huong Nam",
+      "C. Huong Dong",
+      "D. Huong Bac"
+    ],
+    "answer": "C"
+  },
+  {
+    "level": 2,
+    "question": "Thu do cua Viet Nam la gi?",
+    "options": [
+      "A. Da Nang",
+      "B. TP. Ho Chi Minh",
+      "C. Hai Phong",
+      "D. Ha Noi"
+    ],
+    "answer": "D"
+  },
+  {
+    "level": 3,
+    "question": "Dien tich Viet Nam khoang bao nhieu km vuong?",
+    "options": [
+      "A. 130,000 km2",
+      "B. 230,000 km2",
+      "C. 330,000 km2",
+      "D. 430,000 km2"
+    ],
+    "answer": "C"
+  }
+]
