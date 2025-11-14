@@ -1,46 +1,508 @@
 [
-  {
-    "level": 1,
-    "question": "Con vat nao sau day song duoi nuoc?",
-    "options": [
-      "A. Con meo",
-      "B. Con ca",
-      "C. Con chim",
-      "D. Con lon"
-    ],
-    "answer": "B"
-  },
-  {
-    "level": 1,
-    "question": "Mat troi moc o huong nao?",
-    "options": [
-      "A. Huong Tay",
-      "B. Huong Nam",
-      "C. Huong Dong",
-      "D. Huong Bac"
-    ],
-    "answer": "C"
-  },
-  {
-    "level": 2,
-    "question": "Thu do cua Viet Nam la gi?",
-    "options": [
-      "A. Da Nang",
-      "B. TP. Ho Chi Minh",
-      "C. Hai Phong",
-      "D. Ha Noi"
-    ],
-    "answer": "D"
-  },
-  {
-    "level": 3,
-    "question": "Dien tich Viet Nam khoang bao nhieu km vuong?",
-    "options": [
-      "A. 130,000 km2",
-      "B. 230,000 km2",
-      "C. 330,000 km2",
-      "D. 430,000 km2"
-    ],
-    "answer": "C"
-  }
+    {
+        "answer": "B",
+        "level": 1,
+        "options": [
+            "A. Nam Cao",
+            "B. Ngo Tat To",
+            "C. Nguyen Cong Hoan",
+            "D. Vu Trong Phung"
+        ],
+        "question": "Ai la tac gia cua truyen 'Tat den'?"
+    },
+    {
+        "answer": "C",
+        "level": 1,
+        "options": [
+            "A. Huong Tay",
+            "B. Huong Nam",
+            "C. Huong Dong",
+            "D. Huong Bac"
+        ],
+        "question": "Mat troi moc o huong nao?"
+    },
+    {
+        "answer": "C",
+        "level": 1,
+        "options": [
+            "A. 9",
+            "B. 10",
+            "C. 11",
+            "D. 12"
+        ],
+        "question": "Trong bong da, moi doi co bao nhieu cau thu tren san?"
+    },
+    {
+        "answer": "D",
+        "level": 2,
+        "options": [
+            "A. Da Nang",
+            "B. TP. Ho Chi Minh",
+            "C. Hai Phong",
+            "D. Ha Noi"
+        ],
+        "question": "Thu do cua Viet Nam la gi?"
+    },
+    {
+        "answer": "C",
+        "level": 2,
+        "options": [
+            "A. Com",
+            "B. Duong",
+            "C. Nuoc",
+            "D. Ruou"
+        ],
+        "question": "Chat nao co cong thuc hoa hoc H2O?"
+    },
+    {
+        "answer": "B",
+        "level": 2,
+        "options": [
+            "A. Truong Chinh",
+            "B. Ho Chi Minh",
+            "C. Ton Duc Thang",
+            "D. Le Duan"
+        ],
+        "question": "Chu tich nuoc Viet Nam dau tien la ai?"
+    },
+    {
+        "answer": "C",
+        "level": 3,
+        "options": [
+            "A. Tam giac can",
+            "B. Tam giac deu",
+            "C. Tam giac vuong",
+            "D. Tam giac thuong"
+        ],
+        "question": "Dinh Ly Pitago dung cho loai tam giac nao?"
+    },
+    {
+        "answer": "C",
+        "level": 3,
+        "options": [
+            "A. 130,000 km2",
+            "B. 230,000 km2",
+            "C. 330,000 km2",
+            "D. 430,000 km2"
+        ],
+        "question": "Dien tich Viet Nam khoang bao nhieu km vuong?"
+    },
+    {
+        "answer": "B",
+        "level": 3,
+        "options": [
+            "A. Phan Xi Pang",
+            "B. Everest",
+            "C. Andes",
+            "D. Fuji"
+        ],
+        "question": "Ngon nui cao nhat the gioi la gi?"
+    },
+    {
+        "answer": "C",
+        "level": 4,
+        "options": [
+            "A. Luu huynh",
+            "B. Oxi",
+            "C. Sat",
+            "D. Hidro"
+        ],
+        "question": "Nguyen to nao sau day la kim loai?"
+    },
+    {
+        "answer": "C",
+        "level": 4,
+        "options": [
+            "A. Viet Nam",
+            "B. Trung Quoc",
+            "C. Nga",
+            "D. An Do"
+        ],
+        "question": "Nuoc nao co dien tich lon nhat the gioi?"
+    },
+    {
+        "answer": "B",
+        "level": 4,
+        "options": [
+            "A. Tu ban",
+            "B. Cong san",
+            "C. Xa hoi",
+            "D. Dan chu"
+        ],
+        "question": "Bieu tuong 'cai liem va cay bua' thuoc ve he tu tuong nao?"
+    },
+    {
+        "answer": "A",
+        "level": 5,
+        "options": [
+            "A. 2*pi*r",
+            "B. pi*r^2",
+            "C. 4r",
+            "D. r^2"
+        ],
+        "question": "Chu vi hinh tron duoc tinh theo cong thuc nao?"
+    },
+    {
+        "answer": "D",
+        "level": 5,
+        "options": [
+            "A. Oxi",
+            "B. Cacbonic",
+            "C. Clo",
+            "D. Chlorophyll"
+        ],
+        "question": "Chat nao giup cay xanh quang hop?"
+    },
+    {
+        "answer": "C",
+        "level": 5,
+        "options": [
+            "A. Penixilin, amixilin",
+            "B. Vitamin C, glucose",
+            "C. Seduxen, moocphin",
+            "D. Pamin, panadol"
+        ],
+        "question": "Loai thuoc nao sau day de gay nghien cho con nguoi?"
+    },
+    {
+        "answer": "B",
+        "level": 6,
+        "options": [
+            "A. Om",
+            "B. Ampe",
+            "C. Von",
+            "D. Oat"
+        ],
+        "question": "Don vi do cuong do dong dien la gi?"
+    },
+    {
+        "answer": "B",
+        "level": 6,
+        "options": [
+            "A. Won",
+            "B. Yen",
+            "C. VND",
+            "D. Dola"
+        ],
+        "question": "Tien te chinh thuc cua Nhat Ban la gi?"
+    },
+    {
+        "answer": "D",
+        "level": 6,
+        "options": [
+            "A. 30",
+            "B. 90",
+            "C. 180",
+            "D. 365"
+        ],
+        "question": "Chu ky cua Trai Dat quay quanh Mat Troi la bao nhieu ngay?"
+    },
+    {
+        "answer": "A",
+        "level": 7,
+        "options": [
+            "A. Luc bat",
+            "B. Song that luc bat",
+            "C. That ngon bat cu",
+            "D. Tu do"
+        ],
+        "question": "Tac pham 'Truyen Kieu' duoc viet bang the tho nao?"
+    },
+    {
+        "answer": "A",
+        "level": 7,
+        "options": [
+            "A. Nguyen Du",
+            "B. Nguyen Dinh Chieu",
+            "C. Ho Xuan Huong",
+            "D. Le Quy Don"
+        ],
+        "question": "Ai la nguoi viet 'Truyen Kieu'?"
+    },
+    {
+        "answer": "B",
+        "level": 7,
+        "options": [
+            "A. Sao Kim",
+            "B. Sao Thuy",
+            "C. Sao Hoa",
+            "D. Trai Dat"
+        ],
+        "question": "Hanh tinh nao gan Mat Troi nhat?"
+    },
+    {
+        "answer": "B",
+        "level": 8,
+        "options": [
+            "A. 2",
+            "B. 3",
+            "C. 4",
+            "D. 5"
+        ],
+        "question": "Nguyen tu co cau tao tu may loai hat co ban?"
+    },
+    {
+        "answer": "C",
+        "level": 8,
+        "options": [
+            "A. Nhom",
+            "B. Dong",
+            "C. Lithium",
+            "D. Sat"
+        ],
+        "question": "Kim loai nao nhe nhat trong tu nhien?"
+    },
+    {
+        "answer": "A",
+        "level": 8,
+        "options": [
+            "A. Hue",
+            "B. Da Nang",
+            "C. Sai Gon",
+            "D. Ha Noi"
+        ],
+        "question": "Dac san bun bo noi tieng cua thanh pho nao?"
+    },
+    {
+        "answer": "B",
+        "level": 9,
+        "options": [
+            "A. Song Hong",
+            "B. Song Me Kong",
+            "C. Song Dong Nai",
+            "D. Song Da"
+        ],
+        "question": "Dong song nao dai nhat Viet Nam?"
+    },
+    {
+        "answer": "B",
+        "level": 9,
+        "options": [
+            "A. Nhat Ban",
+            "B. Trung Quoc",
+            "C. Han Quoc",
+            "D. Viet Nam"
+        ],
+        "question": "'Tam Quoc Dien Nghia' la tac pham van hoc noi tieng cua nuoc nao?"
+    },
+    {
+        "answer": "B",
+        "level": 9,
+        "options": [
+            "A. Oxi",
+            "B. Nitrogen",
+            "C. Carbon dioxide",
+            "D. Argon"
+        ],
+        "question": "Loai khi nao chiem ty le lon nhat trong khong khi Trai Dat?"
+    },
+    {
+        "answer": "C",
+        "level": 10,
+        "options": [
+            "A. Hoang Xuan Vinh",
+            "B. Tran Quang Khai",
+            "C. Hoang Le Giang",
+            "D. Nguyen Anh"
+        ],
+        "question": "Nguoi Viet Nam dau tien dat chan den Nam Cuc la ai?"
+    },
+    {
+        "answer": "B",
+        "level": 10,
+        "options": [
+            "A. New York",
+            "B. Zurich",
+            "C. London",
+            "D. Tokyo"
+        ],
+        "question": "Thanh pho nao duoc goi la 'thanh pho ngan hang' cua the gioi?"
+    },
+    {
+        "answer": "C",
+        "level": 10,
+        "options": [
+            "A. Tennis",
+            "B. Bong chay",
+            "C. Cau long",
+            "D. Bong ban"
+        ],
+        "question": "Mon the thao nao su dung vat goi la 'shuttlecock'?"
+    },
+    {
+        "answer": "B",
+        "level": 11,
+        "options": [
+            "A. Rome",
+            "B. Paris",
+            "C. London",
+            "D. Madrid"
+        ],
+        "question": "Thanh pho nao duoc menh danh la 'Kinh do anh sang'?"
+    },
+    {
+        "answer": "B",
+        "level": 11,
+        "options": [
+            "A. 1993",
+            "B. 1997",
+            "C. 2000",
+            "D. 2001"
+        ],
+        "question": "'Internet' chinh thuc duoc dua vao Viet Nam nam nao?"
+    },
+    {
+        "answer": "B",
+        "level": 11,
+        "options": [
+            "A. Newton",
+            "B. Edison",
+            "C. Einstein",
+            "D. Tesla"
+        ],
+        "question": "Ai la nha phat minh bong den dien?"
+    },
+    {
+        "answer": "C",
+        "level": 12,
+        "options": [
+            "A. Leonardo da Vinci",
+            "B. Pablo Picasso",
+            "C. Vincent van Gogh",
+            "D. Claude Monet"
+        ],
+        "question": "'The Starry Night' la buc tranh noi tieng cua hoa si nao?"
+    },
+    {
+        "answer": "B",
+        "level": 12,
+        "options": [
+            "A. Quang Binh",
+            "B. Quang Ninh",
+            "C. Thanh Hoa",
+            "D. Nghe An"
+        ],
+        "question": "Vinh Ha Long thuoc tinh nao?"
+    },
+    {
+        "answer": "C",
+        "level": 12,
+        "options": [
+            "A. Xuan Dieu",
+            "B. Huy Can",
+            "C. Quang Dung",
+            "D. To Huu"
+        ],
+        "question": "Tac gia cua bai tho 'Tay Tien' la ai?"
+    },
+    {
+        "answer": "B",
+        "level": 12,
+        "options": [
+            "A. Vang",
+            "B. Bac",
+            "C. Dong",
+            "D. Nhom"
+        ],
+        "question": "Kim loai nao co tinh dan dien tot nhat?"
+    },
+    {
+        "answer": "B",
+        "level": 13,
+        "options": [
+            "A. Yuri Gagarin",
+            "B. Neil Armstrong",
+            "C. Buzz Aldrin",
+            "D. Alan Shepard"
+        ],
+        "question": "Ai la nguoi dau tien dat chan len Mat Trang?"
+    },
+    {
+        "answer": "B",
+        "level": 13,
+        "options": [
+            "A. Isaac Newton",
+            "B. Albert Einstein",
+            "C. Galileo Galilei",
+            "D. Niels Bohr"
+        ],
+        "question": "Ai la nguoi kham pha ra dinh luat van toc anh sang?"
+    },
+    {
+        "answer": "C",
+        "level": 13,
+        "options": [
+            "A. Tan",
+            "B. Nam Han",
+            "C. Mong Nguyen",
+            "D. Minh"
+        ],
+        "question": "Trong lich su Viet Nam, Tran Hung Dao co cong trong cuoc khang chien chong ai?"
+    },
+    {
+        "answer": "C",
+        "level": 14,
+        "options": [
+            "A. C++",
+            "B. Java",
+            "C. Python",
+            "D. Ruby"
+        ],
+        "question": "Ngon ngu lap trinh nao duoc su dung nhieu nhat hien nay?"
+    },
+    {
+        "answer": "B",
+        "level": 14,
+        "options": [
+            "A. Nha tho",
+            "B. Lang mo vua",
+            "C. Noi hoi hop",
+            "D. Kho chua"
+        ],
+        "question": "Trong lich su, Ai Cap co kim tu thap la de lam gi?"
+    },
+    {
+        "answer": "C",
+        "level": 14,
+        "options": [
+            "A. Isaac Newton",
+            "B. Albert Einstein",
+            "C. Charles Darwin",
+            "D. Thomas Edison"
+        ],
+        "question": "Ai la nguoi de xuat hoc thuyet tien hoa?"
+    },
+    {
+        "answer": "A",
+        "level": 15,
+        "options": [
+            "A. Antoine Lavoisier",
+            "B. Isaac Newton",
+            "C. Marie Curie",
+            "D. Albert Einstein"
+        ],
+        "question": "Ai la nha hoa hoc phat hien ra nguyen to Oxi?"
+    },
+    {
+        "answer": "B",
+        "level": 15,
+        "options": [
+            "A. Taylor Swift",
+            "B. Olly Murs",
+            "C. Rihanna",
+            "D. Lady Gaga"
+        ],
+        "question": "Ca khuc 'That girl' la bai hat cua ca si nao?"
+    },
+    {
+        "answer": "A",
+        "level": 15,
+        "options": [
+            "A. Fortran",
+            "B. Java",
+            "C. Pascal",
+            "D. BASIC"
+        ],
+        "question": "Ngon ngu lap trinh nao duoc phat minh dau tien tren the gioi?"
+    }
 ]
