@@ -68,8 +68,7 @@ Standard Library: vector, thread, chrono, fstream, algorithm...
 Cấu Trúc Dự Án
 Dự án được tổ chức theo mô hình tách biệt mã nguồn (Separation of Concerns):
 
-Plaintext
-
+```text
 THUCTAP-AILATRIEUPHU/
 │
 ├── include/                # Chứa các file header (.h)

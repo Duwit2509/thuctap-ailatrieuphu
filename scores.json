@@ -10,6 +10,11 @@
         "score": 2000000
     },
     {
+        "level": 3,
+        "name": "duwit",
+        "score": 600000
+    },
+    {
         "level": 2,
         "name": "duwit",
         "score": 400000
@@ -30,13 +35,13 @@
         "score": 0
     },
     {
-        "level": 3,
-        "name": "duwit",
-        "score": 600000
-    },
-    {
         "level": 0,
         "name": "Noname",
         "score": 0
+    },
+    {
+        "level": 3,
+        "name": "Duwit",
+        "score": 600000
     }
 ]
