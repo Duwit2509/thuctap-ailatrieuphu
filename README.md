@@ -1,107 +1,137 @@
 Game Ai Là Triệu Phú (Console C++)
-Đây là project môn Thực tập Cơ sở, mô phỏng lại gameshow "Ai Là Triệu Phú" kinh điển trên nền tảng console C++. Ứng dụng được xây dựng với giao diện ASCII, màu sắc, và đầy đủ các chức năng chính.
+Project Thực tập Cơ sở - Mô phỏng gameshow "Ai Là Triệu Phú" kinh điển với giao diện Console sống động, âm thanh thực tế và logic chuẩn xác.
 
+Tính Năng Nổi Bật
+Phiên bản nâng cấp này mang đến trải nghiệm người dùng vượt trội so với các ứng dụng console thông thường:
 
+1. Gameplay & Logic Chặt Chẽ
+Hệ thống 15 câu hỏi: Độ khó tăng dần, bao gồm các mốc quan trọng (Câu 5, 10, 15).
 
-* Tính Năng Nổi Bật
-Chương trình đáp ứng đầy đủ các yêu cầu của Mức 1 và Mức 2, đồng thời bổ sung nhiều tính năng nâng cao:
+Tiền thưởng thực tế: Mô phỏng thang tiền thưởng từ 200.000 VNĐ đến 150.000.000 VNĐ.
 
-Logic Game Hoàn Chỉnh:
+Áp lực thời gian: Đồng hồ đếm ngược 30 giây cho mỗi câu hỏi. Hết giờ tự động xử lý thua cuộc.
 
-Vượt qua 15 câu hỏi với độ khó tăng dần.
+Dừng cuộc chơi: Người chơi có thể chọn [S] để dừng lại và bảo toàn số tiền hiện có.
 
-Hiển thị các mốc tiền thưởng quan trọng (5, 10, 15).
+2. Hệ Thống Trợ Giúp
+[5] 50:50: Loại bỏ ngay lập tức 2 phương án sai.
 
-Cho phép người chơi [S] Dừng cuộc chơi bất cứ lúc nào để bảo toàn tiền thưởng.
+[6] Hỏi ý kiến khán giả: Hiển thị biểu đồ phần trăm bình chọn trực quan.
 
-Đầy Đủ 3 Quyền Trợ Giúp:
+[7] Gọi điện thoại cho người thân: Kết nối với "Nhà thông thái" (có tỷ lệ đúng/sai logic).
 
-[5] 50:50: Loại bỏ 2 đáp án sai.
+3. Trải Nghiệm Nghe Nhìn (Audio & Visual)
+Giao diện Neon: Sử dụng bảng màu nâng cao của Windows API.
 
-[6] Hỏi ý kiến khán giả: Hiển thị biểu đồ bình chọn (dạng thanh [=== ]).
+Top 1: Vàng Gold (14)
 
-[7] Gọi điện thoại cho người thân: "Nhà thông thái" đưa ra gợi ý (80% đúng, 20% sai).
+Top 2: Xanh Ngọc Neon (11)
 
-Phân Hệ Quản Trị (Admin):
+Top 3: Tím Hồng (13)
 
-Đăng nhập bằng mật khẩu (adminLogin).
+Hiệu ứng chọn đáp án: Ô đáp án chuyển màu khi được chọn -> Tạo cảm giác hồi hộp trước khi công bố kết quả.
 
-Xem toàn bộ ngân hàng câu hỏi (viewAllQuestions).
+Âm thanh sống động: Tích hợp hệ thống âm thanh WinMM:
 
-Thêm câu hỏi mới (addQuestion) (Hỗ trợ Tiếng Việt có dấu).
+Nhạc nền hồi hộp, tiếng tim đập khi đếm ngược.
 
-Xóa câu hỏi (deleteQuestion).
+Hiệu ứng âm thanh riêng cho từng quyền trợ giúp.
 
-Tự động sắp xếp file questions.json theo level (1-15) mỗi khi thêm câu hỏi.
+Nhạc chiến thắng, nhạc thua cuộc, nhạc hiệu chương trình.
 
-Lưu Trữ & Bảng Xếp Hạng:
+4. Hệ Thống Quản Trị (Admin) & Dữ Liệu
+Đăng nhập bảo mật: Cần mật khẩu để truy cập quyền Admin.
 
-Người chơi nhập tên trước khi chơi.
+Quản lý câu hỏi:
 
-Tự động lưu điểm số vào scores.json.
+Xem danh sách, Thêm mới, Xóa câu hỏi.
 
-Hiển thị Bảng Xếp Hạng Top 10 người chơi (viewHighScores).
+Tự động sắp xếp câu hỏi theo Level.
 
-Giao Diện Console (TUI):
+Lưu trữ JSON: Dữ liệu câu hỏi và bảng xếp hạng được lưu vĩnh viễn trong file .json.
 
-Sử dụng Màu sắc (Windows API) để làm nổi bật các chức năng.
+ Bảng Xếp Hạng: Lưu trữ Tên, Số tiền và Level câu hỏi cao nhất đạt được.
 
-Dùng ký tự ASCII mở rộng (UTF-8) ╔═╗ để vẽ khung thân thiện.
+Công Nghệ Sử Dụng
+Ngôn ngữ: C++ (Chuẩn C++17).
 
-Sử dụng sleep để tạo hiệu ứng chờ, tăng kịch tính.
-
-* Công Nghệ Sử Dụng
-Ngôn ngữ: C++ (Sử dụng chuẩn C++17).
-
-Trình biên dịch: g++ (MinGW-w64).
+Trình biên dịch: MinGW-w64 (g++).
 
 Thư viện:
 
-JSON for Modern C++ (json.hpp): Dùng để đọc và ghi dữ liệu câu hỏi/điểm số từ file .json.
+nlohmann/json: Xử lý dữ liệu JSON.
 
-Standard Library (STL): vector, string, fstream, random, algorithm...
+Windows API: Xử lý màu sắc, âm thanh (PlaySound, Beep), input (FlushConsoleInputBuffer).
 
-Windows API: Sử dụng SetConsoleOutputCP(CP_UTF8), SetConsoleCP(CP_UTF8) và SetConsoleTextAttribute để xử lý Tiếng Việt, màu sắc, và ký tự đặc biệt.
+Standard Library: vector, thread, chrono, fstream, algorithm...
 
-* Cách Chạy (Hướng Dẫn)
-Cách 1: Chơi Ngay (Cho Người Dùng)
-Tải file Game_Ai_La_Trieu_Phu.zip từ mục Releases.
+Cấu Trúc Dự Án
+Dự án được tổ chức theo mô hình tách biệt mã nguồn (Separation of Concerns):
 
-Giải nén file .zip.
+Plaintext
 
-Chạy file game.exe để chơi.
+THUCTAP-AILATRIEUPHU/
+│
+├── include/                # Chứa các file header (.h)
+│   ├── game.h              # Struct Player, Question & khai báo hàm game
+│   ├── admin.h             # Các hàm quản lý Admin
+│   ├── helpers.h           # Hàm hỗ trợ (màu sắc, âm thanh, UI)
+│   ├── json_handler.h      # Xử lý đọc/ghi file JSON
+│   └── json.hpp            # Thư viện JSON (nlohmann)
+│
+├── src/                    # Chứa mã nguồn (.cpp)
+│   ├── main.cpp            # Hàm main, Menu chính
+│   ├── game.cpp            # Logic luồng game chính
+│   ├── game_ui.cpp         # Xử lý hiển thị, vẽ khung, hiệu ứng
+│   ├── admin.cpp           # Logic quản trị viên
+│   ├── helpers.cpp         # Triển khai các hàm tiện ích
+│   └── json_handler.cpp    # Triển khai đọc/ghi file
+│
+├── sounds/                 # Thư mục chứa file âm thanh .wav
+│   ├── intro.wav, select.wav, correct.wav...
+│
+├── questions.json          # Cơ sở dữ liệu câu hỏi
+├── scores.json             # Dữ liệu bảng xếp hạng
+├── build.bat               # Script biên dịch tự động
+└── README.md
 
-(Lưu ý: Đảm bảo 2 file questions.json và scores.json luôn nằm cạnh file game.exe).
+Hướng Dẫn Cài Đặt & Chạy
+Cách 1: Chơi Ngay (User)
+Tải file .zip từ mục Releases.
 
-Cách 2: Tự Biên Dịch (Cho Lập Trình Viên)
-Clone repo:
+Giải nén ra thư mục.
+
+Quan trọng: Đảm bảo thư mục sounds/ và file questions.json nằm cùng cấp với file .exe.
+
+Chạy ailatrieuphu.exe và thưởng thức!
+
+Cách 2: Tự Biên Dịch (Developer)
+Yêu cầu: Đã cài đặt MinGW (g++) hỗ trợ C++17.
+
+Clone repository:
 
 Bash
 
 git clone https://github.com/Duwit2509/thuctap-ailatrieuphu.git
-Yêu cầu:
+Chạy script biên dịch (Windows): Nhấn đúp vào file build.bat hoặc chạy lệnh trong terminal:
 
-Trình biên dịch g++ hỗ trợ C++17.
+DOS
 
-Thư viện json.hpp (đã có sẵn trong repo).
+.\build.bat
+Nếu báo Build successful!, game sẽ tự động chạy.
 
-Biên dịch: Mở Terminal và gõ lệnh:
+Hướng Dẫn Chơi
+Sử dụng bàn phím để tương tác:
 
-Bash
+A, B, C, D: Chọn đáp án tương ứng.
 
-g++ main.cpp -o game.exe -std=c++17
-Chạy:
+5, 6, 7: Sử dụng quyền trợ giúp.
 
-Bash
+S: Dừng cuộc chơi (Stop).
 
-./game.exe
-* Cấu Trúc File
-.
-├── main.cpp          # File code C++ chinh, chua toan bo logic
-├── json.hpp          # Thu vien JSON (khong can cai dat)
-├── questions.json    # Ngan hang cau hoi (Co the sua truc tiep)
-├── scores.json       # Luu bang xep hang (Tu dong tao)
-├── game.exe          # File chay (sau khi bien dich)
-└── README.md         # File gioi thieu 
-* Tác Giả
-Trần Đức Việt - 65134312
+Admin Password mặc định: 2509
+
+Tác Giả
+Trần Đức Việt
+MSSV: 65134312
+Github: Duwit2509

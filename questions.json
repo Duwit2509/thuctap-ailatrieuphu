@@ -44,17 +44,6 @@
         "question": "Thu do cua Viet Nam la gi?"
     },
     {
-        "answer": "C",
-        "level": 2,
-        "options": [
-            "A. Com",
-            "B. Duong",
-            "C. Nuoc",
-            "D. Ruou"
-        ],
-        "question": "Chat nao co cong thuc hoa hoc H2O?"
-    },
-    {
         "answer": "B",
         "level": 2,
         "options": [
@@ -67,6 +56,17 @@
     },
     {
         "answer": "C",
+        "level": 2,
+        "options": [
+            "A. Com",
+            "B. Duong",
+            "C. Nuoc",
+            "D. Ruou"
+        ],
+        "question": "Chat nao co cong thuc hoa hoc H2O?"
+    },
+    {
+        "answer": "C",
         "level": 3,
         "options": [
             "A. Tam giac can",
@@ -75,17 +75,6 @@
             "D. Tam giac thuong"
         ],
         "question": "Dinh Ly Pitago dung cho loai tam giac nao?"
-    },
-    {
-        "answer": "C",
-        "level": 3,
-        "options": [
-            "A. 130,000 km2",
-            "B. 230,000 km2",
-            "C. 330,000 km2",
-            "D. 430,000 km2"
-        ],
-        "question": "Dien tich Viet Nam khoang bao nhieu km vuong?"
     },
     {
         "answer": "B",
@@ -100,6 +89,17 @@
     },
     {
         "answer": "C",
+        "level": 3,
+        "options": [
+            "A. 130,000 km2",
+            "B. 230,000 km2",
+            "C. 330,000 km2",
+            "D. 430,000 km2"
+        ],
+        "question": "Dien tich Viet Nam khoang bao nhieu km vuong?"
+    },
+    {
+        "answer": "C",
         "level": 4,
         "options": [
             "A. Luu huynh",
@@ -108,17 +108,6 @@
             "D. Hidro"
         ],
         "question": "Nguyen to nao sau day la kim loai?"
-    },
-    {
-        "answer": "C",
-        "level": 4,
-        "options": [
-            "A. Viet Nam",
-            "B. Trung Quoc",
-            "C. Nga",
-            "D. An Do"
-        ],
-        "question": "Nuoc nao co dien tich lon nhat the gioi?"
     },
     {
         "answer": "B",
@@ -132,6 +121,17 @@
         "question": "Bieu tuong 'cai liem va cay bua' thuoc ve he tu tuong nao?"
     },
     {
+        "answer": "C",
+        "level": 4,
+        "options": [
+            "A. Viet Nam",
+            "B. Trung Quoc",
+            "C. Nga",
+            "D. An Do"
+        ],
+        "question": "Nuoc nao co dien tich lon nhat the gioi?"
+    },
+    {
         "answer": "A",
         "level": 5,
         "options": [
@@ -141,17 +141,6 @@
             "D. r^2"
         ],
         "question": "Chu vi hinh tron duoc tinh theo cong thuc nao?"
-    },
-    {
-        "answer": "D",
-        "level": 5,
-        "options": [
-            "A. Oxi",
-            "B. Cacbonic",
-            "C. Clo",
-            "D. Chlorophyll"
-        ],
-        "question": "Chat nao giup cay xanh quang hop?"
     },
     {
         "answer": "C",
@@ -165,6 +154,17 @@
         "question": "Loai thuoc nao sau day de gay nghien cho con nguoi?"
     },
     {
+        "answer": "D",
+        "level": 5,
+        "options": [
+            "A. Oxi",
+            "B. Cacbonic",
+            "C. Clo",
+            "D. Chlorophyll"
+        ],
+        "question": "Chat nao giup cay xanh quang hop?"
+    },
+    {
         "answer": "B",
         "level": 6,
         "options": [
@@ -174,17 +174,6 @@
             "D. Oat"
         ],
         "question": "Don vi do cuong do dong dien la gi?"
-    },
-    {
-        "answer": "B",
-        "level": 6,
-        "options": [
-            "A. Won",
-            "B. Yen",
-            "C. VND",
-            "D. Dola"
-        ],
-        "question": "Tien te chinh thuc cua Nhat Ban la gi?"
     },
     {
         "answer": "D",
@@ -198,6 +187,17 @@
         "question": "Chu ky cua Trai Dat quay quanh Mat Troi la bao nhieu ngay?"
     },
     {
+        "answer": "B",
+        "level": 6,
+        "options": [
+            "A. Won",
+            "B. Yen",
+            "C. VND",
+            "D. Dola"
+        ],
+        "question": "Tien te chinh thuc cua Nhat Ban la gi?"
+    },
+    {
         "answer": "A",
         "level": 7,
         "options": [
@@ -207,6 +207,17 @@
             "D. Tu do"
         ],
         "question": "Tac pham 'Truyen Kieu' duoc viet bang the tho nao?"
+    },
+    {
+        "answer": "B",
+        "level": 7,
+        "options": [
+            "A. Sao Kim",
+            "B. Sao Thuy",
+            "C. Sao Hoa",
+            "D. Trai Dat"
+        ],
+        "question": "Hanh tinh nao gan Mat Troi nhat?"
     },
     {
         "answer": "A",
@@ -221,17 +232,6 @@
     },
     {
         "answer": "B",
-        "level": 7,
-        "options": [
-            "A. Sao Kim",
-            "B. Sao Thuy",
-            "C. Sao Hoa",
-            "D. Trai Dat"
-        ],
-        "question": "Hanh tinh nao gan Mat Troi nhat?"
-    },
-    {
-        "answer": "B",
         "level": 8,
         "options": [
             "A. 2",
@@ -240,17 +240,6 @@
             "D. 5"
         ],
         "question": "Nguyen tu co cau tao tu may loai hat co ban?"
-    },
-    {
-        "answer": "C",
-        "level": 8,
-        "options": [
-            "A. Nhom",
-            "B. Dong",
-            "C. Lithium",
-            "D. Sat"
-        ],
-        "question": "Kim loai nao nhe nhat trong tu nhien?"
     },
     {
         "answer": "A",
@@ -262,6 +251,17 @@
             "D. Ha Noi"
         ],
         "question": "Dac san bun bo noi tieng cua thanh pho nao?"
+    },
+    {
+        "answer": "C",
+        "level": 8,
+        "options": [
+            "A. Nhom",
+            "B. Dong",
+            "C. Lithium",
+            "D. Sat"
+        ],
+        "question": "Kim loai nao nhe nhat trong tu nhien?"
     },
     {
         "answer": "B",
@@ -278,23 +278,23 @@
         "answer": "B",
         "level": 9,
         "options": [
-            "A. Nhat Ban",
-            "B. Trung Quoc",
-            "C. Han Quoc",
-            "D. Viet Nam"
-        ],
-        "question": "'Tam Quoc Dien Nghia' la tac pham van hoc noi tieng cua nuoc nao?"
-    },
-    {
-        "answer": "B",
-        "level": 9,
-        "options": [
             "A. Oxi",
             "B. Nitrogen",
             "C. Carbon dioxide",
             "D. Argon"
         ],
         "question": "Loai khi nao chiem ty le lon nhat trong khong khi Trai Dat?"
+    },
+    {
+        "answer": "B",
+        "level": 9,
+        "options": [
+            "A. Nhat Ban",
+            "B. Trung Quoc",
+            "C. Han Quoc",
+            "D. Viet Nam"
+        ],
+        "question": "'Tam Quoc Dien Nghia' la tac pham van hoc noi tieng cua nuoc nao?"
     },
     {
         "answer": "C",
@@ -308,17 +308,6 @@
         "question": "Nguoi Viet Nam dau tien dat chan den Nam Cuc la ai?"
     },
     {
-        "answer": "B",
-        "level": 10,
-        "options": [
-            "A. New York",
-            "B. Zurich",
-            "C. London",
-            "D. Tokyo"
-        ],
-        "question": "Thanh pho nao duoc goi la 'thanh pho ngan hang' cua the gioi?"
-    },
-    {
         "answer": "C",
         "level": 10,
         "options": [
@@ -328,6 +317,17 @@
             "D. Bong ban"
         ],
         "question": "Mon the thao nao su dung vat goi la 'shuttlecock'?"
+    },
+    {
+        "answer": "B",
+        "level": 10,
+        "options": [
+            "A. New York",
+            "B. Zurich",
+            "C. London",
+            "D. Tokyo"
+        ],
+        "question": "Thanh pho nao duoc goi la 'thanh pho ngan hang' cua the gioi?"
     },
     {
         "answer": "B",
@@ -363,17 +363,6 @@
         "question": "Ai la nha phat minh bong den dien?"
     },
     {
-        "answer": "C",
-        "level": 12,
-        "options": [
-            "A. Leonardo da Vinci",
-            "B. Pablo Picasso",
-            "C. Vincent van Gogh",
-            "D. Claude Monet"
-        ],
-        "question": "'The Starry Night' la buc tranh noi tieng cua hoa si nao?"
-    },
-    {
         "answer": "B",
         "level": 12,
         "options": [
@@ -405,6 +394,17 @@
             "D. Nhom"
         ],
         "question": "Kim loai nao co tinh dan dien tot nhat?"
+    },
+    {
+        "answer": "C",
+        "level": 12,
+        "options": [
+            "A. Leonardo da Vinci",
+            "B. Pablo Picasso",
+            "C. Vincent van Gogh",
+            "D. Claude Monet"
+        ],
+        "question": "'The Starry Night' la buc tranh noi tieng cua hoa si nao?"
     },
     {
         "answer": "B",
