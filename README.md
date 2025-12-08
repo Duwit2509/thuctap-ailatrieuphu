@@ -93,7 +93,7 @@ THUCTAP-AILATRIEUPHU/
 ├── scores.json             # Dữ liệu bảng xếp hạng
 ├── build.bat               # Script biên dịch tự động
 └── README.md
-
+```
 Hướng Dẫn Cài Đặt & Chạy
 Cách 1: Chơi Ngay (User)
 Tải file .zip từ mục Releases.
