@@ -37,8 +37,9 @@ int main() {
 
 
     bool isRunning = true;
-    playWelcomeSound();
+    
     while (isRunning) {
+        playWelcomeSound();
         clearScreen(); 
         resetColor(); 
 

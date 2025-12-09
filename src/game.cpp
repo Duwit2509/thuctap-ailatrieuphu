@@ -10,6 +10,7 @@
 #include <iomanip>
 #include <algorithm>
 #include <random>
+#include <conio.h>
 
 
 using namespace std;
@@ -134,8 +135,26 @@ long long playGame(const vector<Question>& allQuestions, int &finalLevel) {
                 }
             }
             else if (playerAnswer == 'S') {
-                playerWantsToStop = true;
-                answerSubmitted = true; 
+               playSelectSound();
+                
+                setColor(12); 
+                cout << "\nBAN CO CHAC CHAN MUON DUNG CUOC CHOI? (Y/N): ";
+                resetColor();
+
+                // Dùng _getch() để bắt phím Y hoặc N ngay lập tức
+                char confirm = _getch();
+                confirm = toupper(confirm); 
+                cout << confirm << endl; 
+
+                if (confirm == 'Y') {
+                    playerWantsToStop = true;
+                    answerSubmitted = true; 
+                } else {
+                    setColor(10);
+                    cout << "Quyet dinh dung dan! Hay tiep tuc chien dau..." << endl;
+                    resetColor();
+                    sleep(1000); 
+                }
             }
             else if (playerAnswer >= 'A' && playerAnswer <= 'D') {
                 playPalpitatingSound();
