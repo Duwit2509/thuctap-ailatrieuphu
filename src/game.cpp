@@ -313,9 +313,9 @@ void viewHighScores(vector<Player>& allPlayers) {
     clearScreen();
     playSelectSound();
     setColor(14); 
-    cout << "╔══════════════════════════════════════╗" << endl;
-    cout << "║            BẢNG XẾP HẠNG             ║" << endl;
-    cout << "╚══════════════════════════════════════╝" << endl;
+    cout << "╔══════════════════════════════════════════════════╗" << endl;
+    cout << "║                  BẢNG XẾP HẠNG                   ║" << endl;
+    cout << "╚══════════════════════════════════════════════════╝" << endl;
     resetColor();
 
     if (allPlayers.empty()) {
@@ -329,7 +329,7 @@ void viewHighScores(vector<Player>& allPlayers) {
              << setw(15) << "CÂU SỐ"  
              << "TIỀN THƯỞNG" << endl;
         resetColor();
-        cout << "---------------------------------------------------" << endl;
+        cout << "--------------------------------------------------" << endl;
 
         int rank = 1;
         for (const Player& p : allPlayers) {

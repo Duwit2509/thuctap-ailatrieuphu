@@ -311,3 +311,59 @@ char getUserInputWithTimer(int &timeLeft) {
     cout << "\n";
     return 'X'; 
 }
+
+// Ham hien thi luat choi
+void viewGameRules() {
+    clearScreen();
+    playPalpitatingSound();
+    setColor(14);
+    cout << "╔══════════════════════════════════════════════════════════════════════╗" << endl;
+    cout << "║                      HƯỚNG DẪN LUẬT CHƠI                             ║" << endl;
+    cout << "╚══════════════════════════════════════════════════════════════════════╝" << endl;
+    
+    setColor(11);
+    cout << "\n[1] MỤC TIÊU:" << endl;
+    resetColor();
+    cout << "\n   - Bạn phải vượt qua 15 câu hỏi trắc nghiệm từ dễ đến khó." << endl;
+    cout << "\n   - Mỗi câu hỏi có 4 đáp án (A, B, C, D) và chỉ có 1 đáp án đúng." << endl;
+    cout << "\n   - Thời gian suy nghĩ cho mỗi câu là "; setColor(12); cout << "30 giây"; resetColor(); cout << "." << endl;
+
+    setColor(11);
+    cout << "\n[2] MỐC QUAN TRỌNG:" << endl;
+    resetColor();
+    cout << "\n   - Có 3 mốc quan trọng: "; setColor(14); cout << "Câu 5 - Câu 10 - Câu 15"; resetColor(); cout << "." << endl;
+    cout << "\n   - Ý nghĩa: Khi đã vượt qua các mốc này, nếu bạn trả lời sai ở" << endl;
+    cout << "\n     các câu tiếp theo, bạn sẽ không bị mất hết tiền mã sẽ ra về" << endl;
+    cout << "\n     với số tiền thưởng của mốc quan trọng gần nhất." << endl;
+    setColor(8);
+    cout << "\n     * Ví dụ: Trả lời sai câu 7 -> Nhận tiền thưởng Câu 5." << endl;
+    cout << "     * Ví dụ: Trả lời sai câu 12 -> Nhận tiền thưởng Câu 10." << endl;
+    resetColor();
+
+    setColor(11);
+    cout << "\n[3] QUYỀN TRỢ GIÚP (Chỉ dùng 1 lần duy nhất):" << endl;
+    resetColor();
+    cout << "   "; setColor(10); cout << "\n     [5] 50:50"; resetColor(); cout << ": Máy tính sẽ loại bỏ 2 phương án sai." << endl;
+    cout << "   "; setColor(10); cout << "\n     [6] Hỏi ý kiến khán giả"; resetColor(); cout << ": Xem biểu đồ khảo sát từ khán giả." << endl;
+    cout << "   "; setColor(10); cout << "\n     [7] Gọi điện thoại"; resetColor(); cout << ": Hỏi ý kiến nhà thông thái." << endl;
+
+    setColor(11);
+    cout << "\n[4] DỪNG CUỘC CHƠI:" << endl;
+    resetColor();
+    cout << "\n   - Nhấn phím "; setColor(12); cout << "[S]"; resetColor(); cout << " để dừng cuộc chơi bất cứ lúc nào." << endl;
+    cout << "\n   - Khi dừng cuộc chơi, bạn sẽ bảo toàn "; setColor(14); cout << "100%"; resetColor(); cout << " số tiền hiện có." << endl;
+
+    setColor(11);
+    cout << "\n[5] THẮNG TIỀN THƯỞNG:" << endl;
+    resetColor();
+    cout << "\n   Câu 1: 200.000       Câu 6: 3.000.000       Câu 11: 30.000.000" << endl;
+    cout << "   Câu 2: 400.000       Câu 7: 6.000.000       Câu 12: 40.000.000" << endl;
+    cout << "   Câu 3: 600.000       Câu 8: 10.000.000      Câu 13: 60.000.000" << endl;
+    cout << "   Câu 4: 1.000.000     Câu 9: 14.000.000      Câu 14: 85.000.000" << endl;
+    setColor(14);
+    cout << "   CÂU 5: 2.000.000     CÂU 10: 22.000.000     CÂU 15: 150.000.000" << endl;
+    resetColor();
+
+    cout << "\n----------------------------------------------------------------------" << endl;
+    pressEnterToContinue();
+}

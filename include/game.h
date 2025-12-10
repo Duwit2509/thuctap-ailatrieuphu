@@ -45,5 +45,6 @@ string formatMoney(long long money);
 //Ham xuong dong van ban
 string wrapText(const string& text, int width); 
 
+void viewGameRules();
 
 #endif

@@ -52,9 +52,10 @@ int main() {
         cout << "  1. Chơi game" << endl;
         cout << "  2. Xem Bảng Xếp Hạng" << endl;
         cout << "  3. Quản lý câu hỏi (Admin)" << endl;
-        cout << "  4. Thoát" << endl;
+        cout << "  4. Hướng dẫn & luật chơi" << endl;
+        cout << "  5. Thoát" << endl;
         cout << "----------------------------------------" << endl;
-        cout << "Nhập lựa chọn của bạn (1-4): ";
+        cout << "Nhập lựa chọn của bạn (1-5): ";
 
         int choice;
         cin >> choice;
@@ -111,6 +112,9 @@ int main() {
                 adminLogin(allQuestions);
                 break;
             case 4:
+                viewGameRules();
+                break;
+            case 5:
                 isRunning = false;
                 cout << "Tạm biệt! Hẹn gặp lại." << endl;
                 sleep(1000);
