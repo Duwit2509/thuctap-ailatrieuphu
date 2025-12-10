@@ -6,19 +6,19 @@
 vector<Question> loadQuestions() {
     ifstream file_in("questions.json");
     if (!file_in.is_open()) {
-        cerr << "LOI: Khong the mo file questions.json. Vui long kiem tra lai!" << endl;
+        cerr << "LỖI: Không thể mở file questions.json. Vui lòng kiểm tra lại!" << endl;
         return {}; 
     }
     json j;
     try {
         file_in >> j;
         if (j.is_null() || j.empty()) { 
-             cout << "File questions.json dang rong, bat dau danh sach moi." << endl;
+             cout << "File questions.json đang rỗng, bắt đầu danh sách mới." << endl;
              file_in.close();
              return {};
         }
     } catch (json::parse_error& e) {
-        cerr << "LOI: File questions.json bi loi dinh dang! " << e.what() << endl;
+        cerr << "LỖI: File questions.json bị lỗi định dạng! " << e.what() << endl;
         file_in.close();
         return {};
     }
@@ -32,7 +32,7 @@ vector<Question> loadQuestions() {
         q.options = item["options"].get<vector<string>>();
         questionList.push_back(q);
     }
-    cout << "Da tai " << questionList.size() << " cau hoi tu file JSON." << endl;
+    cout << "Đã tải " << questionList.size() << " câu hỏi từ file JSON." << endl;
     return questionList;
 }
 
@@ -48,31 +48,31 @@ void saveQuestions(const vector<Question>& allQuestions) {
     }
     ofstream file_out("questions.json");
     if (!file_out.is_open()) {
-        cerr << "LOI: Khong the mo file questions.json de LUU!" << endl;
+        cerr << "LỖI: Không thể mở file questions.json để LƯU!" << endl;
         return;
     }
     file_out << j_array.dump(4);
     file_out.close();
-    cout << "Da luu thanh cong " << allQuestions.size() << " cau hoi." << endl;
+    cout << "Đã lưu thành công " << allQuestions.size() << " câu hỏi." << endl;
 }
 
 vector<Player> loadScores() {
     ifstream file_in("scores.json");
     vector<Player> allPlayers;
     if (!file_in.is_open()) {
-        cout << "File scores.json khong tim thay, se tao file moi." << endl;
+        cout << "File scores.json không tìm thấy, sẽ tạo file mới." << endl;
         return allPlayers; 
     }
     json j;
     try {
         file_in >> j;
         if (j.is_null() || j.empty()) { 
-             cout << "File scores.json dang rong, bat dau danh sach moi." << endl;
+             cout << "File scores.json đang rỗng, bắt đầu danh sách mới." << endl;
              file_in.close();
              return allPlayers;
         }
     } catch (json::parse_error& e) {
-        cout << "File scores.json dang rong hoac loi, bat dau danh sach moi." << endl;
+        cout << "File scores.json đang rỗng hoặc lỗi, bắt đầu danh sách mới." << endl;
         file_in.close();
         return allPlayers;
     }
@@ -88,7 +88,7 @@ vector<Player> loadScores() {
         p.score = item["score"];
         allPlayers.push_back(p);
     }
-    cout << "Da tai " << allPlayers.size() << " luot choi truoc." << endl;
+    cout << "Đã tải " << allPlayers.size() << " lượt chơi trước." << endl;
     return allPlayers;
 }
 
@@ -104,7 +104,7 @@ void saveScores(const vector<Player>& allPlayers) {
     ofstream file_out("scores.json");
     file_out << j_array.dump(4);
     file_out.close();
-    cout << "Da luu diem so vao file scores.json." << endl;
+    cout << "Đã lưu điểm vào file scores.json." << endl;
 }
 
 bool compareLevels(const Question& a, const Question& b) {

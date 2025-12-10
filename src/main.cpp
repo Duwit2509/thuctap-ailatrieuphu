@@ -27,12 +27,12 @@ int main() {
 
     if (allQuestions.empty()) {
         setColor(12);
-        cout << "LOI NGHIEM TRONG: Khong co cau hoi nao duoc tai. Ket thuc." << endl;
+        cout << "LỖI NGHIÊM TRỌNG: Không có câu hỏi nào được tải. Kết thúc." << endl;
         resetColor();
         pressEnterToContinue();
     }
 
-    cout << "Nhan Enter de bat dau...";
+    cout << "Nhấn Enter để bắt đầu...";
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 
@@ -45,16 +45,16 @@ int main() {
 
         setColor(14); 
         cout << "╔══════════════════════════════════════╗" << endl;
-        cout << "║   CHAO MUNG DEN VOI AI LA TRIEU PHU  ║" << endl;
+        cout << "║   CHÀO MỪNG ĐẾN VỚI AI LÀ TRIỆU PHÚ  ║" << endl;
         cout << "╚══════════════════════════════════════╝" << endl;
         resetColor(); 
         
-        cout << "  1. Choi game" << endl;
-        cout << "  2. Xem Bang Xep Hang" << endl;
-        cout << "  3. Quan ly cau hoi (Admin)" << endl;
-        cout << "  4. Thoat" << endl;
+        cout << "  1. Chơi game" << endl;
+        cout << "  2. Xem Bảng Xếp Hạng" << endl;
+        cout << "  3. Quản lý câu hỏi (Admin)" << endl;
+        cout << "  4. Thoát" << endl;
         cout << "----------------------------------------" << endl;
-        cout << "Nhap lua chon cua ban (1-4): ";
+        cout << "Nhập lựa chọn của bạn (1-4): ";
 
         int choice;
         cin >> choice;
@@ -63,7 +63,7 @@ int main() {
             cin.clear(); 
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             setColor(12);
-            cout << "Lua chon khong hop le. Vui long nhap so (1-4): ";
+            cout << "Lựa chọn không hợp lệ. Vui lòng nhập số (1-4): ";
             resetColor();
             cin >> choice;
         }
@@ -73,7 +73,7 @@ int main() {
             case 1: { 
                 if (allQuestions.empty()) {
                     setColor(12);
-                    cout << "Chua co du lieu cau hoi! Vui long vao Admin de them." << endl;
+                    cout << "Chưa có dữ liệu câu hỏi! Vui lòng vào Admin để thêm." << endl;
                     resetColor();
                     pressEnterToContinue();
                     break;
@@ -81,12 +81,12 @@ int main() {
                 clearScreen();
                 playIntroSound();
                 setColor(14);
-                cout << "Chuan bi vao tro choi..." << endl;
+                cout << "Chuẩn bị vào trò chơi..." << endl;
                 resetColor();
                 sleep(2000);
                 
                 string playerName;
-                cout << "Vui long nhap ten cua ban: ";
+                cout << "Vui lòng nhập tên của bạn: ";
                 getline(cin, playerName); 
                 if (playerName.empty()) playerName = "Noname";
                 sleep(1000);
@@ -98,7 +98,7 @@ int main() {
                 saveScores(allScores); // Luu vector vao file
 
                 setColor(10);
-                cout << "\nDa luu ket qua cua ban vao Bang Xep Hang!" << endl;
+                cout << "\nĐã lưu kết quả vào Bảng Xếp Hạng!" << endl;
                 resetColor();
                 pressEnterToContinue(); 
                 break;
@@ -112,12 +112,12 @@ int main() {
                 break;
             case 4:
                 isRunning = false;
-                cout << "Tam biet! Hen gap lai." << endl;
+                cout << "Tạm biệt! Hẹn gặp lại." << endl;
                 sleep(1000);
                 break;
             default:
                 setColor(12);
-                cout << "Lua chon khong hop le. Vui long nhap lai (1-4)." << endl;
+                cout << "Lựa chọn không hợp lệ. Vui lòng nhập lại (1-4)." << endl;
                 resetColor();
                 pressEnterToContinue(); 
                 break;

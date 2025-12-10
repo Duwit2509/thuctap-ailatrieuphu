@@ -21,13 +21,13 @@ using namespace std;
 void displayQuestion(const Question& q, long long currentPrize, bool used5050, bool usedAskAudience, bool usedPhoneAFriend, char selectedOption) {
     clearScreen();
     setColor(14);
-    cout << "╔═══════════════ QUYEN TRO GIUP ═══════════════ ║ ═══════ LUA CHON KHAC ═══════╗" << endl;
+    cout << "╔═══════════════ QUYỀN TRỢ GIÚP ═══════════════ ║ ═══════ LỰA CHỌN KHÁC ═══════╗" << endl;
     resetColor();
 
     // 50:50
     if (used5050) {
     setColor(7); 
-    cout << "║       [5] 50:50 (Da su dung)                  ║";
+    cout << "║       [5] 50:50 (Đã sử dụng)                  ║";
     } else {
     setColor(10); 
     cout << "║       [5] 50:50                               ║";
@@ -35,26 +35,26 @@ void displayQuestion(const Question& q, long long currentPrize, bool used5050, b
     resetColor(); 
     // Dung cuoc choi
     setColor(12); 
-    cout << "      [S] Dung cuoc choi     " << endl;
+    cout << "      [S] Dừng cuộc chơi     " << endl;
     resetColor();
 
     // Hoi khan gia
     if (usedAskAudience) {
     setColor(7); 
-    cout << "║       [6] Hoi khan gia (Da su dung)           ║                " << endl;
+    cout << "║       [6] Hỏi khán giả (Đã sử dụng)           ║                " << endl;
     } else {
     setColor(10); 
-    cout << "║       [6] Hoi khan gia                        ║                " << endl;
+    cout << "║       [6] Hỏi khán giả                        ║                " << endl;
     }
     resetColor();
 
     // Goi dien thoai
     if (usedPhoneAFriend) {
     setColor(7); 
-    cout << "║       [7] Goi dien thoai (Da su dung)         ║                " << endl;
+    cout << "║       [7] Gọi điện thoại (Đã sử dụng)         ║                " << endl;
     } else {
     setColor(10); 
-    cout << "║       [7] Goi dien thoai                      ║                " << endl;
+    cout << "║       [7] Gọi điện thoại                      ║                " << endl;
     }
     resetColor();
 
@@ -64,7 +64,7 @@ void displayQuestion(const Question& q, long long currentPrize, bool used5050, b
     cout << "╔══════════════════════════════════════════════════════════════════════════════╗" << endl;
 
      // Tieu de cau hoi va tri gia hien tai
-    string header = "CAU SO " + to_string(q.level) + "  -  TRI GIA: " + formatMoney(currentPrize) + " VND";
+    string header = "CÂU SỐ " + to_string(q.level) + "  -  TRỊ GIÁ: " + formatMoney(currentPrize) + " VND";
 
     // Tinh toan can le giua
     int boxWidth = 78;
@@ -81,7 +81,7 @@ void displayQuestion(const Question& q, long long currentPrize, bool used5050, b
     
 
     // Hien thi cau hoi voi ngat dong
-    int maxWidth = 70; // Chieu rong toi da cho cau hoi
+    int maxWidth = 90; // Chieu rong toi da cho cau hoi
     string wrapped = wrapText(q.questionText, maxWidth);
 
     stringstream ss(wrapped);
@@ -150,7 +150,7 @@ void apply5050(Question& currentQuestion) {
 void applyAskAudience(const Question& currentQuestion) {
     clearScreen();
     setColor(14); 
-    cout << "Dang lay y kien khan gia..." << endl;
+    cout << "Đang lấy ý kiến khán giả...\n" << endl;
     resetColor();
 
     playApplyAskAudienceSound();
@@ -185,7 +185,7 @@ void applyAskAudience(const Question& currentQuestion) {
     
     //Hien thi ket qua khan gia
     setColor(14);
-    cout << "╔════════ KET QUA KHAO SAT KHAN GIA ════════╗" << endl;
+    cout << "╔════════ KẾT QUẢ KHẢO SÁT KHÁN GIẢ ════════╗" << endl;
     resetColor();
 
     const int MAX_BAR_WIDTH = 20; 
@@ -221,7 +221,7 @@ void applyAskAudience(const Question& currentQuestion) {
 void applyPhoneAFriend(const Question& currentQuestion) {
     clearScreen();
     setColor(14); 
-    cout << "Dang ket noi voi 'Nha Thong Thai'..." << endl;
+    cout << "Đang kết nối với  'Nhà Thông Thái'..." << endl;
     resetColor();
 
     playApplyPhoneAFriendSound();
@@ -229,15 +229,15 @@ void applyPhoneAFriend(const Question& currentQuestion) {
     cout << "..." << endl;
     sleep(1000);
     setColor(8);
-    cout << "Nha Thong Thai: 'Alo, toi nghe!'" << endl;
+    cout << "Nhà Thông Thái: 'Alo, tôi nghe!'" << endl;
     sleep(1500);
     setColor(11);
-    cout << "Ban: (Doc cau hoi...)" << endl;
+    cout << "Ban: (Đọc câu hỏi...)" << endl;
     sleep(2000);
     setColor(8);
-    cout << "Nha Thong Thai: 'Hmm... cau nay...'" << endl;
+    cout << "Nhà Thông Thái: 'Hmm... câu này...'" << endl;
     sleep(1500);
-    cout << "Nha Thong Thai: 'Toi nghi... dap an la... ";
+    cout << "Nhà Thông Thái: 'Tôi nghĩ... Đáp án là... ";
     sleep(2000);
 
     // Logic 80% dung, 20% sai
@@ -266,9 +266,9 @@ void applyPhoneAFriend(const Question& currentQuestion) {
     setColor(10); 
     cout << finalAnswer << " !'" << endl;
     setColor(14);
-    cout << "Nha Thong Thai: 'Toi kha chac chan... nhung quyet dinh la cua ban. Chuc may man!'" << endl;
+    cout << "Nhà Thông Thái: 'Tôi khá chắc chắn... nhưng quyết định là ở bạn. GOOD LUCK!'" << endl;
     resetColor();
-    cout << "Tit... tit... (Ket thuc cuoc goi)" << endl;
+    cout << "Tít... tít... (Kết thúc cuộc gọi)" << endl;
 
     pressEnterToContinue();
 }
@@ -282,7 +282,7 @@ char getUserInputWithTimer(int &timeLeft) {
 
     while (timeLeft > 0) {
         setColor(12); 
-        cout << "\r   >> Thoi gian con lai: " << setw(2) << timeLeft << " giay <<   ";
+        cout << "\r   >> Thời gian còn lại: " << setw(2) << timeLeft << " giây <<   ";
         resetColor();
 
         //Check phim bam

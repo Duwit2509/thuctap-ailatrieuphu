@@ -55,7 +55,7 @@ void clearScreen() {
 // Ham bat nguoi dung an Enter de tiep tuc 
 void pressEnterToContinue() {
     setColor(7);
-    cout << "\nNhan Enter de tiep tuc...";
+    cout << "\nNhấn Enter để tiếp tục...";
     
     // Xoa bo nho dem de tranh van de bam phim
     #ifdef _WIN32

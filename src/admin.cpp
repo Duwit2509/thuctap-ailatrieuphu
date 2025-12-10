@@ -10,24 +10,24 @@ void adminLogin(vector<Question>& allQuestions) {
     clearScreen();
     setColor(14); 
     cout << "╔══════════════════════════════════════╗" << endl;
-    cout << "║            DANG NHAP ADMIN           ║" << endl;
+    cout << "║            ĐĂNG NHẬP ADMIN           ║" << endl;
     cout << "╚══════════════════════════════════════╝" << endl;
     resetColor();
 
     string pass = "";
-    cout << "Vui long nhap mat khau Admin: ";
+    cout << "Vui lòng nhập mật khẩu Admin: ";
     getline(cin, pass);
 
 
     if (pass == ADMIN_PASSWORD) {
         setColor(10); 
-        cout << "Dang nhap thanh cong! Dang tai..." << endl;
+        cout << "Đăng nhập thành công! Đang tải..." << endl;
         resetColor();
         sleep(1500); 
         adminMenu(allQuestions); 
     } else {
         setColor(12); 
-        cout << "Mat khau sai! Nhan Enter de quay lai." << endl;
+        cout << "Mật khẩu sai! Nhấn Enter để quay lại." << endl;
         resetColor();
         pressEnterToContinue();
     }
@@ -41,15 +41,15 @@ void adminMenu(vector<Question>& allQuestions) {
         clearScreen();
         setColor(14);
         cout << "╔══════════════════════════════════════╗" << endl;
-        cout << "║        CHUC NANG QUAN TRI VIEN       ║" << endl;
+        cout << "║        CHỨC NĂNG QUẢN TRỊ VIÊN       ║" << endl;
         cout << "╚══════════════════════════════════════╝" << endl;
         resetColor();
-        cout << "  1. Xem tat ca cau hoi" << endl;
-        cout << "  2. Them cau hoi moi" << endl;
-        cout << "  3. Xoa cau hoi" << endl;
-        cout << "  4. Quay lai Menu chinh" << endl;
+        cout << "  1. Xem tất cả câu hỏi" << endl;
+        cout << "  2. Thêm câu hỏi mới" << endl;
+        cout << "  3. Xóa câu hỏi" << endl;
+        cout << "  4. Quay lại Menu chính" << endl;
         cout << "----------------------------------------" << endl;
-        cout << "Nhap lua chon cua ban (1-4): ";
+        cout << "Nhập lựa chọn của bạn (1-4): ";
 
         int choice;
         cin >> choice;
@@ -58,7 +58,7 @@ void adminMenu(vector<Question>& allQuestions) {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             setColor(12);
-            cout << "Lua chon khong hop le. Vui long nhap so (1-4): ";
+            cout << "Lựa chọn không hợp lệ. Vui lòng nhập số (1-4): ";
             resetColor();
             cin >> choice;
         }
@@ -79,7 +79,7 @@ void adminMenu(vector<Question>& allQuestions) {
                 break;
             default:
                 setColor(12);
-                cout << "Lua chon khong hop le." << endl;
+                cout << "Lựa chọn không hợp lệ." << endl;
                 resetColor();
                 pressEnterToContinue();
                 break;
@@ -92,29 +92,65 @@ void viewAllQuestions(const vector<Question>& allQuestions) {
     clearScreen();
     setColor(14);
     cout << "========================================" << endl;
-    cout << "        DANH SACH TAT CA CAU HOI (" << allQuestions.size() << " cau)" << endl;
+    cout << "        DANH SÁCH TẤT CẢ CÂU HỎI (" << allQuestions.size() << " câu)" << endl;
     cout << "========================================" << endl;
     resetColor();
 
     if (allQuestions.empty()) {
-        cout << "Khong co cau hoi nao." << endl;
+        cout << "Không có câu hỏi nào." << endl;
     }
 
-    for (int i = 0; i < allQuestions.size(); ++i) {
-        const Question& q = allQuestions[i]; 
-        
-        setColor(11);
-        cout << "\n--- Cau hoi " << (i + 1) << " (Level: " << q.level << ") ---" << endl;
+    int pageSize = 5; // So cau hoi hien thi tren 1 trang
+    int totalQuestions = allQuestions.size();
+    int totalPages = (totalQuestions + pageSize - 1) / pageSize; // Tinh tong so trang
+
+   for (int page = 0; page < totalPages; ++page) {
+        clearScreen();
+        setColor(14);
+        cout << "========================================" << endl;
+        cout << " DANH SÁCH CÂU HỎI (Trang " << (page + 1) << "/" << totalPages << ")" << endl;
+        cout << " Tổng số câu: " << totalQuestions << endl;
+        cout << "========================================" << endl;
         resetColor();
-        cout << "Noi dung: " << q.questionText << endl;
-        for (const string& opt : q.options) {
-            cout << opt << endl;
+
+        int start = page * pageSize;
+        int end = min(start + pageSize, totalQuestions);
+
+        for (int i = start; i < end; ++i) {
+            const Question& q = allQuestions[i]; 
+            
+            setColor(11);
+            cout << "\n--- Câu " << (i + 1) << " (Level: " << q.level << ") ---" << endl;
+            resetColor();
+            cout << "Nội dung: " << q.questionText << endl;
+            
+            // In cac dap an
+            for (const string& opt : q.options) {
+                cout << "  " << opt << endl;
+            }
+            
+            setColor(10);
+            cout << "Đáp án đúng: " << q.answer << endl;
+            resetColor();
+            cout << "----------------------------------------" << endl;
         }
-        setColor(10);
-        cout << "Dap an dung: " << q.answer << endl;
-        resetColor();
+
+        // Hoi nguoi dung muon xem tiep khong
+        if (page < totalPages - 1) {
+            setColor(14);
+            cout << "\n>> Nhấn Enter để xem trang tiếp theo (hoặc nhập 'Q' để thoát)...";
+            resetColor();
+            
+            string input;
+            getline(cin, input);
+            if (input == "q" || input == "Q") break;
+        } else {
+            setColor(14);
+            cout << "\n>> Đã hết danh sách.";
+            resetColor();
+            pressEnterToContinue();
+        }
     }
-    pressEnterToContinue();
 }
 
 //Them cau hoi moi
@@ -122,13 +158,13 @@ void addQuestion(vector<Question>& allQuestions) {
     clearScreen();
     setColor(14);
     cout << "========================================" << endl;
-    cout << "             THEM CAU HOI MOI" << endl;
+    cout << "             THÊM CÂU HỎI MỚI" << endl;
     cout << "========================================" << endl;
     resetColor();
     
     Question newQ; 
     
-    cout << "Nhap level (1-15): ";
+    cout << "Nhập level (1-15): ";
     cin >> newQ.level;
     
     // Kiem tra loi nhap
@@ -136,41 +172,41 @@ void addQuestion(vector<Question>& allQuestions) {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         setColor(12);
-        cout << "Level khong hop le. Vui long nhap so tu 1-15: ";
+        cout << "Level không hợp lệ. Vui lòng nhập số từ 1-15: ";
         resetColor();
         cin >> newQ.level;
     }
     cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
 
-    cout << "Nhap noi dung cau hoi: ";
+    cout << "Nhập nội dung câu hỏi: ";
     getline(cin, newQ.questionText);
 
     newQ.options.resize(4); 
     string tempOpt;
 
-    cout << "Nhap noi dung dap an A: ";
+    cout << "Nhập nội dung đáp án A: ";
     getline(cin, tempOpt);
     newQ.options[0] = "A. " + tempOpt;
 
-    cout << "Nhap noi dung dap an B: ";
+    cout << "Nhập nội dung đáp án B: ";
     getline(cin, tempOpt);
     newQ.options[1] = "B. " + tempOpt;
 
-    cout << "Nhap noi dung dap an C: ";
+    cout << "Nhập nội dung đáp án C: ";
     getline(cin, tempOpt);
     newQ.options[2] = "C. " + tempOpt;
 
-    cout << "Nhap noi dung dap an D: ";
+    cout << "Nhập nội dung đáp án D: ";
     getline(cin, tempOpt);
     newQ.options[3] = "D. " + tempOpt;
 
-    cout << "Nhap dap an dung (A, B, C hay D): ";
+    cout << "Nhập đáp án đúng (A, B, C hay D): ";
     string answerInput;
     cin >> answerInput;
     newQ.answer = string(1, toupper(answerInput[0]));
     while (newQ.answer != "A" && newQ.answer != "B" && newQ.answer != "C" && newQ.answer != "D") {
         setColor(12);
-        cout << "Dap an phai la A, B, C hoac D. Nhap lai: ";
+        cout << "Đáp án phải là A, B, C hoặc D. Nhập lại: ";
         resetColor();
         cin >> answerInput;
         newQ.answer = string(1, toupper(answerInput[0]));
@@ -186,7 +222,7 @@ void addQuestion(vector<Question>& allQuestions) {
     saveQuestions(allQuestions);
 
     setColor(10);
-    cout << "\nDa them va luu cau hoi moi thanh cong!" << endl;
+    cout << "\nĐã thêm và lưu câu hỏi mới thành công!" << endl;
     resetColor();
     pressEnterToContinue();
 }
@@ -196,18 +232,18 @@ void deleteQuestion(vector<Question>& allQuestions) {
     clearScreen();
     setColor(14);
     cout << "========================================" << endl;
-    cout << "              XOA CAU HOI" << endl;
+    cout << "              XÓA CÂU HỎI" << endl;
     cout << "========================================" << endl;
     resetColor();
 
     if (allQuestions.empty()) {
-        cout << "Khong co cau hoi nao de xoa." << endl;
+        cout << "Không có câu hỏi nào để xóa." << endl;
         pressEnterToContinue();
         return;
     }
 
     setColor(8);
-    cout << "Danh sach cau hoi (Nhap 0 de huy):" << endl;
+    cout << "Danh sách câu hỏi:" << endl;
     resetColor();
     for (size_t i = 0; i < allQuestions.size(); ++i) {
         //Chi hien thi phan dau cau hoi de de nhan biet
@@ -218,7 +254,7 @@ void deleteQuestion(vector<Question>& allQuestions) {
     }
     
     setColor(14);
-    cout << "\nNhap STT cau hoi muon XOA: ";
+    cout << "\nNhập STT câu hỏi muốn XÓA (Nhập 0 để hủy): ";
     resetColor();
     int indexToDelete;
     cin >> indexToDelete;
@@ -227,7 +263,7 @@ void deleteQuestion(vector<Question>& allQuestions) {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         setColor(12);
-        cout << "Nhap sai. Vui long nhap so: ";
+        cout << "Nhập sai. Vui lòng nhập số: ";
         resetColor();
         cin >> indexToDelete;
     }
@@ -235,7 +271,7 @@ void deleteQuestion(vector<Question>& allQuestions) {
 
     if (indexToDelete == 0) {
         setColor(10);
-        cout << "Da huy xoa." << endl;
+        cout << "Đã hủy xóa." << endl;
         resetColor();
         pressEnterToContinue();
         return;
@@ -245,7 +281,7 @@ void deleteQuestion(vector<Question>& allQuestions) {
         int realIndex = indexToDelete - 1;
 
         setColor(12);
-        cout << "\nBan co chac muon xoa cau hoi: \"" << allQuestions[realIndex].questionText << "\" ? (y/n): ";
+        cout << "\nBạn có chắc muốn xóa câu hỏi: \"" << allQuestions[realIndex].questionText << "\" ? (y/n): ";
         resetColor();
         char confirm;
         cin >> confirm;
@@ -255,14 +291,14 @@ void deleteQuestion(vector<Question>& allQuestions) {
             allQuestions.erase(allQuestions.begin() + realIndex);
             saveQuestions(allQuestions);
             setColor(10);
-            cout << "\nDa xoa va luu lai thanh cong!" << endl;
+            cout << "\nĐã xóa và lưu lại thành công!" << endl;
             resetColor();
         } else {
-            cout << "\nHuy xoa." << endl;
+            cout << "\nHủy xóa." << endl;
         }
     } else {
         setColor(12);
-        cout << "\nSo thu tu khong hop le. Khong co gi duoc xoa." << endl;
+        cout << "\nSố thứ tự không hợp lệ. Không có gì được xóa." << endl;
         resetColor();
     }
     pressEnterToContinue();
