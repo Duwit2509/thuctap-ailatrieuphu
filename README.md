@@ -5,22 +5,41 @@ Tính Năng Nổi Bật
 Phiên bản nâng cấp này mang đến trải nghiệm người dùng vượt trội so với các ứng dụng console thông thường:
 
 1. Gameplay & Logic Chặt Chẽ
-Hệ thống 15 câu hỏi: Độ khó tăng dần, bao gồm các mốc quan trọng (Câu 5, 10, 15).
+
+Hệ thống 300 câu hỏi: Được chia thành 15 mốc Level với độ khó tăng dần.
+
+Mốc quan trọng: Bảo toàn tiền thưởng tại các mốc **5, 10, 15**.
 
 Tiền thưởng thực tế: Mô phỏng thang tiền thưởng từ 200.000 VNĐ đến 150.000.000 VNĐ.
 
 Áp lực thời gian: Đồng hồ đếm ngược 30 giây cho mỗi câu hỏi. Hết giờ tự động xử lý thua cuộc.
 
+Cơ chế chống lặp: Đảm bảo không gặp lại câu hỏi cũ trong cùng một phiên chơi.
+
 Dừng cuộc chơi: Người chơi có thể chọn [S] để dừng lại và bảo toàn số tiền hiện có.
 
-2. Hệ Thống Trợ Giúp
+2.Hệ Thống Tài Chính & Danh Hiệu
+
+Tích lũy tài sản: Tiền thưởng sau mỗi lượt chơi được cộng dồn vào "Tài khoản cá nhân" (dựa theo tên người chơi).
+
+Hệ thống danh hiệu: Phong tước hiệu dựa trên tổng tài sản tích lũy:
+
+    Dưới 1 Triệu: Tân binh nghèo khổ.
+
+    Trên 1 Tỷ: VUA TIỀN TỆ
+
+Menu thông minh: Hiển thị Tên, Tài Sản, Danh Hiệu ngay trên màn chính
+
+3. Hệ Thống Trợ Giúp
+
 [5] 50:50: Loại bỏ ngay lập tức 2 phương án sai.
 
 [6] Hỏi ý kiến khán giả: Hiển thị biểu đồ phần trăm bình chọn trực quan.
 
 [7] Gọi điện thoại cho người thân: Kết nối với "Nhà thông thái" (có tỷ lệ đúng/sai logic).
 
-3. Trải Nghiệm Nghe Nhìn (Audio & Visual)
+4. Trải Nghiệm Nghe Nhìn (Audio & Visual)
+
 Giao diện Neon: Sử dụng bảng màu nâng cao của Windows API.
 
 Top 1: Vàng Gold (14)
@@ -39,7 +58,8 @@ Hiệu ứng âm thanh riêng cho từng quyền trợ giúp.
 
 Nhạc chiến thắng, nhạc thua cuộc, nhạc hiệu chương trình.
 
-4. Hệ Thống Quản Trị (Admin) & Dữ Liệu
+5. Hệ Thống Quản Trị (Admin) & Dữ Liệu
+
 Đăng nhập bảo mật: Cần mật khẩu để truy cập quyền Admin.
 
 Quản lý câu hỏi:
@@ -66,6 +86,7 @@ Windows API: Xử lý màu sắc, âm thanh (PlaySound, Beep), input (FlushConso
 Standard Library: vector, thread, chrono, fstream, algorithm...
 
 Cấu Trúc Dự Án
+
 Dự án được tổ chức theo mô hình tách biệt mã nguồn (Separation of Concerns):
 
 ```text
@@ -89,12 +110,14 @@ THUCTAP-AILATRIEUPHU/
 ├── sounds/                 # Thư mục chứa file âm thanh .wav
 │   ├── intro.wav, select.wav, correct.wav...
 │
+├── userdata.json           # Lưu tiền & danh hiệu người chơi
 ├── questions.json          # Cơ sở dữ liệu câu hỏi
 ├── scores.json             # Dữ liệu bảng xếp hạng
 ├── build.bat               # Script biên dịch tự động
 └── README.md
 ```
 Hướng Dẫn Cài Đặt & Chạy
+
 Cách 1: Chơi Ngay (User)
 Tải file .zip từ mục Releases.
 

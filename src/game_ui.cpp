@@ -364,6 +364,19 @@ void viewGameRules() {
     cout << "   CÂU 5: 2.000.000     CÂU 10: 22.000.000     CÂU 15: 150.000.000" << endl;
     resetColor();
 
+    setColor(11);
+    cout << "\n[6] HỆ THỐNG DANH HIỆU (TÍCH LŨY):" << endl;
+    resetColor();
+    cout << "\n   Số tiền bạn kiếm được sẽ cộng dồn vào tài khoản cá nhân." << endl;
+    cout << "\n   Tích lũy càng nhiều, danh hiệu của bạn càng cao:" << endl;
+    
+    cout << "\n   - Dưới 1 Tr:         "; setColor(8); cout << "Tân binh nghèo khổ" << endl; resetColor();
+    cout << "   - 1 Tr - 10 Tr:      "; setColor(7); cout << "Người chơi tiềm năng" << endl; resetColor();
+    cout << "   - 10 Tr - 50 Tr:     "; setColor(10); cout << "Triệu phú" << endl; resetColor();
+    cout << "   - 50 Tr - 200 Tr:    "; setColor(11); cout << "Đại gia" << endl; resetColor();
+    cout << "   - 200 Tr - 1 Ty:     "; setColor(13); cout << "Tỷ phú" << endl; resetColor();
+    cout << "   - Trên 1 Ty:         "; setColor(14); cout << "VUA TIỀN TỆ" << endl; resetColor();
+
     cout << "\n----------------------------------------------------------------------" << endl;
     pressEnterToContinue();
 }

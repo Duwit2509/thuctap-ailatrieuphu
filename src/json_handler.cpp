@@ -110,3 +110,37 @@ void saveScores(const vector<Player>& allPlayers) {
 bool compareLevels(const Question& a, const Question& b) {
     return a.level < b.level; 
 }
+
+
+// Doc tien cua rieng mot nguoi choi
+long long loadUserMoney(string name) {
+    ifstream file_in("userdata.json");
+    if (!file_in.is_open()) return 0;
+    
+    json j;
+    try {
+        file_in >> j;
+        if (j.contains(name)) {
+            return j[name].get<long long>();
+        }
+    } catch (...) { return 0; }
+    return 0; 
+}
+
+// Luu tien cho rieng mot nguoi choi
+void saveUserMoney(string name, long long money) {
+    json j;
+    
+     // Doc du lieu hien tai tu file 
+    ifstream file_in("userdata.json");
+    if (file_in.is_open()) {
+        try {
+            file_in >> j;
+        } catch (...) {} // Neu loi thi coi nhu file rong
+        file_in.close();
+    }
+
+    j[name] = money;
+    ofstream file_out("userdata.json");
+    file_out << j.dump(4);
+}
