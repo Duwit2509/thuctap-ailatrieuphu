@@ -21,7 +21,7 @@ string getRankTitle(long long money) {
     if (money < 10000000) return "Người chơi tiềm năng";
     if (money < 50000000) return "Triệu phú";     
     if (money < 200000000) return "Đại gia";      
-    if (money < 1000000000) return "Ty phú";      
+    if (money < 1000000000) return "Tỷ phú";      
     return "VUA TIEN TE";                         
 }
 
@@ -42,8 +42,9 @@ int main() {
         pressEnterToContinue();
     }
 
-    cout << "Nhấn Enter để bắt đầu...";
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cout << "Đang khởi tạo hệ thống..." << endl;
+    sleep(1000);
+    clearScreen();
 
 
     bool isRunning = true;
@@ -61,19 +62,28 @@ int main() {
         setColor(11);
         cout << "\nNhập tên của bạn để bắt đầu (hoặc 'X' để thoát): ";
         resetColor();
-        getline(cin, playerName);
+
+        playerName = inputUTF8();
+
         if (playerName == "x" || playerName == "X") {
             setColor(14);
             cout << "Tạm biệt! Hẹn gặp lại." << endl;
             resetColor();
             break;
         }
+
+        // Xu ly ten mac dinh
         if (playerName.empty()) playerName = "Noname";
+
+        // Tai so tien nguoi choi
         long long myMoney = loadUserMoney(playerName);
+
         bool isUserSession = true;
+
         while (isUserSession) {
             clearScreen();
             playIntroSound();
+
             setColor(14); 
             cout << "╔═════════════════════════════════════════════╗" << endl;
             cout << "║      CHÀO MỪNG ĐẾN VỚI AI LÀ TRIỆU PHÚ      ║" << endl;
@@ -83,8 +93,8 @@ int main() {
             setColor(10);
             cout << "\nXin chào: " << playerName << endl;
             setColor(11);
-            cout << "Tài sản: " << formatMoney(myMoney) << "VND" << endl;
-            cout << "Danh hiệu: ";
+            cout << "| Tài sản: " << formatMoney(myMoney) << "VND" << endl;
+            cout << "\nDanh hiệu: ";
             setColor(13);
             cout << getRankTitle(myMoney) << endl;
             resetColor();
@@ -123,21 +133,25 @@ int main() {
                     clearScreen();
                     setColor(14);
                     cout << "\n   Chuẩn bị vào trò chơi..." << endl;
-                    cout << "   Chúc bạn may mắn!" << endl;
+                    cout << "   Chúc bạn may mắn, " << playerName << "!" << endl;
                     resetColor();
-                    
                     sleep(3000);
                     
                     int finalLevel = 0;
-                    long long finalScore = playGame(allQuestions, finalLevel);
+                    // Goi ham PlayGame (Tra ve so tien thang duoc trong luot nay)
+                    long long prizeWon = playGame(allQuestions, finalLevel);
 
-                    // Cap nhat so tien nguoi choi
-                    myMoney += finalScore;
+                    // Cong don tien vao tai khoan
+                    myMoney += prizeWon;
                     saveUserMoney(playerName, myMoney);
-                    // Luu diem so
-                    Player newScoreEntry = {playerName, finalScore, finalLevel};
-                    allScores.push_back(newScoreEntry); // Them diem moi vao vector
-                    saveScores(allScores); // Luu vector vao file
+                    
+                    // Luu HighScore neu co diem
+                    if (prizeWon > 0 || finalLevel > 0) {
+                        Player newScoreEntry = {playerName, prizeWon, finalLevel};
+                        allScores.push_back(newScoreEntry); 
+                        
+                        saveScores(allScores);
+                    }
 
                     setColor(10);
                     cout << "\nĐã lưu kết quả vào Bảng Xếp Hạng!" << endl;

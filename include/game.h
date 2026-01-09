@@ -30,7 +30,7 @@ long long playGame(const vector<Question>& allQuestions, int &finalLevel);
 //Ham tro giup 
 void apply5050(Question& currentQuestion);
 void applyAskAudience(const Question& currentQuestion);
-void applyPhoneAFriend(const Question& currentQuestion);
+void applyCallWiseMan(const Question& currentQuestion);
 
 //Ham dem nguoc thoi gian tra loi
 char getUserInputWithTimer(int& timeLeft);

@@ -18,7 +18,7 @@
 using namespace std;
 
 // Ham hien thi cau hoi
-void displayQuestion(const Question& q, long long currentPrize, bool used5050, bool usedAskAudience, bool usedPhoneAFriend, char selectedOption) {
+void displayQuestion(const Question& q, long long currentPrize, bool used5050, bool usedAskAudience, bool usedCallWiseMan, char selectedOption) {
     clearScreen();
     setColor(14);
     cout << "╔═══════════════ QUYỀN TRỢ GIÚP ═══════════════ ║ ═══════ LỰA CHỌN KHÁC ═══════╗" << endl;
@@ -49,7 +49,7 @@ void displayQuestion(const Question& q, long long currentPrize, bool used5050, b
     resetColor();
 
     // Goi dien thoai
-    if (usedPhoneAFriend) {
+    if (usedCallWiseMan) {
     setColor(7); 
     cout << "║       [7] Gọi điện thoại (Đã sử dụng)         ║                " << endl;
     } else {
@@ -123,6 +123,15 @@ void displayQuestion(const Question& q, long long currentPrize, bool used5050, b
 
 //Ham thuc hien tro giup 50:50
 void apply5050(Question& currentQuestion) {
+    // In ra de nguoi choi biet chuc nang dang chay
+    setColor(14); // Mau vang
+    cout << "   Đang loại bỏ 2 phương án sai..." << endl;
+    resetColor();
+    
+    // Phat am thanh va doi 1.5 giay
+    playApply5050Sound();
+    sleep(1500);
+
     char correctAnswerChar = currentQuestion.answer[0]; 
     vector<int> incorrectIndices; 
     
@@ -133,49 +142,59 @@ void apply5050(Question& currentQuestion) {
         }
     }
 
+    // Xao tron danh sach dap an sai
     static random_device rd;
     static mt19937 gen(rd());
     shuffle(incorrectIndices.begin(), incorrectIndices.end(), gen);
 
+    // In ra 2 dap an sai dau tien
     int indexToHide1 = incorrectIndices[0];
     int indexToHide2 = incorrectIndices[1];
 
-    playApply5050Sound();
-
-    currentQuestion.options[indexToHide1] = string(1, 'A' + indexToHide1) + ". ...";
-    currentQuestion.options[indexToHide2] = string(1, 'A' + indexToHide2) + ". ...";
+    currentQuestion.options[indexToHide1] = string(1, 'A' + indexToHide1) + ". ______";
+    currentQuestion.options[indexToHide2] = string(1, 'A' + indexToHide2) + ". ______";
 }
 
 // Ham thuc hien tro giup Hoi y kien khan gia 
 void applyAskAudience(const Question& currentQuestion) {
     clearScreen();
     setColor(14); 
-    cout << "Đang lấy ý kiến khán giả...\n" << endl;
+    cout << "\n==============================================" << endl;
+    cout << "       ĐANG LẤY Ý KIẾN KHÁN GIẢ..." << endl;
+    cout << "==============================================\n" << endl;
     resetColor();
 
     playApplyAskAudienceSound();
     sleep(2000); 
 
+    //Logic tính toán phần trăm
     int totalPercent = 100;
     vector<int> percents(4); 
+
+   // Xác định index đáp án đúng
+    // Giả sử answer là string "A" -> lấy ký tự đầu tiên
     char correct = currentQuestion.answer[0]; 
     int correctIndex = correct - 'A'; 
 
     static random_device rd;
     static mt19937 gen(rd());
 
-    uniform_int_distribution<> dis(40, 70);
+    // Phân bổ phần trăm
+    uniform_int_distribution<> dis(40, 60);
     percents[correctIndex] = dis(gen);
     
     int remaining = totalPercent - percents[correctIndex];
-    
+
+    // Chia phần trăm còn lại cho 3 đáp án sai
     int wrong1 = gen() % remaining;
     int wrong2 = gen() % (remaining - wrong1);
     int wrong3 = remaining - wrong1 - wrong2;
-    
+
+    // Lưu phần trăm vào vector
     vector<int> wrongPercents = {wrong1, wrong2, wrong3};
-    
-    int j = 0; 
+
+    // Gán phần trăm cho các đáp án sai
+    int j = 0;
     for (int i = 0; i < 4; ++i) {
         if (i != correctIndex) {
             percents[i] = wrongPercents[j];
@@ -187,116 +206,144 @@ void applyAskAudience(const Question& currentQuestion) {
     setColor(14);
     cout << "╔════════ KẾT QUẢ KHẢO SÁT KHÁN GIẢ ════════╗" << endl;
     resetColor();
+    // Dinh nghia chieu rong cua thanh do
+    const int MAX_BAR_WIDTH = 20;
 
-    const int MAX_BAR_WIDTH = 20; 
-
+    // In ra tung phan tram voi thanh do
     for (int i = 0; i < 4; ++i) {
         cout << "║ " << (char)('A' + i) << ": " << setw(3) << percents[i] << "% ";
-        
-        setColor(10); 
-        cout << "["; 
-        
+        setColor(10);
+        cout << "[";
         // (Lay % * 20) / 100
         int barWidth = (percents[i] * MAX_BAR_WIDTH) / 100;
-        
         for (int k = 0; k < barWidth; ++k) {
             cout << "=";
         }
-        
         for (int k = 0; k < MAX_BAR_WIDTH - barWidth; ++k) {
             cout << " ";
         }
-        
-        cout << "]"; 
-        resetColor(); 
+        cout << "]";
+        resetColor();
         cout << endl;
     }
     cout << "╚═══════════════════════════════════════════╝" << endl;
     
-    Beep(1000, 200);
+    // In ra đáp án được chọn nhiều nhất
+    int maxP = 0;
+    int maxIdx = 0;
+    for(int i=0; i<4; i++) {
+        if(percents[i] > maxP) { maxP = percents[i]; maxIdx = i; }
+    }
+    cout << "\nĐa số khán giả chọn phương án " << (char)('A' + maxIdx) << " (" << maxP << "%)" << endl;
     pressEnterToContinue(); 
 }
 
-// Ham thuc hien tro giup Goi dien thoai 
-void applyPhoneAFriend(const Question& currentQuestion) {
+// Hàm thực hiện quyền trợ giúp: Gọi Nhà Thông Thái
+void applyCallWiseMan(const Question& currentQuestion) {
     clearScreen();
-    setColor(14); 
-    cout << "Đang kết nối với  'Nhà Thông Thái'..." << endl;
+    
+    // Tạo hiệu ứng đang kết nối
+    setColor(14); // Màu vàng
+    cout << "\n==============================================" << endl;
+    cout << "   ĐANG KẾT NỐI VỚI TỔ TƯ VẤN TẠI CHỖ..." << endl;
+    cout << "==============================================\n" << endl;
     resetColor();
 
-    playApplyPhoneAFriendSound();
+    playApplyCallWiseMan();
 
     cout << "..." << endl;
+    sleep(1000); // Tạm dừng 1s
+    cout << "..." << endl;
     sleep(1000);
-    setColor(8);
-    cout << "Nhà Thông Thái: 'Alo, tôi nghe!'" << endl;
-    sleep(1500);
-    setColor(11);
-    cout << "Ban: (Đọc câu hỏi...)" << endl;
-    sleep(2000);
-    setColor(8);
-    cout << "Nhà Thông Thái: 'Hmm... câu này...'" << endl;
-    sleep(1500);
-    cout << "Nhà Thông Thái: 'Tôi nghĩ... Đáp án là... ";
+
+    // Bắt đầu hội thoại
+    setColor(11); // Màu xanh dương nhạt (Nhà thông thái)
+    cout << "\n[Nhà Thông Thái]: 'Alo, tôi nghe đây! Có câu hỏi khó cần trợ giúp phải không?'" << endl;
     sleep(2000);
 
-    // Logic 80% dung, 20% sai
+    setColor(15); // Màu trắng (Người chơi)
+    cout << "\n[Bạn]: (Đọc to nội dung câu hỏi: " << currentQuestion.questionText << "...)" << endl;
+    sleep(3000); // Giả lập thời gian đọc câu hỏi
+
+    setColor(11);
+    cout << "\n[Nhà Thông Thái]: 'Hừm... Đợi tôi tra cứu dữ liệu một chút...'" << endl;
+    sleep(2000);
+    cout << "\n[Nhà Thông Thái]: 'Câu này thuộc lĩnh vực này tôi cũng có nghiên cứu...'" << endl;
+    sleep(1500);
+    cout << "\n[Nhà Thông Thái]: 'Theo phân tích của tôi thì đáp án là... ";
+    sleep(2000); // Tạo hồi hộp
+
+    // --- LOGIC XỬ LÝ TỈ LỆ ĐÚNG/SAI ---
+    // Cơ chế: Nhà thông thái không phải lúc nào cũng đúng.
+    // - Tỉ lệ đúng: 80%
+    // - Tỉ lệ sai: 20% (Để troll người chơi)
+    
     static random_device rd;
     static mt19937 gen(rd());
     uniform_int_distribution<> dis(1, 100); 
 
-    char finalAnswer;
+    char finalAnswer; // Đáp án nhà thông thái sẽ chọn
 
+    // Nếu random ra số <= 80 -> Chọn đáp án ĐÚNG
     if (dis(gen) <= 80) { 
+        // Lấy ký tự đầu tiên của chuỗi đáp án đúng (Ví dụ "A" -> 'A')
         finalAnswer = currentQuestion.answer[0];
-    } else {
+    } 
+    // Nếu random ra số > 80 -> Chọn đáp án SAI (Random 1 trong 3 câu sai)
+    else {
         vector<char> wrongOptions;
         for (int i = 0; i < 4; ++i) {
-            char opt = 'A' + i;
+            char opt = 'A' + i; // Tạo 'A', 'B', 'C', 'D'
+            // Nếu đáp án này khác đáp án đúng -> Thêm vào danh sách sai
             if (opt != currentQuestion.answer[0]) {
                 wrongOptions.push_back(opt);
             }
         }
-        // Lay ngau nhien 1 trong 3 dap an sai
+        // Lấy ngẫu nhiên 1 đáp án trong danh sách sai
         uniform_int_distribution<> dis_wrong(0, wrongOptions.size() - 1);
         finalAnswer = wrongOptions[dis_wrong(gen)];
     }
 
-    // In ra dap an
-    setColor(10); 
+    // In ra đáp án chốt
+    setColor(14); 
     cout << finalAnswer << " !'" << endl;
-    setColor(14);
-    cout << "Nhà Thông Thái: 'Tôi khá chắc chắn... nhưng quyết định là ở bạn. GOOD LUCK!'" << endl;
+    
+    setColor(11);
+    cout << "\n[Nhà Thông Thái]: 'Tôi tin chắc 90% là phương án này. Chúc bạn may mắn!'" << endl;
     resetColor();
-    cout << "Tít... tít... (Kết thúc cuộc gọi)" << endl;
+    
+    cout << "\n----------------------------------------------" << endl;
+    cout << "Cuộc gọi kết thúc..." << endl;
 
     pressEnterToContinue();
 }
 
-//Ham nhan dien phim bam co gioi han thoi gian
+//Hàm nhận diện phím bấm với giới hạn thời gian
 char getUserInputWithTimer(int &timeLeft) {
-    // Xoa bo nho dem
+    // Xóa bộ đệm phím trước khi bắt đầu
     FlushConsoleInputBuffer(GetStdHandle(STD_INPUT_HANDLE));
 
     cout << endl; 
 
     while (timeLeft > 0) {
         setColor(12); 
-        cout << "\r   >> Thời gian còn lại: " << setw(2) << timeLeft << " giây <<   ";
+        // \r de tro ve dau dong
+        cout << "\r   >> THỜI GIAN CÒN LẠI: " << setw(2)  << timeLeft << " GIÂY <<   ";
         resetColor();
 
-        //Check phim bam
+        // Kiểm tra nếu có phím bấm
         for (int i = 0; i < 10; i++) {
-            if (_kbhit()) { 
-                char ch = _getch(); 
-                ch = toupper(ch);  
+            if (_kbhit()) { // Nếu có phím bấm
+                char ch = _getch(); // Lấy ký tự phím bấm
+                ch = toupper(ch);  // Chuyển thành chữ hoa để dễ so sánh
                 
+                // Kiểm tra nếu phím bấm hợp lệ 
                 if ((ch >= 'A' && ch <= 'D') || ch == '5' || ch == '6' || ch == '7' || ch == 'S') {
                     cout << "\n"; 
                     return ch;    
                 }
             }
-            Sleep(100); 
+            Sleep(95); // Đợi 95ms trước khi kiểm tra lại
         }
 
         if (timeLeft <= 5) {

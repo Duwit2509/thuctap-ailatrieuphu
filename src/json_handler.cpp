@@ -3,6 +3,7 @@
 #include <fstream>
 #include <iostream>
 
+// Ham load cau hoi tu file JSON
 vector<Question> loadQuestions() {
     ifstream file_in("questions.json");
     if (!file_in.is_open()) {
@@ -13,7 +14,6 @@ vector<Question> loadQuestions() {
     try {
         file_in >> j;
         if (j.is_null() || j.empty()) { 
-             cout << "File questions.json đang rỗng, bắt đầu danh sách mới." << endl;
              file_in.close();
              return {};
         }
@@ -23,16 +23,27 @@ vector<Question> loadQuestions() {
         return {};
     }
     file_in.close();
+
     vector<Question> questionList;
-    for (auto& item : j) {
-        Question q;
-        q.level = item["level"];
-        q.questionText = item["question"];
-        q.answer = item["answer"];
-        q.options = item["options"].get<vector<string>>();
-        questionList.push_back(q);
+    try {
+        for (auto& item : j) {
+            Question q;
+            q.level = item.value("level", 1); // Giá trị mặc định là 1 nếu thiếu
+            q.questionText = item.value("question", "Câu hỏi lỗi");
+            q.answer = item.value("answer", "A");
+            
+            if (item.contains("options")) {
+                q.options = item["options"].get<vector<string>>();
+            } else {
+                q.options = {"A. Lỗi", "B. Lỗi", "C. Lỗi", "D. Lỗi"};
+            }
+            questionList.push_back(q);
+        }
+    } catch (...) {
+        cerr << "LỖI: Dữ liệu bên trong JSON không khớp cấu trúc!" << endl;
     }
-    cout << "Đã tải " << questionList.size() << " câu hỏi từ file JSON." << endl;
+
+    //cout << "Đã tải " << questionList.size() << " câu hỏi từ file JSON." << endl;
     return questionList;
 }
 
@@ -56,6 +67,7 @@ void saveQuestions(const vector<Question>& allQuestions) {
     cout << "Đã lưu thành công " << allQuestions.size() << " câu hỏi." << endl;
 }
 
+// Ham load diem so tu file JSON
 vector<Player> loadScores() {
     ifstream file_in("scores.json");
     vector<Player> allPlayers;
@@ -121,7 +133,10 @@ long long loadUserMoney(string name) {
     try {
         file_in >> j;
         if (j.contains(name)) {
-            return j[name].get<long long>();
+           // Kiểm tra kiểu dữ liệu để tránh crash
+            if (j[name].is_number()) {
+                return j[name].get<long long>();
+            }
         }
     } catch (...) { return 0; }
     return 0; 
@@ -141,6 +156,8 @@ void saveUserMoney(string name, long long money) {
     }
 
     j[name] = money;
+
     ofstream file_out("userdata.json");
     file_out << j.dump(4);
+    file_out.close();
 }

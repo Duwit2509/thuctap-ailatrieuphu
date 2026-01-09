@@ -77,9 +77,12 @@ long long playGame(const vector<Question>& allQuestions, int &finalLevel) {
     int currentLevel = 1;
     long long money = 0;
     finalLevel = 0;
+
+    // Bien luu trang thai tro giup
     bool used5050 = false; 
     bool usedAskAudience = false;
-    bool usedPhoneAFriend = false;
+    bool usedCallWiseMan = false;
+
     bool playerWantsToStop = false;
 
     const long long prizeMoney[] = {
@@ -89,16 +92,22 @@ long long playGame(const vector<Question>& allQuestions, int &finalLevel) {
     };
 
     while (currentLevel <= 15) {
+        // Lay cau hoi ngau nhien theo level hien tai
         Question currentQuestion = getRandomQuestionByLevel(allQuestions, currentLevel);
+
         bool answerSubmitted = false;
         char playerAnswer;
 
-        int remainingTime = 30;
+        int remainingTime = 30;// Thoi gian tra loi ban dau
+
         while (!answerSubmitted) {
-            displayQuestion(currentQuestion, prizeMoney[currentLevel], used5050, usedAskAudience, usedPhoneAFriend, ' '); 
+            // Hien thi cau hoi
+            displayQuestion(currentQuestion, prizeMoney[currentLevel], used5050, usedAskAudience, usedCallWiseMan, ' '); 
+
             setColor(11);
             cout << "Nhập lựa chọn (A, B, C, D) hoặc (5, 6, 7) để trợ giúp, [S] stop: ";
             resetColor();
+
             //Goi ham nhan dien phim bam co gioi han thoi gian
             playerAnswer = getUserInputWithTimer(remainingTime);
 
@@ -109,24 +118,33 @@ long long playGame(const vector<Question>& allQuestions, int &finalLevel) {
                 cout << "\nHẾT GIỜ!!! Bạn đã không đưa ra câu trả lời kịp thời." << endl;
                 resetColor();
                 sleep(1500);
-                    cout << "Đáp án đúng là: ";
+
+                cout << "Đáp án đúng là: ";
                 setColor(10);
                 cout << currentQuestion.answer << endl;
                 resetColor();
                 sleep(2000);
-                if (currentLevel > 10) money = prizeMoney[10];
-                else if (currentLevel > 5) money = prizeMoney[5];
-                else money = 0;
+            
+               // Logic xử lý khi trả lời sai hoặc hết giờ
+                if (currentLevel > 10) {
+                    money = prizeMoney[10]; // Mốc bảo toàn 2 (22.000.000 VND)
+                } else if (currentLevel > 5) {
+                    money = prizeMoney[5];  // Mốc bảo toàn 1 (2.000.000 VND)
+                } else {
+                    money = 0; // Chưa qua câu 5 thì mất trắng
+                }
                 
                 cout << "Bạn ra về với số tiền: ";
                 setColor(10);
                 cout << formatMoney(money) << " VND" << endl;
                 resetColor();
+
                 pressEnterToContinue();
                 finalLevel = currentLevel - 1;
                 return money; 
             }
 
+            // Xu ly tro giup hoac cau tra loi
             if (playerAnswer == '5') {
                 if (used5050) {
                     setColor(12);
@@ -156,15 +174,15 @@ long long playGame(const vector<Question>& allQuestions, int &finalLevel) {
                 }
             }
             else if (playerAnswer == '7') {
-                if (usedPhoneAFriend) {
+                if (usedCallWiseMan) {
                     setColor(12);
                     cout << "Bạn đã sử dụng quy trợ giúp này rồi! Nhấn Enter để chọn lại." << endl;
                     resetColor();
                     pressEnterToContinue();
                 } else {
                     cout << "\nBạn đã chọn sử dụng trợ giúp Gọi điện thoại!" << endl;
-                    usedPhoneAFriend = true; 
-                    applyPhoneAFriend(currentQuestion); 
+                    usedCallWiseMan = true; 
+                    applyCallWiseMan(currentQuestion); 
                 }
             }
             else if (playerAnswer == 'S') {
@@ -189,10 +207,12 @@ long long playGame(const vector<Question>& allQuestions, int &finalLevel) {
                     sleep(1000); 
                 }
             }
+            
+            // Neu nguoi choi chon dap an
             else if (playerAnswer >= 'A' && playerAnswer <= 'D') {
                 playPalpitatingSound();
                 // Hien thi cau hoi voi dap an da chon
-                displayQuestion(currentQuestion, prizeMoney[currentLevel], used5050, usedAskAudience, usedPhoneAFriend, playerAnswer);
+                displayQuestion(currentQuestion, prizeMoney[currentLevel], used5050, usedAskAudience, usedCallWiseMan, playerAnswer);
                 cout << "Đáp án cuối cùng của bạn là: ";
                 setColor(11);
                 cout << playerAnswer << endl;
@@ -219,6 +239,7 @@ long long playGame(const vector<Question>& allQuestions, int &finalLevel) {
             setColor(10);
             cout << formatMoney(money) << " VND" << endl;
             resetColor();
+
             pressEnterToContinue();
             finalLevel = currentLevel - 1;
             return money;
@@ -244,19 +265,20 @@ long long playGame(const vector<Question>& allQuestions, int &finalLevel) {
             cout << "\nCHÍNH XÁC!!! (" << currentQuestion.answer << ")" << endl;
             cout << "Tiền thưởng hiện tại: " << formatMoney(money) << " VND" << endl;
             resetColor();
-            if (currentLevel == 5 || currentLevel == 10 || currentLevel == 15) {
+
+            if (isMilestone) {
                 setColor(13);
-                cout << "Bạn đã vượt qua mốc quan trọng số " << currentLevel << "!" << endl;
+                cout << ">>> CHÚC MỪNG! BẠN ĐÃ VƯỢT QUA MỐC CÂU SỐ " << currentLevel << "! <<<" << endl;
                 resetColor();
             }
             if (currentLevel == 15) {
                 sleep(8000);
                 playEndGameSound();
-
+                clearScreen();
                 setColor(14);
                 cout << "========================================" << endl;
                 cout << "CHÚC MỪNG! BẠN ĐÃ TRỞ THÀNH TRIỆU PHÚ!" << endl;
-                cout << "BẠN CHIẾN THẮNG 150,000,000 VND!" << endl;
+                cout << "GIẢI THƯỞNG: 150,000,000 VND!" << endl;
                 cout << "========================================" << endl;
                 resetColor();
 
@@ -275,11 +297,14 @@ long long playGame(const vector<Question>& allQuestions, int &finalLevel) {
             cout << "\nRất tiếc! Đó là câu trả lời sai." << endl;
             resetColor();
             sleep(1500); 
+
             cout << "Đáp án đúng là: ";
             setColor(10); 
             cout << currentQuestion.answer << endl;
             resetColor();
             sleep(2000); 
+
+            // Tinh tien nguoi choi duoc khi tra loi sai
             if (currentLevel > 10) {
                 money = prizeMoney[10]; 
             } else if (currentLevel > 5) {
@@ -287,10 +312,12 @@ long long playGame(const vector<Question>& allQuestions, int &finalLevel) {
             } else {
                 money = 0; 
             }
+
             cout << "Bạn ra về với số tiền thưởng là: " ;
             setColor(10);
             cout << formatMoney(money) << " VND" << endl;
             resetColor();
+
             pressEnterToContinue();
             finalLevel = currentLevel - 1;
             return money; 
@@ -323,11 +350,13 @@ void viewHighScores(vector<Player>& allPlayers) {
     } else {
         sort(allPlayers.begin(), allPlayers.end(), compareScores);
 
-        setColor(15); 
+       setColor(11); 
+        // Can chinh cac cot bang setw va left/right
+        cout << endl;
         cout << left << setw(5) << "TOP" 
-             << setw(25) << "TÊN NGƯỜI CHƠI" 
-             << setw(15) << "CÂU SỐ"  
-             << "TIỀN THƯỞNG" << endl;
+             << left << setw(25) << "TÊN NGƯỜI CHƠI" 
+             << left << setw(15) << "LEVEL"  
+             << right << setw(15) << "TIỀN THƯỞNG" << endl;
         resetColor();
         cout << "--------------------------------------------------" << endl;
 
@@ -336,18 +365,19 @@ void viewHighScores(vector<Player>& allPlayers) {
             // Mau sac cho 3 vi tri dau
             if (rank == 1) setColor(14);     
             else if (rank == 2) setColor(11); 
-            else if (rank == 3) setColor(13); 
-            else setColor(8);
+            else if (rank == 3) setColor(8); 
+            else resetColor();
 
-            cout << left << setw(5) << rank 
-                 << setw(20) << p.name 
-                 << setw(10) << p.level 
-                 << formatMoney(p.score) << " VND" << endl;
+           cout << left << setw(5) << rank 
+                 << left << setw(22) << p.name.substr(0, 18) // Cat ten neu qua dai
+                 << left << setw(15) << p.level 
+                 << right << setw(10) << formatMoney(p.score) << "VND" << endl;
             
             resetColor();
             if (rank == 10) break; 
             rank++;
         }
     }
+    cout << "\n--------------------------------------------------" << endl;
     pressEnterToContinue();
 }

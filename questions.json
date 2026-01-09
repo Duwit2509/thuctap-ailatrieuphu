@@ -1,16 +1,5 @@
 [
     {
-        "answer": "B",
-        "level": 1,
-        "options": [
-            "A. 365",
-            "B. 366",
-            "C. 364",
-            "D. 367"
-        ],
-        "question": "Năm nhuận có bao nhiêu ngày?"
-    },
-    {
         "answer": "A",
         "level": 1,
         "options": [
@@ -22,7 +11,149 @@
         "question": "Hoa đào thường nở vào mùa nào ở miền Bắc?"
     },
     {
-      
+        "answer": "B",
+        "level": 1,
+        "options": [
+            "A. Đường",
+            "B. Muối",
+            "C. Giấm",
+            "D. Ớt"
+        ],
+        "question": "Gia vị nào có vị mặn?"
+    },
+    {
+        "answer": "B",
+        "level": 1,
+        "options": [
+            "A. Cá mập",
+            "B. Cá heo",
+            "C. Cá voi",
+            "D. Bạch tuộc"
+        ],
+        "question": "Loài vật nào thông minh nhất đại dương?"
+    },
+    {
+        "answer": "B",
+        "level": 1,
+        "options": [
+            "A. Vàng sao đỏ",
+            "B. Đỏ sao vàng",
+            "C. Xanh sao trắng",
+            "D. Trắng sao xanh"
+        ],
+        "question": "Màu cờ tổ quốc Việt Nam là gì?"
+    },
+    {
+        "answer": "B",
+        "level": 1,
+        "options": [
+            "A. Sư tử",
+            "B. Hổ",
+            "C. Voi",
+            "D. Gấu"
+        ],
+        "question": "Con vật nào là 'Chúa sơn lâm'?"
+    },
+    {
+        "answer": "C",
+        "level": 1,
+        "options": [
+            "A. 9",
+            "B. 10",
+            "C. 11",
+            "D. 12"
+        ],
+        "question": "Trong bóng đá, mỗi đội có bao nhiêu cầu thủ?"
+    },
+    {
+        "answer": "C",
+        "level": 1,
+        "options": [
+            "A. Ngày nay",
+            "B. Ngày mai",
+            "C. Ngày xửa ngày xưa",
+            "D. Ngày kia"
+        ],
+        "question": "Truyện cổ tích thường bắt đầu bằng cụm từ nào?"
+    },
+    {
+        "answer": "C",
+        "level": 1,
+        "options": [
+            "A. 10",
+            "B. 11",
+            "C. 12",
+            "D. 13"
+        ],
+        "question": "Một năm có bao nhiêu tháng?"
+    },
+    {
+        "answer": "C",
+        "level": 1,
+        "options": [
+            "A. Rắn",
+            "B. Cá",
+            "C. San hô",
+            "D. Chim"
+        ],
+        "question": "Loài vật nào không có xương sống?"
+    },
+    {
+        "answer": "A",
+        "level": 1,
+        "options": [
+            "A. Mèo",
+            "B. Hổ",
+            "C. Chuột",
+            "D. Trâu"
+        ],
+        "question": "Biểu tượng năm Mão là con gì?"
+    },
+    {
+        "answer": "B",
+        "level": 1,
+        "options": [
+            "A. V",
+            "B. X",
+            "C. L",
+            "D. M"
+        ],
+        "question": "Số 10 viết bằng chữ số La Mã là gì?"
+    },
+    {
+        "answer": "B",
+        "level": 1,
+        "options": [
+            "A. 2",
+            "B. 3",
+            "C. 4",
+            "D. 5"
+        ],
+        "question": "Đèn giao thông có mấy màu?"
+    },
+    {
+        "answer": "B",
+        "level": 1,
+        "options": [
+            "A. 365",
+            "B. 366",
+            "C. 364",
+            "D. 367"
+        ],
+        "question": "Năm nhuận có bao nhiêu ngày?"
+    },
+    {
+        "answer": "C",
+        "level": 1,
+        "options": [
+            "A. Tây",
+            "B. Nam",
+            "C. Đông",
+            "D. Bắc"
+        ],
+        "question": "Mặt trời mọc ở hướng nào?"
+    },
+    {
         "answer": "B",
         "level": 1,
         "options": [
@@ -32,7 +163,6 @@
             "D. Dịch vị"
         ],
         "question": "Chất lỏng màu đỏ chảy trong cơ thể người là gì?"
-
     },
     {
         "answer": "D",
@@ -57,17 +187,6 @@
         "question": "Tên gọi khác của cướp biển là gì?"
     },
     {
-        "answer": "B",
-        "level": 1,
-        "options": [
-            "A. Nam Cao",
-            "B. Ngô Tất Tố",
-            "C. Nguyễn Công Hoan",
-            "D. Vũ Trọng Phụng"
-        ],
-        "question": "Ai là tác giả của truyện 'Tắt đèn'?"
-    },
-    {
         "answer": "A",
         "level": 1,
         "options": [
@@ -77,39 +196,6 @@
             "D. Sông"
         ],
         "question": "Điền vào chỗ trống: 'Đi mây về …'?"
-    },
-    {
-        "answer": "B",
-        "level": 1,
-        "options": [
-            "A. Cầm giáo đánh giặc",
-            "B. Bóp quả cam biểu thị quyết tâm kháng chiến",
-            "C. Xây thành lũy bảo vệ kinh đô",
-            "D. Viết thư cầu viện các nước"
-        ],
-        "question": "Trần Quốc Toản nổi tiếng với hành động gì khi còn nhỏ?"
-    },
-    {
-        "answer": "C",
-        "level": 1,
-        "options": [
-            "A. Xanh",
-            "B. Vàng",
-            "C. Đỏ",
-            "D. Tím"
-        ],
-        "question": "Quả dưa hấu bên trong màu gì?"
-    },
-    {
-        "answer": "B",
-        "level": 1,
-        "options": [
-            "A. 2",
-            "B. 3",
-            "C. 4",
-            "D. 5"
-        ],
-        "question": "Đèn giao thông có mấy màu?"
     },
     {
         "answer": "C",
@@ -126,136 +212,34 @@
         "answer": "C",
         "level": 1,
         "options": [
-            "A. Tây",
-            "B. Nam",
-            "C. Đông",
-            "D. Bắc"
+            "A. Xanh",
+            "B. Vàng",
+            "C. Đỏ",
+            "D. Tím"
         ],
-        "question": "Mặt trời mọc ở hướng nào?"
+        "question": "Quả dưa hấu bên trong màu gì?"
     },
     {
         "answer": "B",
         "level": 1,
         "options": [
-            "A. Đường",
-            "B. Muối",
-            "C. Giấm",
-            "D. Ớt"
+            "A. Cầm giáo đánh giặc",
+            "B. Bóp quả cam biểu thị quyết tâm kháng chiến",
+            "C. Xây thành lũy bảo vệ kinh đô",
+            "D. Viết thư cầu viện các nước"
         ],
-        "question": "Gia vị nào có vị mặn?"
+        "question": "Trần Quốc Toản nổi tiếng với hành động gì khi còn nhỏ?"
     },
     {
         "answer": "B",
         "level": 1,
         "options": [
-            "A. V",
-            "B. X",
-            "C. L",
-            "D. M"
+            "A. Nam Cao",
+            "B. Ngô Tất Tố",
+            "C. Nguyễn Công Hoan",
+            "D. Vũ Trọng Phụng"
         ],
-        "question": "Số 10 viết bằng chữ số La Mã là gì?"
-    },
-    {
-       "answer": "A",
-        "level": 1,
-        "options": [
-            "A. Mèo",
-            "B. Hổ",
-            "C. Chuột",
-            "D. Trâu"
-        ],
-        "question": "Biểu tượng năm Mão là con gì?"
-
-    },
-    {
-        "answer": "C",
-        "level": 1,
-        "options": [
-            "A. Rắn",
-            "B. Cá",
-            "C. San hô",
-            "D. Chim"
-        ],
-        "question": "Loài vật nào không có xương sống?"
-
-    },
-    {
-        "answer": "C",
-        "level": 1,
-        "options": [
-            "A. 10",
-            "B. 11",
-            "C. 12",
-            "D. 13"
-        ],
-        "question": "Một năm có bao nhiêu tháng?"
-    },
-    {
-        "answer": "C",
-        "level": 1,
-        "options": [
-            "A. Ngày nay",
-            "B. Ngày mai",
-            "C. Ngày xửa ngày xưa",
-            "D. Ngày kia"
-        ],
-        "question": "Truyện cổ tích thường bắt đầu bằng cụm từ nào?"
-    },
-    {
-        "answer": "C",
-        "level": 1,
-        "options": [
-            "A. 9",
-            "B. 10",
-            "C. 11",
-            "D. 12"
-        ],
-        "question": "Trong bóng đá, mỗi đội có bao nhiêu cầu thủ?"
-    },
-    {
-        "answer": "B",
-        "level": 1,
-        "options": [
-            "A. Sư tử",
-            "B. Hổ",
-            "C. Voi",
-            "D. Gấu"
-        ],
-        "question": "Con vật nào là 'Chúa sơn lâm'?"
-    },
-    {
-        "answer": "B",
-        "level": 1,
-        "options": [
-            "A. Vàng sao đỏ",
-            "B. Đỏ sao vàng",
-            "C. Xanh sao trắng",
-            "D. Trắng sao xanh"
-        ],
-        "question": "Màu cờ tổ quốc Việt Nam là gì?"
-    },
-    {
-        "answer": "B",
-        "level": 1,
-        "options": [
-            "A. Cá mập",
-            "B. Cá heo",
-            "C. Cá voi",
-            "D. Bạch tuộc"
-        ],
-        "question": "Loài vật nào thông minh nhất đại dương?"
-
-    },
-    {
-        "answer": "A",
-        "level": 2,
-        "options": [
-            "A. Paris",
-            "B. London",
-            "C. Berlin",
-            "D. Madrid"
-        ],
-        "question": "Thủ đô của nước Pháp là gì?"
+        "question": "Ai là tác giả của truyện 'Tắt đèn'?"
     },
     {
         "answer": "C",
@@ -268,7 +252,138 @@
         ],
         "question": "Châu lục nào có diện tích nhỏ nhất thế giới?"
     },
-   
+    {
+        "answer": "C",
+        "level": 2,
+        "options": [
+            "A. 5",
+            "B. 6",
+            "C. 7",
+            "D. 8"
+        ],
+        "question": "Cầu vồng có bao nhiêu màu?"
+    },
+    {
+        "answer": "C",
+        "level": 2,
+        "options": [
+            "A. Ô tô",
+            "B. Máy bay",
+            "C. Tàu hỏa",
+            "D. Thuyền"
+        ],
+        "question": "Phương tiện nào di chuyển trên đường sắt?"
+    },
+    {
+        "answer": "C",
+        "level": 2,
+        "options": [
+            "A. Cơm",
+            "B. Đường",
+            "C. Nước",
+            "D. Rượu"
+        ],
+        "question": "H2O là công thức hóa học của chất nào?"
+    },
+    {
+        "answer": "B",
+        "level": 2,
+        "options": [
+            "A. Ong",
+            "B. Ruồi",
+            "C. Muỗi",
+            "D. Ve"
+        ],
+        "question": "Điền vào chỗ trống trong câu sau 'Mật ngọt chết …'"
+    },
+    {
+        "answer": "D",
+        "level": 2,
+        "options": [
+            "A. Xuân",
+            "B. Hạ",
+            "C. Thu",
+            "D. Đông"
+        ],
+        "question": "Mùa nào lạnh nhất trong năm?"
+    },
+    {
+        "answer": "B",
+        "level": 2,
+        "options": [
+            "A. Nghệ An",
+            "B. Lào Cai",
+            "C. Quảng Bình",
+            "D. Thanh Hóa"
+        ],
+        "question": "Tỉnh nào sau đây không giáp biển?"
+    },
+    {
+        "answer": "B",
+        "level": 2,
+        "options": [
+            "A. Hình vuông",
+            "B. Hình cầu",
+            "C. Tam giác",
+            "D. Chữ nhật"
+        ],
+        "question": "Trái đất có hình gì?"
+    },
+    {
+        "answer": "B",
+        "level": 2,
+        "options": [
+            "A. Xe",
+            "B. Tượng",
+            "C. Mã",
+            "D. Pháo"
+        ],
+        "question": "Trong cờ tướng, quân nào trong cờ tướng KHÔNG được phép vượt qua sông?"
+    },
+    {
+        "answer": "B",
+        "level": 2,
+        "options": [
+            "A. 28",
+            "B. 29",
+            "C. 30",
+            "D. 31"
+        ],
+        "question": "Tháng 2 năm nhuận có bao nhiêu ngày?"
+    },
+    {
+        "answer": "B",
+        "level": 2,
+        "options": [
+            "A. Chống hạn hán",
+            "B. Chống lũ lụt",
+            "C. Chống giặc",
+            "D. Trồng lúa"
+        ],
+        "question": "Truyền thuyết Sơn Tinh, Thủy Tinh nói về hoạt động gì?"
+    },
+    {
+        "answer": "B",
+        "level": 2,
+        "options": [
+            "A. Hải Dương",
+            "B. Hưng Yên",
+            "C. Bắc Giang",
+            "D. Nam Định"
+        ],
+        "question": "Tỉnh nào nổi tiếng với Nhãn lồng?"
+    },
+    {
+        "answer": "B",
+        "level": 2,
+        "options": [
+            "A. Tò vò",
+            "B. Tò he",
+            "C. Tò hò",
+            "D. Tò vòe"
+        ],
+        "question": "Tên một loại đồ chơi dân gian là?"
+    },
     {
         "answer": "B",
         "level": 2,
@@ -290,17 +405,6 @@
             "D. 20/11"
         ],
         "question": "Ngày Quốc khánh Việt Nam là ngày nào?"
-    },
-    {
-        "answer": "B",
-        "level": 2,
-        "options": [
-            "A. Hải Dương",
-            "B. Hưng Yên",
-            "C. Bắc Giang",
-            "D. Nam Định"
-        ],
-        "question": "Tỉnh nào nổi tiếng với Nhãn lồng?"
     },
     {
         "answer": "B",
@@ -339,12 +443,12 @@
         "answer": "B",
         "level": 2,
         "options": [
-            "A. Hình tròn",
-            "B. Hình vuông",
-            "C. Hình tam giác",
-            "D. Hình chữ nhật"
+            "A. Trường Chinh",
+            "B. Hồ Chí Minh",
+            "C. Tôn Đức Thắng",
+            "D. Lê Duẩn"
         ],
-        "question": "Bánh chưng hình gì?"
+        "question": "Chủ tịch nước đầu tiên là ai?"
     },
     {
         "answer": "A",
@@ -361,133 +465,155 @@
         "answer": "B",
         "level": 2,
         "options": [
-            "A. Tò vò",
-            "B. Tò he",
-            "C. Tò hò",
-            "D. Tò vòe"
+            "A. Hình tròn",
+            "B. Hình vuông",
+            "C. Hình tam giác",
+            "D. Hình chữ nhật"
         ],
-        "question": "Tên một loại đồ chơi dân gian là?"
+        "question": "Bánh chưng hình gì?"
     },
     {
-       "answer": "B",
+        "answer": "A",
         "level": 2,
         "options": [
-            "A. Ong",
-            "B. Ruồi",
-            "C. Muỗi",
-            "D. Ve"
+            "A. Paris",
+            "B. London",
+            "C. Berlin",
+            "D. Madrid"
         ],
-        "question": "Điền vào chỗ trống trong câu sau 'Mật ngọt chết …'"
-    },
-    {
-        "answer": "B",
-        "level": 2,
-        "options": [
-            "A. Trường Chinh",
-            "B. Hồ Chí Minh",
-            "C. Tôn Đức Thắng",
-            "D. Lê Duẩn"
-        ],
-        "question": "Chủ tịch nước đầu tiên là ai?"
+        "question": "Thủ đô của nước Pháp là gì?"
     },
     {
         "answer": "B",
-        "level": 2,
+        "level": 3,
         "options": [
-            "A. 28",
-            "B. 29",
-            "C. 30",
-            "D. 31"
+            "A. Hà Nội",
+            "B. Đà Nẵng",
+            "C. Cần Thơ",
+            "D. TP. HCM"
         ],
-        "question": "Tháng 2 năm nhuận có bao nhiêu ngày?"
+        "question": "Thành phố nào ở Việt Nam có cầu Rồng?"
     },
     {
         "answer": "B",
-        "level": 2,
+        "level": 3,
         "options": [
-            "A. Xe",
-            "B. Tượng",
-            "C. Mã",
-            "D. Pháo"
+            "A. 2354",
+            "B. 3254",
+            "C. 4352",
+            "D. 1234"
         ],
-        "question": "Trong cờ tướng, quân nào trong cờ tướng KHÔNG được phép vượt qua sông?"
+        "question": "Truyện Kiều có bao nhiêu câu thơ?"
+    },
+    {
+        "answer": "A",
+        "level": 3,
+        "options": [
+            "A. Ếch",
+            "B. Chó",
+            "C. Mèo",
+            "D. Gà"
+        ],
+        "question": "Loài vật nào là động vật lưỡng cư?"
+    },
+    {
+        "answer": "A",
+        "level": 3,
+        "options": [
+            "A. Hoàn Kiếm",
+            "B. Ba Đình",
+            "C. Đống Đa",
+            "D. Tây Hồ"
+        ],
+        "question": "Hồ Gươm ở quận nào Hà Nội?"
     },
     {
         "answer": "B",
-        "level": 2,
+        "level": 3,
         "options": [
-            "A. Chống hạn hán",
-            "B. Chống lũ lụt",
-            "C. Chống giặc",
-            "D. Trồng lúa"
+            "A. Sư tử",
+            "B. Báo gấm",
+            "C. Ngựa",
+            "D. Đà điểu"
         ],
-        "question": "Truyền thuyết Sơn Tinh, Thủy Tinh nói về hoạt động gì?"
-    },
-    {
-        "answer": "B",
-        "level": 2,
-        "options": [
-            "A. Hình vuông",
-            "B. Hình cầu",
-            "C. Tam giác",
-            "D. Chữ nhật"
-        ],
-        "question": "Trái đất có hình gì?"
-    },
-    {
-        "answer": "B",
-        "level": 2,
-        "options": [
-            "A. Nghệ An",
-            "B. Lào Cai",
-            "C. Quảng Bình",
-            "D. Thanh Hóa"
-        ],
-        "question": "Tỉnh nào sau đây không giáp biển?"
-    },
-    {
-        "answer": "D",
-        "level": 2,
-        "options": [
-            "A. Xuân",
-            "B. Hạ",
-            "C. Thu",
-            "D. Đông"
-        ],
-        "question": "Mùa nào lạnh nhất trong năm?"
+        "question": "Động vật chạy nhanh nhất trên cạn?"
     },
     {
         "answer": "C",
-        "level": 2,
+        "level": 3,
         "options": [
-            "A. Cơm",
-            "B. Đường",
-            "C. Nước",
-            "D. Rượu"
+            "A. 130.000",
+            "B. 230.000",
+            "C. 331.000",
+            "D. 430.000"
         ],
-        "question": "H2O là công thức hóa học của chất nào?"
+        "question": "Diện tích Việt Nam khoảng bao nhiêu km2?"
+    },
+    {
+        "answer": "B",
+        "level": 3,
+        "options": [
+            "A. Euro",
+            "B. USD",
+            "C. Yên",
+            "D. Bảng Anh"
+        ],
+        "question": "Tiền tệ của Mỹ là gì?"
+    },
+    {
+        "answer": "B",
+        "level": 3,
+        "options": [
+            "A. Trung Quốc",
+            "B. Ấn Độ",
+            "C. Mỹ",
+            "D. Indonesia"
+        ],
+        "question": "Nước nào đông dân nhất thế giới (2023)?"
+    },
+    {
+        "answer": "B",
+        "level": 3,
+        "options": [
+            "A. Lá chuối",
+            "B. Lá dong",
+            "C. Lá sen",
+            "D. Lá dừa"
+        ],
+        "question": "Bánh chưng được gói bằng lá gì?"
     },
     {
         "answer": "C",
-        "level": 2,
+        "level": 3,
         "options": [
-            "A. Ô tô",
-            "B. Máy bay",
-            "C. Tàu hỏa",
-            "D. Thuyền"
+            "A. Đinh Tiên Hoàng",
+            "B. Lê Đại Hành",
+            "C. Lý Thái Tổ",
+            "D. Trần Nhân Tông"
         ],
-        "question": "Phương tiện nào di chuyển trên đường sắt?"
+        "question": "Vua nào dời đô về Thăng Long?"
     },
     {
         "answer": "C",
-        "level": 2,
+        "level": 3,
         "options": [
-            "A. 5",
-            "B. 6",
-            "C. 7",
-            "D. 8"
+            "A. Mèo",
+            "B. Rồng",
+            "C. Rắn",
+            "D. Ngựa"
         ],
-        "question": "Cầu vồng có bao nhiêu màu?"
+        "question": "Năm 2013 là năm con gì?"
+    },
+    {
+        "answer": "B",
+        "level": 3,
+        "options": [
+            "A. Fansipan",
+            "B. Everest",
+            "C. Andes",
+            "D. Fuji"
+        ],
+        "question": "Ngọn núi cao nhất thế giới là gì?"
     },
     {
         "answer": "A",
@@ -523,17 +649,6 @@
         "question": "Nước nào có hình dáng giống chiếc ủng?"
     },
     {
-        "answer": "B",
-        "level": 3,
-        "options": [
-            "A. Samsung",
-            "B. Apple",
-            "C. Nokia",
-            "D. Sony"
-        ],
-        "question": "Điện thoại iPhone do hãng nào sản xuất?"
-    },
-    {
         "answer": "C",
         "level": 3,
         "options": [
@@ -543,6 +658,28 @@
             "D. Thường"
         ],
         "question": "Định Lý Pitago dùng cho tam giác nào?"
+    },
+    {
+        "answer": "B",
+        "level": 3,
+        "options": [
+            "A. Cố đô Huế",
+            "B. Vịnh Hạ Long",
+            "C. Hội An",
+            "D. Mỹ Sơn"
+        ],
+        "question": "Kỳ quan thiên nhiên thế giới ở Việt Nam?"
+    },
+    {
+        "answer": "B",
+        "level": 3,
+        "options": [
+            "A. Ngô Tất Tố",
+            "B. Nam Cao",
+            "C. Tô Hoài",
+            "D. Nguyên Hồng"
+        ],
+        "question": "Ai là tác giả truyện ngắn 'Lão Hạc'?"
     },
     {
         "answer": "A",
@@ -559,179 +696,122 @@
         "answer": "B",
         "level": 3,
         "options": [
-            "A. Ngô Tất Tố",
-            "B. Nam Cao",
-            "C. Tô Hoài",
-            "D. Nguyên Hồng"
+            "A. Samsung",
+            "B. Apple",
+            "C. Nokia",
+            "D. Sony"
         ],
-        "question": "Ai là tác giả truyện ngắn 'Lão Hạc'?"
-    },
-    {
-        "answer": "C",
-        "level": 3,
-        "options": [
-            "A. Mèo",
-            "B. Rồng",
-            "C. Rắn",
-            "D. Ngựa"
-        ],
-        "question": "Năm 2013 là năm con gì?"
-    },
-    {
-        "answer": "B",
-        "level": 3,
-        "options": [
-            "A. 2354",
-            "B. 3254",
-            "C. 4352",
-            "D. 1234"
-        ],
-        "question": "Truyện Kiều có bao nhiêu câu thơ?"
+        "question": "Điện thoại iPhone do hãng nào sản xuất?"
     },
     {
         "answer": "A",
-        "level": 3,
+        "level": 4,
         "options": [
-            "A. Ếch",
-            "B. Chó",
-            "C. Mèo",
-            "D. Gà"
+            "A. Vợ Chồng A Phủ",
+            "B. Tắt Đèn",
+            "C. Chí Phèo",
+            "D. Lão Hạc"
         ],
-        "question": "Loài vật nào là động vật lưỡng cư?"
-    },
-    {
-        "answer": "B",
-        "level": 3,
-        "options": [
-            "A. Fansipan",
-            "B. Everest",
-            "C. Andes",
-            "D. Fuji"
-        ],
-        "question": "Ngọn núi cao nhất thế giới là gì?"
-    },
-    {
-        "answer": "B",
-        "level": 3,
-        "options": [
-            "A. Hà Nội",
-            "B. Đà Nẵng",
-            "C. Cần Thơ",
-            "D. TP. HCM"
-        ],
-        "question": "Thành phố nào ở Việt Nam có cầu Rồng?"
-
-
-    },
-    {
-        "answer": "B",
-        "level": 3,
-        "options": [
-            "A. Cố đô Huế",
-            "B. Vịnh Hạ Long",
-            "C. Hội An",
-            "D. Mỹ Sơn"
-        ],
-        "question": "Kỳ quan thiên nhiên thế giới ở Việt Nam?"
-    },
-    {
-        "answer": "C",
-        "level": 3,
-        "options": [
-            "A. Đinh Tiên Hoàng",
-            "B. Lê Đại Hành",
-            "C. Lý Thái Tổ",
-            "D. Trần Nhân Tông"
-        ],
-        "question": "Vua nào dời đô về Thăng Long?"
-    },
-    {
-        "answer": "B",
-        "level": 3,
-        "options": [
-            "A. Lá chuối",
-            "B. Lá dong",
-            "C. Lá sen",
-            "D. Lá dừa"
-        ],
-        "question": "Bánh chưng được gói bằng lá gì?"
-    },
-    {
-        "answer": "B",
-        "level": 3,
-        "options": [
-            "A. Trung Quốc",
-            "B. Ấn Độ",
-            "C. Mỹ",
-            "D. Indonesia"
-        ],
-        "question": "Nước nào đông dân nhất thế giới (2023)?"
-    },
-    {
-        "answer": "B",
-        "level": 3,
-        "options": [
-            "A. Euro",
-            "B. USD",
-            "C. Yên",
-            "D. Bảng Anh"
-        ],
-        "question": "Tiền tệ của Mỹ là gì?"
-    },
-    {
-        "answer": "C",
-        "level": 3,
-        "options": [
-            "A. 130.000",
-            "B. 230.000",
-            "C. 331.000",
-            "D. 430.000"
-        ],
-        "question": "Diện tích Việt Nam khoảng bao nhiêu km2?"
-    },
-    {
-        "answer": "B",
-        "level": 3,
-        "options": [
-            "A. Sư tử",
-            "B. Báo gấm",
-            "C. Ngựa",
-            "D. Đà điểu"
-        ],
-        "question": "Động vật chạy nhanh nhất trên cạn?"
+        "question": "Vàng Pao là nhân vật trong tác phẩm nào?"
     },
     {
         "answer": "A",
-        "level": 3,
+        "level": 4,
         "options": [
-            "A. Hoàn Kiếm",
-            "B. Ba Đình",
-            "C. Đống Đa",
-            "D. Tây Hồ"
+            "A. Thủy tinh",
+            "B. Nhựa",
+            "C. Gỗ",
+            "D. Kim loại"
         ],
-        "question": "Hồ Gươm ở quận nào Hà Nội?"
+        "question": "Chất nào sau đây không phân hủy được trong tự nhiên?"
     },
     {
         "answer": "B",
         "level": 4,
         "options": [
-            "A. Hà Nội",
-            "B. Đà Nẵng",
-            "C. TP. HCM",
-            "D. Cần Thơ"
+            "A. Mông Nguyên",
+            "B. Đông Hán",
+            "C. Minh",
+            "D. Thanh"
         ],
-        "question": "Thành phố nào được mệnh danh là 'Thành phố đáng sống'?"
+        "question": "Hai Bà Trưng khởi nghĩa chống quân nào?"
+    },
+    {
+        "answer": "B",
+        "level": 4,
+        "options": [
+            "A. Tư bản",
+            "B. Cộng sản",
+            "C. Xã hội",
+            "D. Dân chủ"
+        ],
+        "question": "Biểu tượng 'cái liềm và cây búa' thuộc hệ tư tưởng nào?"
     },
     {
         "answer": "C",
         "level": 4,
         "options": [
-            "A. Nghệ An",
-            "B. Thanh Hóa",
-            "C. Lâm Đồng",
-            "D. Gia Lai"
+            "A. Việt Nam",
+            "B. Trung Quốc",
+            "C. Nga",
+            "D. Ấn Độ"
         ],
-        "question": "Tỉnh nào có diện tích rộng nhất Việt Nam?"
+        "question": "Nước có diện tích lớn nhất thế giới?"
+    },
+    {
+        "answer": "B",
+        "level": 4,
+        "options": [
+            "A. Đa",
+            "B. Tre",
+            "C. Dừa",
+            "D. Cau"
+        ],
+        "question": "Cây biểu tượng làng quê Việt Nam?"
+    },
+    {
+        "answer": "C",
+        "level": 4,
+        "options": [
+            "A. Bóng rổ",
+            "B. Bóng chuyền",
+            "C. Bóng đá",
+            "D. Quần vợt"
+        ],
+        "question": "Môn thể thao vua là môn nào?"
+    },
+    {
+        "answer": "B",
+        "level": 4,
+        "options": [
+            "A. Kim",
+            "B. Hỏa",
+            "C. Mộc",
+            "D. Thổ"
+        ],
+        "question": "Hành tinh nào là 'Hành tinh đỏ'?"
+    },
+    {
+        "answer": "C",
+        "level": 4,
+        "options": [
+            "A. Nhật",
+            "B. Trung",
+            "C. Hàn",
+            "D. Thái"
+        ],
+        "question": "Quốc gia của món Kim Chi là quốc gia nào?"
+    },
+    {
+        "answer": "B",
+        "level": 4,
+        "options": [
+            "A. Sắt",
+            "B. Đồng",
+            "C. Chì",
+            "D. Kẽm"
+        ],
+        "question": "Vật liệu dùng làm lõi dây điện là gì?"
     },
     {
         "answer": "A",
@@ -743,6 +823,28 @@
             "D. Drake"
         ],
         "question": "Ai là người tìm ra Châu Mỹ?"
+    },
+    {
+        "answer": "A",
+        "level": 4,
+        "options": [
+            "A. 3143m",
+            "B. 3134m",
+            "C. 3413m",
+            "D. 3314m"
+        ],
+        "question": "Đỉnh Fansipan cao bao nhiêu mét?"
+    },
+    {
+        "answer": "C",
+        "level": 4,
+        "options": [
+            "A. Nghệ An",
+            "B. Thanh Hóa",
+            "C. Lâm Đồng",
+            "D. Gia Lai"
+        ],
+        "question": "Tỉnh nào có diện tích rộng nhất Việt Nam?"
     },
     {
         "answer": "B",
@@ -770,23 +872,34 @@
         "answer": "B",
         "level": 4,
         "options": [
+            "A. Hà Nội",
+            "B. Đà Nẵng",
+            "C. TP. HCM",
+            "D. Cần Thơ"
+        ],
+        "question": "Thành phố nào được mệnh danh là 'Thành phố đáng sống'?"
+    },
+    {
+        "answer": "A",
+        "level": 4,
+        "options": [
+            "A. Hải Phòng",
+            "B. Đà Nẵng",
+            "C. Huế",
+            "D. Cần Thơ"
+        ],
+        "question": "Thành phố hoa phượng đỏ là đâu?"
+    },
+    {
+        "answer": "B",
+        "level": 4,
+        "options": [
             "A. Sông Đà",
             "B. Sông Hồng",
             "C. Sông Lô",
             "D. Sông Gâm"
         ],
         "question": "Con sông nào chảy qua Hà Nội?"
-    },
-    {
-        "answer": "A",
-        "level": 4,
-        "options": [
-            "A. Thổ Nhĩ Kỳ",
-            "B. Ai Cập",
-            "C. Hy Lạp",
-            "D. Iran"
-        ],
-        "question": "Quốc gia nào nằm giữa hai châu lục Á - Âu?"
     },
     {
         "answer": "C",
@@ -803,133 +916,144 @@
         "answer": "A",
         "level": 4,
         "options": [
-            "A. Vợ Chồng A Phủ",
-            "B. Tắt Đèn",
-            "C. Chí Phèo",
-            "D. Lão Hạc"
+            "A. Thổ Nhĩ Kỳ",
+            "B. Ai Cập",
+            "C. Hy Lạp",
+            "D. Iran"
         ],
-        "question": "Vàng Pao là nhân vật trong tác phẩm nào?"
+        "question": "Quốc gia nào nằm giữa hai châu lục Á - Âu?"
     },
     {
         "answer": "A",
-        "level": 4,
+        "level": 5,
         "options": [
-            "A. 3143m",
-            "B. 3134m",
-            "C. 3413m",
-            "D. 3314m"
+            "A. Vua",
+            "B. Hậu",
+            "C. Xe",
+            "D. Mã"
         ],
-        "question": "Đỉnh Fansipan cao bao nhiêu mét?"
-    },
-    {
-        "answer": "B",
-        "level": 4,
-        "options": [
-            "A. Tư bản",
-            "B. Cộng sản",
-            "C. Xã hội",
-            "D. Dân chủ"
-        ],
-        "question": "Biểu tượng 'cái liềm và cây búa' thuộc hệ tư tưởng nào?"
+        "question": "Trong các loại cờ, quân nào có giá trị nhất?"
     },
     {
         "answer": "C",
-        "level": 4,
+        "level": 5,
         "options": [
-            "A. Nhật",
-            "B. Trung",
-            "C. Hàn",
-            "D. Thái"
+            "A. Penixilin",
+            "B. Vitamin C",
+            "C. Moocphin",
+            "D. Panadol"
         ],
-        "question": "Quốc gia của món Kim Chi là quốc gia nào?"
-    },
-    {
-        "answer": "B",
-        "level": 4,
-        "options": [
-            "A. Kim",
-            "B. Hỏa",
-            "C. Mộc",
-            "D. Thổ"
-        ],
-        "question": "Hành tinh nào là 'Hành tinh đỏ'?"
-    },
-    {
-        "answer": "B",
-        "level": 4,
-        "options": [
-            "A. Sắt",
-            "B. Đồng",
-            "C. Chì",
-            "D. Kẽm"
-        ],
-        "question": "Vật liệu dùng làm lõi dây điện là gì?"
-    },
-    {
-        "answer": "C",
-        "level": 4,
-        "options": [
-            "A. Bóng rổ",
-            "B. Bóng chuyền",
-            "C. Bóng đá",
-            "D. Quần vợt"
-        ],
-        "question": "Môn thể thao vua là môn nào?"
-    },
-    {
-        "answer": "B",
-        "level": 4,
-        "options": [
-            "A. Đa",
-            "B. Tre",
-            "C. Dừa",
-            "D. Cau"
-        ],
-        "question": "Cây biểu tượng làng quê Việt Nam?"
+        "question": "Thuốc nào sau đây gây nghiện?"
     },
     {
         "answer": "A",
-        "level": 4,
+        "level": 5,
         "options": [
-            "A. Thủy tinh",
-            "B. Nhựa",
-            "C. Gỗ",
-            "D. Kim loại"
+            "A. Tinh bột",
+            "B. Glucose",
+            "C. Fructose",
+            "D. Protein"
         ],
-        "question": "Chất nào sau đây không phân hủy được trong tự nhiên?"
-    },
-    {
-        "answer": "C",
-        "level": 4,
-        "options": [
-            "A. Việt Nam",
-            "B. Trung Quốc",
-            "C. Nga",
-            "D. Ấn Độ"
-        ],
-        "question": "Nước có diện tích lớn nhất thế giới?"
+        "question": "Chất nào tạo ra màu xanh lam với dung dịch iốt?"
     },
     {
         "answer": "B",
-        "level": 4,
+        "level": 5,
         "options": [
-            "A. Mông Nguyên",
-            "B. Đông Hán",
-            "C. Minh",
-            "D. Thanh"
+            "A. Thương mại",
+            "B. Y tế",
+            "C. Liên hợp quốc",
+            "D. Tiền tệ"
         ],
-        "question": "Hai Bà Trưng khởi nghĩa chống quân nào?"
+        "question": "WHO là tổ chức gì?"
+    },
+    {
+        "answer": "B",
+        "level": 5,
+        "options": [
+            "A. 1945",
+            "B. 1954",
+            "C. 1968",
+            "D. 1975"
+        ],
+        "question": "Chiến thắng Điện Biên Phủ năm nào?"
+    },
+    {
+        "answer": "D",
+        "level": 5,
+        "options": [
+            "A. Oxi",
+            "B. Cacbonic",
+            "C. Clo",
+            "D. Diệp lục"
+        ],
+        "question": "Chất nào giúp cây xanh quang hợp?"
     },
     {
         "answer": "A",
-        "level": 4,
+        "level": 5,
         "options": [
-            "A. Hải Phòng",
-            "B. Đà Nẵng",
-            "C. Huế",
-            "D. Cần Thơ"
+            "A. Bắc Ninh",
+            "B. Bắc Giang",
+            "C. Hà Nam",
+            "D. Hưng Yên"
         ],
-        "question": "Thành phố hoa phượng đỏ là đâu?"
+        "question": "Dân ca Quan Họ là di sản của tỉnh nào?"
+    },
+    {
+        "answer": "C",
+        "level": 5,
+        "options": [
+            "A. Lý Thường Kiệt",
+            "B. Trần Hưng Đạo",
+            "C. Nguyễn Trãi",
+            "D. Quang Trung"
+        ],
+        "question": "Tác giả Bình Ngô Đại Cáo là ai?"
+    },
+    {
+        "answer": "B",
+        "level": 5,
+        "options": [
+            "A. Trường Sơn",
+            "B. Hoàng Liên Sơn",
+            "C. Bạch Mã",
+            "D. Ba Vì"
+        ],
+        "question": "Fansipan thuộc dãy núi nào?"
+    },
+    {
+        "answer": "B",
+        "level": 5,
+        "options": [
+            "A. Phạm Tuyên",
+            "B. Văn Cao",
+            "C. Trịnh Công Sơn",
+            "D. Hoàng Việt"
+        ],
+        "question": "Tác giả bài Tiến Quân Ca là ai?"
+    },
+    {
+        "answer": "A",
+        "level": 5,
+        "options": [
+            "A. Axit ascorbic",
+            "B. Axit citric",
+            "C. Axit malic",
+            "D. Axit lactic"
+        ],
+        "question": "Vitamin C còn được gọi là gì?"
+    },
+    {
+        "answer": "C",
+        "level": 5,
+        "options": [
+            "A. 1954",
+            "B. 1968",
+            "C. 1972",
+            "D. 1975"
+        ],
+        "question": "Chiến thắng Điện Biên Phủ trên không năm nào?"
     },
     {
         "answer": "A",
@@ -965,17 +1089,6 @@
         "question": "Người Việt Nam đầu tiên bay vào vũ trụ là ai?"
     },
     {
-        "answer": "B",
-        "level": 5,
-        "options": [
-            "A. Trái Đất đi qua bóng của Mặt Trời",
-            "B. Mặt Trăng đi qua bóng của Trái Đất",
-            "C. Mặt Trời đi qua bóng của Trái Đất",
-            "D. Mặt Trăng đi qua ánh sáng trực tiếp của Mặt Trời"
-        ],
-        "question": "Nguyệt thực xảy ra khi nào?"
-    },
-    {
         "answer": "A",
         "level": 5,
         "options": [
@@ -985,72 +1098,6 @@
             "D. r^2"
         ],
         "question": "Chu vi hình tròn tính thế nào?"
-    },
-    {
-        "answer": "A",
-        "level": 5,
-        "options": [
-            "A. Vua",
-            "B. Hậu",
-            "C. Xe",
-            "D. Mã"
-        ],
-        "question": "Trong các loại cờ, quân nào có giá trị nhất?"
-    },
-    {
-        "answer": "B",
-        "level": 5,
-        "options": [
-            "A. Monaco",
-            "B. Vatican",
-            "C. Singapore",
-            "D. Maldives"
-        ],
-        "question": "Quốc gia nào có diện tích nhỏ nhất thế giới?"
-    },
-    {
-        "answer": "B",
-        "level": 5,
-        "options": [
-            "A. Tố Hữu",
-            "B. Hồ Chí Minh",
-            "C. Xuân Diệu",
-            "D. Phạm Tiến Duật"
-        ],
-        "question": "Ai là tác giả 'Nhật ký trong tù'?"
-    },
-    {
-        "answer": "A",
-        "level": 5,
-        "options": [
-            "A. Axit ascorbic",
-            "B. Axit citric",
-            "C. Axit malic",
-            "D. Axit lactic"
-        ],
-        "question": "Vitamin C còn được gọi là gì?"
-    },
-    {
-        "answer": "C",
-        "level": 5,
-        "options": [
-            "A. 1954",
-            "B. 1968",
-            "C. 1972",
-            "D. 1975"
-        ],
-        "question": "Chiến thắng Điện Biên Phủ trên không năm nào?"
-    },
-    {
-        "answer": "C",
-        "level": 5,
-        "options": [
-            "A. Penixilin",
-            "B. Vitamin C",
-            "C. Moocphin",
-            "D. Panadol"
-        ],
-        "question": "Thuốc nào sau đây gây nghiện?"
     },
     {
         "answer": "A",
@@ -1067,177 +1114,34 @@
         "answer": "B",
         "level": 5,
         "options": [
-            "A. Phạm Tuyên",
-            "B. Văn Cao",
-            "C. Trịnh Công Sơn",
-            "D. Hoàng Việt"
+            "A. Tố Hữu",
+            "B. Hồ Chí Minh",
+            "C. Xuân Diệu",
+            "D. Phạm Tiến Duật"
         ],
-        "question": "Tác giả bài Tiến Quân Ca là ai?"
-    },
-    {
-        "answer": "A",
-        "level": 5,
-        "options": [
-            "A. Tinh bột",
-            "B. Glucose",
-            "C. Fructose",
-            "D. Protein"
-        ],
-        "question": "Chất nào tạo ra màu xanh lam với dung dịch iốt?"
+        "question": "Ai là tác giả 'Nhật ký trong tù'?"
     },
     {
         "answer": "B",
         "level": 5,
         "options": [
-            "A. Trường Sơn",
-            "B. Hoàng Liên Sơn",
-            "C. Bạch Mã",
-            "D. Ba Vì"
+            "A. Monaco",
+            "B. Vatican",
+            "C. Singapore",
+            "D. Maldives"
         ],
-        "question": "Fansipan thuộc dãy núi nào?"
-    },
-    {
-        "answer": "C",
-        "level": 5,
-        "options": [
-            "A. Lý Thường Kiệt",
-            "B. Trần Hưng Đạo",
-            "C. Nguyễn Trãi",
-            "D. Quang Trung"
-        ],
-        "question": "Tác giả Bình Ngô Đại Cáo là ai?"
-    },
-    {
-        "answer": "A",
-        "level": 5,
-        "options": [
-            "A. Bắc Ninh",
-            "B. Bắc Giang",
-            "C. Hà Nam",
-            "D. Hưng Yên"
-        ],
-        "question": "Dân ca Quan Họ là di sản của tỉnh nào?"
-    },
-    {
-        "answer": "D",
-        "level": 5,
-        "options": [
-            "A. Oxi",
-            "B. Cacbonic",
-            "C. Clo",
-            "D. Diệp lục"
-        ],
-        "question": "Chất nào giúp cây xanh quang hợp?"
+        "question": "Quốc gia nào có diện tích nhỏ nhất thế giới?"
     },
     {
         "answer": "B",
         "level": 5,
         "options": [
-            "A. 1945",
-            "B. 1954",
-            "C. 1968",
-            "D. 1975"
+            "A. Trái Đất đi qua bóng của Mặt Trời",
+            "B. Mặt Trăng đi qua bóng của Trái Đất",
+            "C. Mặt Trời đi qua bóng của Trái Đất",
+            "D. Mặt Trăng đi qua ánh sáng trực tiếp của Mặt Trời"
         ],
-        "question": "Chiến thắng Điện Biên Phủ năm nào?"
-    },
-    {
-        "answer": "B",
-        "level": 5,
-        "options": [
-            "A. Thương mại",
-            "B. Y tế",
-            "C. Liên hợp quốc",
-            "D. Tiền tệ"
-        ],
-        "question": "WHO là tổ chức gì?"
-    },
-    {
-        "answer": "B",
-        "level": 6,
-        "options": [
-            "A. Thụy Điển",
-            "B. Phần Lan",
-            "C. Na Uy",
-            "D. Đan Mạch"
-        ],
-        "question": "Nước nào là quê hương của ông già Noel?"
-    },
-    {
-        "answer": "C",
-        "level": 6,
-        "options": [
-            "A. Đường",
-            "B. Muối",
-            "C. Dầu ăn",
-            "D. Mì chính"
-        ],
-        "question": "Chất nào không tan trong nước?"
-    },
-    {
-        "answer": "D",
-        "level": 6,
-        "options": [
-            "A. Lào",
-            "B. Thái Lan",
-            "C. Campuchia",
-            "D. Philippines"
-        ],
-        "question": "Sông Mê Kông KHÔNG chảy qua nước nào?"
-    },
-    {
-        "answer": "B",
-        "level": 6,
-        "options": [
-            "A. Om",
-            "B. Ampe",
-            "C. Von",
-            "D. Oát"
-        ],
-        "question": "Đơn vị đo cường độ dòng điện?"
-    },
-    {
-        "answer": "B",
-        "level": 6,
-        "options": [
-            "A. Anh",
-            "B. Pháp",
-            "C. Đức",
-            "D. Ý"
-        ],
-        "question": "Tháp Eiffel ở nước nào?"
-    },
-    {
-        "answer": "B",
-        "level": 6,
-        "options": [
-            "A. Sao Mộc",
-            "B. Sao Thổ",
-            "C. Sao Hỏa",
-            "D. Sao Kim"
-        ],
-        "question": "Hành tinh nào có vành đai đẹp nhất?"
-    },
-    {
-        "answer": "C",
-        "level": 6,
-        "options": [
-            "A. Chelsea",
-            "B. Liverpool",
-            "C. Man Utd",
-            "D. Arsenal"
-        ],
-        "question": "Câu lạc bộ bóng đá nào có biệt danh Quỷ Đỏ?"
-    },
-    {
-        "answer": "A",
-        "level": 6,
-        "options": [
-            "A. Canada",
-            "B. Mỹ",
-            "C. Anh",
-            "D. Úc"
-        ],
-        "question": "Đất nước nào có hình chiếc lá Phong?"
+        "question": "Nguyệt thực xảy ra khi nào?"
     },
     {
         "answer": "A",
@@ -1254,34 +1158,56 @@
         "answer": "B",
         "level": 6,
         "options": [
-            "A. Nikola Tesla",
-            "B. Thomas Edison",
-            "C. Isaac Newton",
-            "D. Albert Einstein"
+            "A. 5",
+            "B. 6",
+            "C. 7",
+            "D. 8"
         ],
-        "question": "Ai phát minh ra bóng đèn?"
+        "question": "Trái đất có bao nhiêu lục địa?"
     },
     {
         "answer": "B",
         "level": 6,
         "options": [
-            "A. Oxi",
-            "B. Hiđrô",
-            "C. Cacbonic",
-            "D. Nitơ"
+            "A. Thomas Edison",
+            "B. Alexander Graham Bell",
+            "C. Nikola Tesla",
+            "D. Isaac Newton"
         ],
-        "question": "Khí nào bơm bóng bay giúp bay lên?"
+        "question": "Ai phát minh điện thoại?"
+    },
+    {
+        "answer": "C",
+        "level": 6,
+        "options": [
+            "A. 206",
+            "B. 208",
+            "C. 206",
+            "D. 210"
+        ],
+        "question": "Cơ thể người có bao nhiêu chiếc xương?"
+    },
+    {
+        "answer": "A",
+        "level": 6,
+        "options": [
+            "A. Quảng Bình",
+            "B. Quảng Trị",
+            "C. Quảng Nam",
+            "D. Quảng Ngãi"
+        ],
+        "question": "Hang Sơn Đoòng nằm ở tỉnh nào của Việt Nam?"
     },
     {
         "answer": "B",
         "level": 6,
         "options": [
-            "A. New York",
-            "B. Tokyo",
-            "C. Thượng Hải",
-            "D. London"
+            "A. Won",
+            "B. Yên",
+            "C. Euro",
+            "D. Đô la"
         ],
-        "question": "Thành phố nào đông dân nhất thế giới?"
+        "question": "Tiền tệ Nhật Bản là gì?"
     },
     {
         "answer": "C",
@@ -1298,67 +1224,23 @@
         "answer": "B",
         "level": 6,
         "options": [
-            "A. Won",
-            "B. Yên",
-            "C. Euro",
-            "D. Đô la"
+            "A. New York",
+            "B. Tokyo",
+            "C. Thượng Hải",
+            "D. London"
         ],
-        "question": "Tiền tệ Nhật Bản là gì?"
-    },
-    {
-        "answer": "A",
-        "level": 6,
-        "options": [
-            "A. Quảng Bình",
-            "B. Quảng Trị",
-            "C. Quảng Nam",
-            "D. Quảng Ngãi"
-        ],
-        "question": "Hang Sơn Đoòng nằm ở tỉnh nào của Việt Nam?"
-    },
-    {
-        "answer": "C",
-        "level": 6,
-        "options": [
-            "A. 206",
-            "B. 208",
-            "C. 206",
-            "D. 210"
-        ],
-        "question": "Cơ thể người có bao nhiêu chiếc xương?"
+        "question": "Thành phố nào đông dân nhất thế giới?"
     },
     {
         "answer": "B",
         "level": 6,
         "options": [
-            "A. Thomas Edison",
-            "B. Alexander Graham Bell",
-            "C. Nikola Tesla",
-            "D. Isaac Newton"
+            "A. Oxi",
+            "B. Hiđrô",
+            "C. Cacbonic",
+            "D. Nitơ"
         ],
-        "question": "Ai phát minh điện thoại?"
-    },
-    {
-        "answer": "B",
-        "level": 6,
-        "options": [
-            "A. 5",
-            "B. 6",
-            "C. 7",
-            "D. 8"
-        ],
-        "question": "Trái đất có bao nhiêu lục địa?"
-    },
-    {
-        "answer": "C",
-        "level": 6,
-        "options": [
-            "A. 2",
-            "B. 3",
-            "C. 4",
-            "D. 5"
-        ],
-        "question": "World Cup tổ chức mấy năm 1 lần?"
+        "question": "Khí nào bơm bóng bay giúp bay lên?"
     },
     {
         "answer": "B",
@@ -1373,6 +1255,171 @@
     },
     {
         "answer": "B",
+        "level": 6,
+        "options": [
+            "A. Sao Mộc",
+            "B. Sao Thổ",
+            "C. Sao Hỏa",
+            "D. Sao Kim"
+        ],
+        "question": "Hành tinh nào có vành đai đẹp nhất?"
+    },
+    {
+        "answer": "B",
+        "level": 6,
+        "options": [
+            "A. Om",
+            "B. Ampe",
+            "C. Von",
+            "D. Oát"
+        ],
+        "question": "Đơn vị đo cường độ dòng điện?"
+    },
+    {
+        "answer": "B",
+        "level": 6,
+        "options": [
+            "A. Thụy Điển",
+            "B. Phần Lan",
+            "C. Na Uy",
+            "D. Đan Mạch"
+        ],
+        "question": "Nước nào là quê hương của ông già Noel?"
+    },
+    {
+        "answer": "C",
+        "level": 6,
+        "options": [
+            "A. Chelsea",
+            "B. Liverpool",
+            "C. Man Utd",
+            "D. Arsenal"
+        ],
+        "question": "Câu lạc bộ bóng đá nào có biệt danh Quỷ Đỏ?"
+    },
+    {
+        "answer": "C",
+        "level": 6,
+        "options": [
+            "A. 2",
+            "B. 3",
+            "C. 4",
+            "D. 5"
+        ],
+        "question": "World Cup tổ chức mấy năm 1 lần?"
+    },
+    {
+        "answer": "A",
+        "level": 6,
+        "options": [
+            "A. Canada",
+            "B. Mỹ",
+            "C. Anh",
+            "D. Úc"
+        ],
+        "question": "Đất nước nào có hình chiếc lá Phong?"
+    },
+    {
+        "answer": "C",
+        "level": 6,
+        "options": [
+            "A. Đường",
+            "B. Muối",
+            "C. Dầu ăn",
+            "D. Mì chính"
+        ],
+        "question": "Chất nào không tan trong nước?"
+    },
+    {
+        "answer": "B",
+        "level": 6,
+        "options": [
+            "A. Nikola Tesla",
+            "B. Thomas Edison",
+            "C. Isaac Newton",
+            "D. Albert Einstein"
+        ],
+        "question": "Ai phát minh ra bóng đèn?"
+    },
+    {
+        "answer": "D",
+        "level": 6,
+        "options": [
+            "A. Lào",
+            "B. Thái Lan",
+            "C. Campuchia",
+            "D. Philippines"
+        ],
+        "question": "Sông Mê Kông KHÔNG chảy qua nước nào?"
+    },
+    {
+        "answer": "B",
+        "level": 6,
+        "options": [
+            "A. Anh",
+            "B. Pháp",
+            "C. Đức",
+            "D. Ý"
+        ],
+        "question": "Tháp Eiffel ở nước nào?"
+    },
+    {
+        "answer": "A",
+        "level": 7,
+        "options": [
+            "A. Quảng Nam",
+            "B. Huế",
+            "C. Quảng Bình",
+            "D. Ninh Bình"
+        ],
+        "question": "Tỉnh nào có 2 di sản văn hóa thế giới?"
+    },
+    {
+        "answer": "B",
+        "level": 7,
+        "options": [
+            "A. Philippines",
+            "B. Indonesia",
+            "C. Nhật Bản",
+            "D. Na Uy"
+        ],
+        "question": "Nước nào có nhiều đảo nhất thế giới?"
+    },
+    {
+        "answer": "A",
+        "level": 7,
+        "options": [
+            "A. Lâm Thị Phấn",
+            "B. Nguyễn Thị Định",
+            "C. Võ Thị Sáu",
+            "D. Bùi Thị Xuân"
+        ],
+        "question": "Người đẹp Tây Đô là ai?"
+    },
+    {
+        "answer": "C",
+        "level": 7,
+        "options": [
+            "A. Hành tinh",
+            "B. Vệ tinh",
+            "C. Ngôi sao",
+            "D. Thiên thạch"
+        ],
+        "question": "Mặt trời là một...?"
+    },
+    {
+        "answer": "B",
+        "level": 7,
+        "options": [
+            "A. Neil Armstrong",
+            "B. Yuri Gagarin",
+            "C. Buzz Aldrin",
+            "D. John Glenn"
+        ],
+        "question": "Người đầu tiên bay vào vũ trụ?"
+    },
+    {
+        "answer": "B",
         "level": 7,
         "options": [
             "A. Hà Nội",
@@ -1381,6 +1428,17 @@
             "D. Hải Phòng"
         ],
         "question": "Thành phố của những cây cầu là?"
+    },
+    {
+        "answer": "B",
+        "level": 7,
+        "options": [
+            "A. Seine",
+            "B. Thames",
+            "C. Danube",
+            "D. Nile"
+        ],
+        "question": "Sông chảy qua London?"
     },
     {
         "answer": "A",
@@ -1397,34 +1455,23 @@
         "answer": "B",
         "level": 7,
         "options": [
+            "A. Nam Cao",
+            "B. Ngô Tất Tố",
+            "C. Vũ Trọng Phụng",
+            "D. Nguyễn Công Hoan"
+        ],
+        "question": "Ai là tác giả 'Tắt Đèn'?"
+    },
+    {
+        "answer": "B",
+        "level": 7,
+        "options": [
             "A. Sông Hương",
             "B. Sông Đăk Bla",
             "C. Sông Hồng",
             "D. Sông Tiền"
         ],
         "question": "Con sông nào chảy ngược ở Tây Nguyên?"
-    },
-    {
-        "answer": "A",
-        "level": 7,
-        "options": [
-            "A. London",
-            "B. Paris",
-            "C. Đà Lạt",
-            "D. Sapa"
-        ],
-        "question": "Thành phố nào được gọi là 'Thành phố sương mù'?"
-    },
-    {
-        "answer": "A",
-        "level": 7,
-        "options": [
-            "A. 30/4/1975",
-            "B. 1/5/1975",
-            "C. 7/5/1954",
-            "D. 2/9/1945"
-        ],
-        "question": "Chiến dịch Hồ Chí Minh kết thúc khi nào?"
     },
     {
         "answer": "C",
@@ -1438,15 +1485,26 @@
         "question": "Chất lỏng nào nặng nhất ở nhiệt độ thường?"
     },
     {
-        "answer": "A",
+        "answer": "B",
         "level": 7,
         "options": [
-            "A. Lục bát",
-            "B. Song thất",
-            "C. Thất ngôn",
-            "D. Tự do"
+            "A. 7",
+            "B. 8",
+            "C. 9",
+            "D. 10"
         ],
-        "question": "Truyện Kiều thuộc thể thơ gì?"
+        "question": "Trong Hệ Mặt Trời hiện có bao nhiêu hành tinh?"
+    },
+    {
+        "answer": "C",
+        "level": 7,
+        "options": [
+            "A. 48",
+            "B. 49",
+            "C. 50",
+            "D. 51"
+        ],
+        "question": "Cờ Mỹ có mấy ngôi sao?"
     },
     {
         "answer": "A",
@@ -1463,56 +1521,12 @@
         "answer": "A",
         "level": 7,
         "options": [
-            "A. Quảng Nam",
-            "B. Huế",
-            "C. Quảng Bình",
-            "D. Ninh Bình"
+            "A. 30/4/1975",
+            "B. 1/5/1975",
+            "C. 7/5/1954",
+            "D. 2/9/1945"
         ],
-        "question": "Tỉnh nào có 2 di sản văn hóa thế giới?"
-    },
-    {
-        "answer": "A",
-        "level": 7,
-        "options": [
-            "A. Lâm Thị Phấn",
-            "B. Nguyễn Thị Định",
-            "C. Võ Thị Sáu",
-            "D. Bùi Thị Xuân"
-        ],
-        "question": "Người đẹp Tây Đô là ai?"
-    },
-    {
-        "answer": "B",
-        "level": 7,
-        "options": [
-            "A. 7",
-            "B. 8",
-            "C. 9",
-            "D. 10"
-        ],
-        "question": "Trong Hệ Mặt Trời hiện có bao nhiêu hành tinh?"
-    },
-    {
-        "answer": "B",
-        "level": 7,
-        "options": [
-            "A. Philippines",
-            "B. Indonesia",
-            "C. Nhật Bản",
-            "D. Na Uy"
-        ],
-        "question": "Nước nào có nhiều đảo nhất thế giới?"
-    },
-    {
-        "answer": "B",
-        "level": 7,
-        "options": [
-            "A. Neil Armstrong",
-            "B. Yuri Gagarin",
-            "C. Buzz Aldrin",
-            "D. John Glenn"
-        ],
-        "question": "Người đầu tiên bay vào vũ trụ?"
+        "question": "Chiến dịch Hồ Chí Minh kết thúc khi nào?"
     },
     {
         "answer": "A",
@@ -1524,6 +1538,17 @@
             "D. Minh Mạng"
         ],
         "question": "Ai là vị vua cuối cùng của Việt Nam?"
+    },
+    {
+        "answer": "A",
+        "level": 7,
+        "options": [
+            "A. London",
+            "B. Paris",
+            "C. Đà Lạt",
+            "D. Sapa"
+        ],
+        "question": "Thành phố nào được gọi là 'Thành phố sương mù'?"
     },
     {
         "answer": "B",
@@ -1548,59 +1573,15 @@
         "question": "1 Byte bằng bao nhiêu Bit?"
     },
     {
-        "answer": "B",
-        "level": 7,
-        "options": [
-            "A. Seine",
-            "B. Thames",
-            "C. Danube",
-            "D. Nile"
-        ],
-        "question": "Sông chảy qua London?"
-    },
-    {
-        "answer": "B",
-        "level": 7,
-        "options": [
-            "A. Nam Cao",
-            "B. Ngô Tất Tố",
-            "C. Vũ Trọng Phụng",
-            "D. Nguyễn Công Hoan"
-        ],
-        "question": "Ai là tác giả 'Tắt Đèn'?"
-    },
-    {
-        "answer": "C",
-        "level": 7,
-        "options": [
-            "A. Hành tinh",
-            "B. Vệ tinh",
-            "C. Ngôi sao",
-            "D. Thiên thạch"
-        ],
-        "question": "Mặt trời là một...?"
-    },
-    {
-        "answer": "C",
-        "level": 7,
-        "options": [
-            "A. 48",
-            "B. 49",
-            "C. 50",
-            "D. 51"
-        ],
-        "question": "Cờ Mỹ có mấy ngôi sao?"
-    },
-    {
         "answer": "A",
-        "level": 8,
+        "level": 7,
         "options": [
-            "A. 1",
-            "B. 2",
-            "C. 3",
-            "D. 4"
+            "A. Lục bát",
+            "B. Song thất",
+            "C. Thất ngôn",
+            "D. Tự do"
         ],
-        "question": "Đàn bầu có mấy dây?"
+        "question": "Truyện Kiều thuộc thể thơ gì?"
     },
     {
         "answer": "B",
@@ -1680,15 +1661,15 @@
         "question": "SEA Games là của khu vực nào?"
     },
     {
-        "answer": "A",
+        "answer": "B",
         "level": 8,
         "options": [
-            "A. Hải Phòng",
-            "B. Sài Gòn",
-            "C. Đà Nẵng",
-            "D. Cần Thơ"
+            "A. Steve Jobs",
+            "B. Bill Gates",
+            "C. Mark Zuckerberg",
+            "D. Elon Musk"
         ],
-        "question": "Cảng lớn nhất Việt Nam nằm ở đâu?"
+        "question": "Người sáng lập Microsoft?"
     },
     {
         "answer": "B",
@@ -1702,17 +1683,6 @@
         "question": "Tác giả của Dế Mèn Phiêu Lưu Ký là ai?"
     },
     {
-        "answer": "B",
-        "level": 8,
-        "options": [
-            "A. Pháp",
-            "B. Ý",
-            "C. Mỹ",
-            "D. Đức"
-        ],
-        "question": "Quê hương của Pizza ở đâu?"
-    },
-    {
         "answer": "C",
         "level": 8,
         "options": [
@@ -1722,6 +1692,17 @@
             "D. Elon Musk"
         ],
         "question": "Người sáng lập Facebook là ai?"
+    },
+    {
+        "answer": "A",
+        "level": 8,
+        "options": [
+            "A. Hải Phòng",
+            "B. Sài Gòn",
+            "C. Đà Nẵng",
+            "D. Cần Thơ"
+        ],
+        "question": "Cảng lớn nhất Việt Nam nằm ở đâu?"
     },
     {
         "answer": "C",
@@ -1793,190 +1774,45 @@
         "answer": "A",
         "level": 8,
         "options": [
+            "A. 1",
+            "B. 2",
+            "C. 3",
+            "D. 4"
+        ],
+        "question": "Đàn bầu có mấy dây?"
+    },
+    {
+        "answer": "B",
+        "level": 8,
+        "options": [
+            "A. Pháp",
+            "B. Ý",
+            "C. Mỹ",
+            "D. Đức"
+        ],
+        "question": "Quê hương của Pizza ở đâu?"
+    },
+    {
+        "answer": "A",
+        "level": 8,
+        "options": [
             "A. Richter",
             "B. Độ C",
             "C. Độ K",
             "D. Bar"
         ],
         "question": "Đơn vị nào dùng để đo động đất?"
-
-    },
-    {
-        "answer": "B",
-        "level": 8,
-        "options": [
-            "A. Steve Jobs",
-            "B. Bill Gates",
-            "C. Mark Zuckerberg",
-            "D. Elon Musk"
-        ],
-        "question": "Người sáng lập Microsoft?"
-    },
-    {
-        "answer": "B",
-        "level": 9,
-        "options": [
-            "A. Taekwondo",
-            "B. Judo",
-            "C. Vovinam",
-            "D. Muay Thai"
-        ],
-        "question": "Môn võ nào xuất phát từ Nhật Bản?"
-    },
-    {
-        "answer": "B",
-        "level": 9,
-        "options": [
-            "A. Sông Hồng",
-            "B. Sông Đồng Nai",
-            "C. Sông Mê Kông",
-            "D. Sông Đà"
-        ],
-        "question": "Sông nào dài nhất Việt Nam?"
-    },
-    {
-        "answer": "B",
-        "level": 9,
-        "options": [
-            "A. Oxi",
-            "B. Nitơ",
-            "C. Cacbonic",
-            "D. Argon"
-        ],
-        "question": "Khí chiếm tỷ lệ lớn nhất trong không khí?"
-    },
-    {
-        "answer": "B",
-        "level": 9,
-        "options": [
-            "A. Nhật",
-            "B. Trung",
-            "C. Hàn",
-            "D. Việt Nam"
-        ],
-        "question": "Tam Quốc Diễn Nghĩa là tác phẩm văn học cổ điển của nước nào?"
     },
     {
         "answer": "A",
         "level": 9,
         "options": [
-            "A. Ba Đình",
-            "B. Nhà hát lớn",
-            "C. Bến Nhà Rồng",
-            "D. Dinh Độc Lập"
+            "A. Baikal",
+            "B. Tanganyika",
+            "C. Vostok",
+            "D. Caspi"
         ],
-        "question": "Tuyên ngôn độc lập đọc ở đâu?"
-    },
-    {
-        "answer": "B",
-        "level": 9,
-        "options": [
-            "A. Andes",
-            "B. Himalayas",
-            "C. Alps",
-            "D. Rocky"
-        ],
-        "question": "Everest thuộc dãy núi nào?"
-    },
-    {
-        "answer": "B",
-        "level": 9,
-        "options": [
-            "A. Nga",
-            "B. Canada",
-            "C. Mỹ",
-            "D. Úc"
-        ],
-        "question": "Nước nào có bờ biển dài nhất?"
-    },
-    {
-        "answer": "A",
-        "level": 9,
-        "options": [
-            "A. Nghệ",
-            "B. Sâm",
-            "C. Gừng",
-            "D. Hành tây"
-        ],
-        "question": " Loại củ có khả năng làm lành vết thương và mờ sẹo là củ gì?"
-    },
-    {
-        "answer": "B",
-        "level": 9,
-        "options": [
-            "A. Tesla",
-            "B. Edison",
-            "C. Franklin",
-            "D. Watt"
-        ],
-        "question": "Ai là người phát minh ra bóng đèn?"
-    },
-    {
-        "answer": "B",
-        "level": 9,
-        "options": [
-            "A. Thái",
-            "B. Lào",
-            "C. Cam",
-            "D. Myanmar"
-        ],
-        "question": "Đông Nam Á nước nào không giáp biển?"
-
-    },
-    {
-        "answer": "D",
-        "level": 9,
-        "options": [
-            "A. 3",
-            "B. 4",
-            "C. 5",
-            "D. 6"
-        ],
-        "question": "Hệ thống đô thị ở Việt Nam được phân thành mấy loại?"
-    },
-    {
-        "answer": "B",
-        "level": 9,
-        "options": [
-            "A. Nga",
-            "B. Pháp",
-            "C. Mỹ",
-            "D. Anh"
-        ],
-        "question": "Nước nào có nhiều múi giờ nhất?"
-    },
-    {
-        "answer": "A",
-        "level": 9,
-        "options": [
-            "A. Fuji",
-            "B. Kita",
-            "C. Hotaka",
-            "D. Yari"
-        ],
-        "question": "Đỉnh núi cao nhất Nhật Bản?"
-    },
-    {
-        "answer": "C",
-        "level": 9,
-        "options": [
-            "A. Vietjet",
-            "B. Bamboo",
-            "C. VNA",
-            "D. Jetstar"
-        ],
-        "question": "Hãng hàng không quốc gia Việt Nam?"
-    },
-    {
-        "answer": "A",
-        "level": 9,
-        "options": [
-            "A. Anh em nhà Wright",
-            "B. Alexander Graham Bell",
-            "C. Thomas Edison",
-            "D. Nikola Tesla"
-        ],
-        "question": "Ai là người phát minh ra máy bay?"
+        "question": "Hồ nào sâu nhất thế giới?"
     },
     {
         "answer": "A",
@@ -1993,12 +1829,56 @@
         "answer": "A",
         "level": 9,
         "options": [
-            "A. Baikal",
-            "B. Tanganyika",
-            "C. Vostok",
-            "D. Caspi"
+            "A. Anh em nhà Wright",
+            "B. Alexander Graham Bell",
+            "C. Thomas Edison",
+            "D. Nikola Tesla"
         ],
-        "question": "Hồ nào sâu nhất thế giới?"
+        "question": "Ai là người phát minh ra máy bay?"
+    },
+    {
+        "answer": "C",
+        "level": 9,
+        "options": [
+            "A. Vietjet",
+            "B. Bamboo",
+            "C. VNA",
+            "D. Jetstar"
+        ],
+        "question": "Hãng hàng không quốc gia Việt Nam?"
+    },
+    {
+        "answer": "A",
+        "level": 9,
+        "options": [
+            "A. Fuji",
+            "B. Kita",
+            "C. Hotaka",
+            "D. Yari"
+        ],
+        "question": "Đỉnh núi cao nhất Nhật Bản?"
+    },
+    {
+        "answer": "B",
+        "level": 9,
+        "options": [
+            "A. Thái",
+            "B. Lào",
+            "C. Cam",
+            "D. Myanmar"
+        ],
+        "question": "Đông Nam Á nước nào không giáp biển?"
+    },
+    {
+        "answer": "B",
+        "level": 9,
+        "options": [
+            "A. Tesla",
+            "B. Edison",
+            "C. Franklin",
+            "D. Watt"
+        ],
+        "question": "Ai là người phát minh ra bóng đèn?"
     },
     {
         "answer": "B",
@@ -2015,12 +1895,111 @@
         "answer": "A",
         "level": 9,
         "options": [
-            "A. William Shakespeare",
-            "B. Charles Dickens",
-            "C. Mark Twain",
-            "D. Jane Austen"
+            "A. Nghệ",
+            "B. Sâm",
+            "C. Gừng",
+            "D. Hành tây"
         ],
-        "question": "Ai là tác giả 'Romeo và Juliet'?"
+        "question": " Loại củ có khả năng làm lành vết thương và mờ sẹo là củ gì?"
+    },
+    {
+        "answer": "B",
+        "level": 9,
+        "options": [
+            "A. Nga",
+            "B. Canada",
+            "C. Mỹ",
+            "D. Úc"
+        ],
+        "question": "Nước nào có bờ biển dài nhất?"
+    },
+    {
+        "answer": "B",
+        "level": 9,
+        "options": [
+            "A. Andes",
+            "B. Himalayas",
+            "C. Alps",
+            "D. Rocky"
+        ],
+        "question": "Everest thuộc dãy núi nào?"
+    },
+    {
+        "answer": "A",
+        "level": 9,
+        "options": [
+            "A. Ba Đình",
+            "B. Nhà hát lớn",
+            "C. Bến Nhà Rồng",
+            "D. Dinh Độc Lập"
+        ],
+        "question": "Tuyên ngôn độc lập đọc ở đâu?"
+    },
+    {
+        "answer": "B",
+        "level": 9,
+        "options": [
+            "A. Nhật",
+            "B. Trung",
+            "C. Hàn",
+            "D. Việt Nam"
+        ],
+        "question": "Tam Quốc Diễn Nghĩa là tác phẩm văn học cổ điển của nước nào?"
+    },
+    {
+        "answer": "B",
+        "level": 9,
+        "options": [
+            "A. Oxi",
+            "B. Nitơ",
+            "C. Cacbonic",
+            "D. Argon"
+        ],
+        "question": "Khí chiếm tỷ lệ lớn nhất trong không khí?"
+    },
+    {
+        "answer": "B",
+        "level": 9,
+        "options": [
+            "A. Sông Hồng",
+            "B. Sông Đồng Nai",
+            "C. Sông Mê Kông",
+            "D. Sông Đà"
+        ],
+        "question": "Sông nào dài nhất Việt Nam?"
+    },
+    {
+        "answer": "B",
+        "level": 9,
+        "options": [
+            "A. Taekwondo",
+            "B. Judo",
+            "C. Vovinam",
+            "D. Muay Thai"
+        ],
+        "question": "Môn võ nào xuất phát từ Nhật Bản?"
+    },
+    {
+        "answer": "B",
+        "level": 9,
+        "options": [
+            "A. Nga",
+            "B. Pháp",
+            "C. Mỹ",
+            "D. Anh"
+        ],
+        "question": "Nước nào có nhiều múi giờ nhất?"
+    },
+    {
+        "answer": "D",
+        "level": 9,
+        "options": [
+            "A. 3",
+            "B. 4",
+            "C. 5",
+            "D. 6"
+        ],
+        "question": "Hệ thống đô thị ở Việt Nam được phân thành mấy loại?"
     },
     {
         "answer": "B",
@@ -2035,80 +2014,36 @@
     },
     {
         "answer": "A",
-        "level": 10,
+        "level": 9,
         "options": [
-            "A. Nikola Tesla",
-            "B. Thomas Edison",
-            "C. Alexander Graham Bell",
-            "D. Guglielmo Marconi"
+            "A. William Shakespeare",
+            "B. Charles Dickens",
+            "C. Mark Twain",
+            "D. Jane Austen"
         ],
-        "question": "Ai là người phát minh ra dòng điện xoay chiều?"
+        "question": "Ai là tác giả 'Romeo và Juliet'?"
     },
     {
         "answer": "A",
         "level": 10,
         "options": [
-            "A. New York",
-            "B. London",
-            "C. Tokyo",
-            "D. Paris"
+            "A. Ohm",
+            "B. Volt",
+            "C. Ampere",
+            "D. Watt"
         ],
-        "question": "Thành phố nào có biệt danh 'Big Apple'?"
+        "question": "Đơn vị đo điện trở là gì?"
     },
     {
         "answer": "A",
         "level": 10,
         "options": [
-            "A. Gan",
-            "B. Cơ bắp",
-            "C. Thận",
-            "D. Tim"
+            "A. Leonardo da Vinci",
+            "B. Michelangelo",
+            "C. Raphael",
+            "D. Donatello"
         ],
-        "question": "Cơ quan nào sau đây dự trữ tỉ lệ glycogen cao nhất so với tỉ trọng của nó?"
-    },
-    {
-        "answer": "A",
-        "level": 10,
-        "options": [
-            "A. Volga",
-            "B. Danube",
-            "C. Rhine",
-            "D. Thames"
-        ],
-        "question": "Con sông nào dài nhất Châu Âu?"
-    },
-    {
-        "answer": "A",
-        "level": 10,
-        "options": [
-            "A. Canada",
-            "B. Mỹ",
-            "C. Trung Quốc",
-            "D. Brazil"
-        ],
-        "question": "Quốc gia nào có diện tích lớn thứ 2 thế giới?"
-    },
-    {
-        "answer": "A",
-        "level": 10,
-        "options": [
-            "A. J.K. Rowling",
-            "B. J.R.R. Tolkien",
-            "C. C.S. Lewis",
-            "D. George R.R. Martin"
-        ],
-        "question": "Ai là tác giả của 'Harry Potter'?"
-    },
-    {
-        "answer": "A",
-        "level": 10,
-        "options": [
-            "A. Tuyết tùng",
-            "B. Ô liu",
-            "C. Chà là",
-            "D. Xương rồng"
-        ],
-        "question": "Loài cây nào là biểu tượng của Liban?"
+        "question": "Ai là người vẽ bức 'Bữa ăn tối cuối cùng'?"
     },
     {
         "answer": "B",
@@ -2125,34 +2060,78 @@
         "answer": "A",
         "level": 10,
         "options": [
-            "A. Leonardo da Vinci",
-            "B. Michelangelo",
-            "C. Raphael",
-            "D. Donatello"
+            "A. Tuyết tùng",
+            "B. Ô liu",
+            "C. Chà là",
+            "D. Xương rồng"
         ],
-        "question": "Ai là người vẽ bức 'Bữa ăn tối cuối cùng'?"
+        "question": "Loài cây nào là biểu tượng của Liban?"
     },
     {
         "answer": "A",
         "level": 10,
         "options": [
-            "A. Ohm",
-            "B. Volt",
-            "C. Ampere",
-            "D. Watt"
+            "A. J.K. Rowling",
+            "B. J.R.R. Tolkien",
+            "C. C.S. Lewis",
+            "D. George R.R. Martin"
         ],
-        "question": "Đơn vị đo điện trở là gì?"
+        "question": "Ai là tác giả của 'Harry Potter'?"
     },
     {
-        "answer": "C",
+        "answer": "A",
         "level": 10,
         "options": [
-            "A. Hoàng Xuân Vinh",
-            "B. Trần Quang Khải",
-            "C. Hoàng Lê Giang",
-            "D. Phạm Tuân"
+            "A. Canada",
+            "B. Mỹ",
+            "C. Trung Quốc",
+            "D. Brazil"
         ],
-        "question": "Người Việt Nam đầu tiên đến Nam Cực?"
+        "question": "Quốc gia nào có diện tích lớn thứ 2 thế giới?"
+    },
+    {
+        "answer": "A",
+        "level": 10,
+        "options": [
+            "A. Volga",
+            "B. Danube",
+            "C. Rhine",
+            "D. Thames"
+        ],
+        "question": "Con sông nào dài nhất Châu Âu?"
+    },
+    {
+        "answer": "A",
+        "level": 10,
+        "options": [
+            "A. Gan",
+            "B. Cơ bắp",
+            "C. Thận",
+            "D. Tim"
+        ],
+        "question": "Cơ quan nào sau đây dự trữ tỉ lệ glycogen cao nhất so với tỉ trọng của nó?"
+    },
+    {
+        "answer": "A",
+        "level": 10,
+        "options": [
+            "A. New York",
+            "B. London",
+            "C. Tokyo",
+            "D. Paris"
+        ],
+        "question": "Thành phố nào có biệt danh 'Big Apple'?"
+    },
+    {
+        "answer": "A",
+        "level": 10,
+        "options": [
+            "A. Nikola Tesla",
+            "B. Thomas Edison",
+            "C. Alexander Graham Bell",
+            "D. Guglielmo Marconi"
+        ],
+        "question": "Ai là người phát minh ra dòng điện xoay chiều?"
     },
     {
         "answer": "C",
@@ -2166,70 +2145,26 @@
         "question": "Shuttlecock là dụng cụ của môn thể thao nào?"
     },
     {
-        "answer": "B",
-        "level": 10,
-        "options": [
-            "A. New York",
-            "B. Zurich",
-            "C. London",
-            "D. Frankfurt"
-        ],
-        "question": "Thành phố nào nổi tiếng với ngân hàng bí mật và hệ thống ngân hàng ổn định lâu đời?"
-    },
-    {
-        "answer": "B",
-        "level": 10,
-        "options": [
-            "A. Thổ",
-            "B. Mộc",
-            "C. Thiên Vương",
-            "D. Hải Vương"
-        ],
-        "question": "Hành tinh lớn nhất Hệ mặt trời?"
-    },
-    {
         "answer": "C",
         "level": 10,
         "options": [
-            "A. Rembrandt",
-            "B. Picasso",
-            "C. Leonardo da Vinci",
-            "D. Van Gogh"
+            "A. Hoàng Xuân Vinh",
+            "B. Trần Quang Khải",
+            "C. Hoàng Lê Giang",
+            "D. Phạm Tuân"
         ],
-        "question": "Ai là tác giả bức tranh Mona Lisa?"
-    },
-    {
-        "answer": "B",
-        "level": 10,
-        "options": [
-            "A. Nga",
-            "B. Qatar",
-            "C. Brazil",
-            "D. Pháp"
-        ],
-        "question": "Host World Cup 2022 là nước nào?"
-    },
-    {
-        "answer": "B",
-        "level": 10,
-        "options": [
-            "A. Axit ascorbic",
-            "B. Thiamine",
-            "C. Riboflavin",
-            "D. Niacin"
-        ],
-        "question": "Tên gọi khác của Vitamin B1?"
+        "question": "Người Việt Nam đầu tiên đến Nam Cực?"
     },
     {
         "answer": "A",
         "level": 10,
         "options": [
-            "A. Tiến Quân Ca",
-            "B. Ca Ngợi",
-            "C. Việt Nam Quê Hương",
-            "D. Đất Nước"
+            "A. Lá phong",
+            "B. Lá thích",
+            "C. Lá sồi",
+            "D. Lá bạch dương"
         ],
-        "question": "Tên khác của Quốc ca Việt Nam?"
+        "question": "Lá cây trên cờ Canada là lá gì?"
     },
     {
         "answer": "B",
@@ -2246,12 +2181,78 @@
         "answer": "A",
         "level": 10,
         "options": [
-            "A. Lá phong",
-            "B. Lá thích",
-            "C. Lá sồi",
-            "D. Lá bạch dương"
+            "A. Tiến Quân Ca",
+            "B. Ca Ngợi",
+            "C. Việt Nam Quê Hương",
+            "D. Đất Nước"
         ],
-        "question": "Lá cây trên cờ Canada là lá gì?"
+        "question": "Tên khác của Quốc ca Việt Nam?"
+    },
+    {
+        "answer": "B",
+        "level": 10,
+        "options": [
+            "A. Axit ascorbic",
+            "B. Thiamine",
+            "C. Riboflavin",
+            "D. Niacin"
+        ],
+        "question": "Tên gọi khác của Vitamin B1?"
+    },
+    {
+        "answer": "B",
+        "level": 10,
+        "options": [
+            "A. Nga",
+            "B. Qatar",
+            "C. Brazil",
+            "D. Pháp"
+        ],
+        "question": "Host World Cup 2022 là nước nào?"
+    },
+    {
+        "answer": "C",
+        "level": 10,
+        "options": [
+            "A. Rembrandt",
+            "B. Picasso",
+            "C. Leonardo da Vinci",
+            "D. Van Gogh"
+        ],
+        "question": "Ai là tác giả bức tranh Mona Lisa?"
+    },
+    {
+        "answer": "B",
+        "level": 10,
+        "options": [
+            "A. Thổ",
+            "B. Mộc",
+            "C. Thiên Vương",
+            "D. Hải Vương"
+        ],
+        "question": "Hành tinh lớn nhất Hệ mặt trời?"
+    },
+    {
+        "answer": "B",
+        "level": 10,
+        "options": [
+            "A. New York",
+            "B. Zurich",
+            "C. London",
+            "D. Frankfurt"
+        ],
+        "question": "Thành phố nào nổi tiếng với ngân hàng bí mật và hệ thống ngân hàng ổn định lâu đời?"
+    },
+    {
+        "answer": "A",
+        "level": 11,
+        "options": [
+            "A. Lionel Messi",
+            "B. Cristiano Ronaldo",
+            "C. Neymar",
+            "D. Kylian Mbappe"
+        ],
+        "question": "Cầu thủ nào có biệt danh là 'El Pulga'?"
     },
     {
         "answer": "A",
@@ -2263,6 +2264,17 @@
             "D. Phần Lan"
         ],
         "question": "Nước nào có nhiều hồ nhất thế giới?"
+    },
+    {
+        "answer": "A",
+        "level": 11,
+        "options": [
+            "A. Sao Mộc",
+            "B. Sao Thổ",
+            "C. Sao Hải Vương",
+            "D. Sao Thiên Vương"
+        ],
+        "question": "Hành tinh nào có nhiều vệ tinh nhất?"
     },
     {
         "answer": "A",
@@ -2329,50 +2341,6 @@
             "D. Brisbane"
         ],
         "question": "Thủ đô của Úc là gì?"
-    },
-    {
-        "answer": "A",
-        "level": 11,
-        "options": [
-            "A. Lionel Messi",
-            "B. Cristiano Ronaldo",
-            "C. Neymar",
-            "D. Kylian Mbappe"
-        ],
-        "question": "Cầu thủ nào có biệt danh là 'El Pulga'?"
-    },
-    {
-        "answer": "A",
-        "level": 11,
-        "options": [
-            "A. Địa Trung Hải",
-            "B. Biển Đỏ",
-            "C. Đại Tây Dương",
-            "D. Ấn Độ Dương"
-        ],
-        "question": "Sông Nile chảy ra biển nào?"
-    },
-    {
-        "answer": "A",
-        "level": 11,
-        "options": [
-            "A. Sao Mộc",
-            "B. Sao Thổ",
-            "C. Sao Hải Vương",
-            "D. Sao Thiên Vương"
-        ],
-        "question": "Hành tinh nào có nhiều vệ tinh nhất?"
-    },
-    {
-        "answer": "B",
-        "level": 11,
-        "options": [
-            "A. Rome",
-            "B. Paris",
-            "C. London",
-            "D. Madrid"
-        ],
-        "question": "Thành phố nào được gọi là 'Kinh đô ánh sáng'?"
     },
     {
         "answer": "B",
@@ -2463,7 +2431,84 @@
         "question": "Biểu tượng của WWF (World Wide Fund for Nature) là gì?"
     },
     {
-       "answer": "C",
+        "answer": "A",
+        "level": 11,
+        "options": [
+            "A. Địa Trung Hải",
+            "B. Biển Đỏ",
+            "C. Đại Tây Dương",
+            "D. Ấn Độ Dương"
+        ],
+        "question": "Sông Nile chảy ra biển nào?"
+    },
+    {
+        "answer": "B",
+        "level": 11,
+        "options": [
+            "A. Rome",
+            "B. Paris",
+            "C. London",
+            "D. Madrid"
+        ],
+        "question": "Thành phố nào được gọi là 'Kinh đô ánh sáng'?"
+    },
+    {
+        "answer": "B",
+        "level": 12,
+        "options": [
+            "A. Vàng",
+            "B. Bạc",
+            "C. Đồng",
+            "D. Nhôm"
+        ],
+        "question": "Kim loại dẫn điện tốt nhất?"
+    },
+    {
+        "answer": "C",
+        "level": 12,
+        "options": [
+            "A. Pablo Picasso",
+            "B. Claude Monet",
+            "C. Vincent van Gogh",
+            "D. Salvador Dalí"
+        ],
+        "question": "Ai là tác giả bức tranh Đêm đầy sao (Starry Night)?"
+    },
+    {
+        "answer": "A",
+        "level": 12,
+        "options": [
+            "A. Auguste Rodin",
+            "B. Michelangelo",
+            "C. Donatello",
+            "D. Bernini"
+        ],
+        "question": "Bức tượng 'Người suy tư' là của ai?"
+    },
+    {
+        "answer": "A",
+        "level": 12,
+        "options": [
+            "A. Brazil",
+            "B. Việt Nam",
+            "C. Colombia",
+            "D. Ethiopia"
+        ],
+        "question": "Nước nào sản xuất cà phê lớn nhất thế giới?"
+    },
+    {
+        "answer": "A",
+        "level": 12,
+        "options": [
+            "A. 2",
+            "B. 1",
+            "C. 3",
+            "D. 4"
+        ],
+        "question": "Đỉnh núi K2 cao thứ mấy thế giới?"
+    },
+    {
+        "answer": "C",
         "level": 12,
         "options": [
             "A. 5",
@@ -2532,17 +2577,6 @@
         "answer": "A",
         "level": 12,
         "options": [
-            "A. James Watt",
-            "B. Thomas Newcomen",
-            "C. George Stephenson",
-            "D. Richard Trevithick"
-        ],
-        "question": "Ai là người phát minh ra máy hơi nước?"
-    },
-    {
-        "answer": "A",
-        "level": 12,
-        "options": [
             "A. Bern",
             "B. Zurich",
             "C. Geneva",
@@ -2551,37 +2585,48 @@
         "question": "Thành phố nào là thủ đô của Thụy Sỹ?"
     },
     {
-        "answer": "A",
+        "answer": "C",
         "level": 12,
         "options": [
-            "A. Auguste Rodin",
-            "B. Michelangelo",
-            "C. Donatello",
-            "D. Bernini"
+            "A. Xuân Diệu",
+            "B. Huy Cận",
+            "C. Quang Dũng",
+            "D. Chính Hữu"
         ],
-        "question": "Bức tượng 'Người suy tư' là của ai?"
+        "question": "Ai là tác giả bài thơ Tây Tiến?"
+    },
+    {
+        "answer": "B",
+        "level": 12,
+        "options": [
+            "A. Xe đạp",
+            "B. Thuyền",
+            "C. Bus",
+            "D. Tàu"
+        ],
+        "question": "Venice nổi tiếng về?"
     },
     {
         "answer": "A",
         "level": 12,
         "options": [
-            "A. Brazil",
-            "B. Việt Nam",
-            "C. Colombia",
-            "D. Ethiopia"
+            "A. James Watt",
+            "B. Thomas Newcomen",
+            "C. George Stephenson",
+            "D. Richard Trevithick"
         ],
-        "question": "Nước nào sản xuất cà phê lớn nhất thế giới?"
+        "question": "Ai là người phát minh ra máy hơi nước?"
     },
     {
-        "answer": "A",
+        "answer": "B",
         "level": 12,
         "options": [
-            "A. 2",
-            "B. 1",
-            "C. 3",
-            "D. 4"
+            "A. Khải Định",
+            "B. Bảo Đại",
+            "C. Duy Tân",
+            "D. Tự Đức"
         ],
-        "question": "Đỉnh núi K2 cao thứ mấy thế giới?"
+        "question": "Vua cuối triều Nguyễn là ai?"
     },
     {
         "answer": "A",
@@ -2639,59 +2684,15 @@
         "question": "Vịnh Hạ Long ở đâu?"
     },
     {
-        "answer": "C",
-        "level": 12,
+        "answer": "A",
+        "level": 13,
         "options": [
-            "A. Xuân Diệu",
-            "B. Huy Cận",
-            "C. Quang Dũng",
-            "D. Chính Hữu"
+            "A. Seine",
+            "B. Rhine",
+            "C. Danube",
+            "D. Loire"
         ],
-        "question": "Ai là tác giả bài thơ Tây Tiến?"
-    },
-    {
-        "answer": "B",
-        "level": 12,
-        "options": [
-            "A. Vàng",
-            "B. Bạc",
-            "C. Đồng",
-            "D. Nhôm"
-        ],
-        "question": "Kim loại dẫn điện tốt nhất?"
-    },
-    {
-        "answer": "C",
-        "level": 12,
-        "options": [
-            "A. Pablo Picasso",
-            "B. Claude Monet",
-            "C. Vincent van Gogh",
-            "D. Salvador Dalí"
-        ],
-        "question": "Ai là tác giả bức tranh Đêm đầy sao (Starry Night)?"
-    },
-    {
-        "answer": "B",
-        "level": 12,
-        "options": [
-            "A. Xe đạp",
-            "B. Thuyền",
-            "C. Bus",
-            "D. Tàu"
-        ],
-        "question": "Venice nổi tiếng về?"
-    },
-    {
-        "answer": "B",
-        "level": 12,
-        "options": [
-            "A. Khải Định",
-            "B. Bảo Đại",
-            "C. Duy Tân",
-            "D. Tự Đức"
-        ],
-        "question": "Vua cuối triều Nguyễn là ai?"
+        "question": "Con sông nào chảy qua Paris?"
     },
     {
         "answer": "A",
@@ -2793,28 +2794,6 @@
         "question": "Ai là người đầu tiên vòng quanh thế giới?"
     },
     {
-        "answer": "A",
-        "level": 13,
-        "options": [
-            "A. Seine",
-            "B. Rhine",
-            "C. Danube",
-            "D. Loire"
-        ],
-        "question": "Con sông nào chảy qua Paris?"
-    },
-    {
-        "answer": "B",
-        "level": 13,
-        "options": [
-            "A. Yuri Gagarin",
-            "B. Neil Armstrong",
-            "C. Buzz Aldrin",
-            "D. Michael Collins"
-        ],
-        "question": "Người đầu tiên lên Mặt Trăng là ai?"
-    },
-    {
         "answer": "B",
         "level": 13,
         "options": [
@@ -2914,6 +2893,39 @@
         "question": "Sân bay nào rộng nhất thế giới?"
     },
     {
+        "answer": "B",
+        "level": 13,
+        "options": [
+            "A. Yuri Gagarin",
+            "B. Neil Armstrong",
+            "C. Buzz Aldrin",
+            "D. Michael Collins"
+        ],
+        "question": "Người đầu tiên lên Mặt Trăng là ai?"
+    },
+    {
+        "answer": "C",
+        "level": 14,
+        "options": [
+            "A. C++",
+            "B. Java",
+            "C. Python",
+            "D. JS"
+        ],
+        "question": "Ngôn ngữ lập trình phổ biến 2023?"
+    },
+    {
+        "answer": "C",
+        "level": 14,
+        "options": [
+            "A. Nga",
+            "B. Mỹ",
+            "C. Venezuela",
+            "D. Saudi"
+        ],
+        "question": "Quốc gia nào có nhiều dầu mỏ nhất?"
+    },
+    {
         "answer": "A",
         "level": 14,
         "options": [
@@ -2972,17 +2984,6 @@
         "answer": "A",
         "level": 14,
         "options": [
-            "A. Isaac Newton",
-            "B. Albert Einstein",
-            "C. Galileo Galilei",
-            "D. Nikola Tesla"
-        ],
-        "question": "Ai là người tìm ra định luật hấp dẫn?"
-    },
-    {
-        "answer": "A",
-        "level": 14,
-        "options": [
             "A. Ý",
             "B. Trung Quốc",
             "C. Tây Ban Nha",
@@ -3016,23 +3017,23 @@
         "answer": "A",
         "level": 14,
         "options": [
+            "A. Nile",
+            "B. Amazon",
+            "C. Dương Tử",
+            "D. Mississippi"
+        ],
+        "question": "Sông nào dài nhất thế giới ?"
+    },
+    {
+        "answer": "A",
+        "level": 14,
+        "options": [
             "A. Karatedo",
             "B. Điền kinh",
             "C. Bơi lội",
             "D. Cử tạ"
         ],
         "question": "Lê Bích Phương, vận động viên duy nhất giành được huy chương vàng cho Việt Nam tại ASIAD 16 (tổ chức tại Quảng Châu năm 2010) thuộc môn thể thể thao nào?"
-    },
-    {
-        "answer": "C",
-        "level": 14,
-        "options": [
-            "A. C++",
-            "B. Java",
-            "C. Python",
-            "D. JS"
-        ],
-        "question": "Ngôn ngữ lập trình phổ biến 2023?"
     },
     {
         "answer": "A",
@@ -3044,6 +3045,17 @@
             "D. Thành Thái"
         ],
         "question": "Vị vua nào ban hành chiếu “Cần Vương” kêu gọi đồng bào, tướng lĩnh, sĩ phu ra sức giúp vua cứu nước khi thực dân Pháp đặt ách thống trị lên đất nước chúng ta?"
+    },
+    {
+        "answer": "A",
+        "level": 14,
+        "options": [
+            "A. Isaac Newton",
+            "B. Albert Einstein",
+            "C. Galileo Galilei",
+            "D. Nikola Tesla"
+        ],
+        "question": "Ai là người tìm ra định luật hấp dẫn?"
     },
     {
         "answer": "C",
@@ -3079,17 +3091,6 @@
         "question": "Loại thuốc nào là kháng sinh hàng đầu trong điều trị bệnh lao?"
     },
     {
-        "answer": "C",
-        "level": 14,
-        "options": [
-            "A. Nga",
-            "B. Mỹ",
-            "C. Venezuela",
-            "D. Saudi"
-        ],
-        "question": "Quốc gia nào có nhiều dầu mỏ nhất?"
-    },
-    {
         "answer": "B",
         "level": 14,
         "options": [
@@ -3101,7 +3102,7 @@
         "question": "Nữ phi hành gia đầu tiên là ai?"
     },
     {
-       "answer": "B",
+        "answer": "B",
         "level": 14,
         "options": [
             "A. Hình elip",
@@ -3121,17 +3122,6 @@
             "D. Lao"
         ],
         "question": "Loại vacxin 5 trong 1 DPT-VGB-Hib không có tác dụng phòng chống bệnh nào?"
-    },
-    {
-        "answer": "A",
-        "level": 14,
-        "options": [
-            "A. Nile",
-            "B. Amazon",
-            "C. Dương Tử",
-            "D. Mississippi"
-        ],
-        "question": "Sông nào dài nhất thế giới ?"
     },
     {
         "answer": "A",

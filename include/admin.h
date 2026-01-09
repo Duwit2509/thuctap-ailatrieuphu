@@ -10,5 +10,6 @@ void adminMenu(vector<Question>& allQuestions);
 void viewAllQuestions(const vector<Question>& allQuestions);
 void addQuestion(vector<Question>& allQuestions);
 void deleteQuestion(vector<Question>& allQuestions);
+void editQuestion(vector<Question>& allQuestions);
 
 #endif

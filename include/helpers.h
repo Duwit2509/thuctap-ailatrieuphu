@@ -19,10 +19,11 @@ void playEndGameSound();
 void playWelcomeSound();
 void playApply5050Sound();
 void playApplyAskAudienceSound();
-void playApplyPhoneAFriendSound();
+void playApplyCallWiseMan();
 void playPalpitatingSound();
 
 string formatMoney(long long money);
 string wrapText(const string& text, int width);
+std::string inputUTF8();
 
 #endif

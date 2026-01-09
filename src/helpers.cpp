@@ -4,6 +4,8 @@
 #include <chrono>
 #include <limits>
 #include <sstream>
+#include <string>
+#include <vector>
 
 #ifdef _WIN32
     #include <windows.h>
@@ -121,7 +123,7 @@ void playApplyAskAudienceSound() {
     #endif
 }
 
-void playApplyPhoneAFriendSound() {
+void playApplyCallWiseMan() {
    #ifdef _WIN32
     for (int i = 0; i < 2; i++) {
         Beep(1200, 50); Beep(1500, 50); Beep(1200, 50); Beep(1500, 50);
@@ -168,4 +170,54 @@ string wrapText(const string& text, int width) {
         result += line;
 
     return result;
+}
+
+
+
+// Hàm nhập chuỗi Tiếng Việt có dấu trên Console Windows
+string inputUTF8() {
+#ifdef _WIN32
+    // Cấp phát bộ đệm để đọc ký tự Wide (Unicode 16-bit)
+    const int MAX_BUFFER = 1024;
+    wchar_t wBuffer[MAX_BUFFER];
+    DWORD charsRead;
+    HANDLE hStdIn = GetStdHandle(STD_INPUT_HANDLE);
+
+    // Dùng API Windows đọc trực tiếp Unicode từ bàn phím
+    ReadConsoleW(hStdIn, wBuffer, MAX_BUFFER - 1, &charsRead, NULL);
+
+    if (charsRead > 0) {
+        // Loại bỏ ký tự xuống dòng (\r\n) ở cuối do phím Enter tạo ra
+        // Windows thường trả về \r\n, ta cần xóa nó đi để chuỗi sạch
+        if (charsRead >= 2 && wBuffer[charsRead - 2] == L'\r') {
+            wBuffer[charsRead - 2] = L'\0';
+        } else if (charsRead >= 1 && (wBuffer[charsRead - 1] == L'\n' || wBuffer[charsRead - 1] == L'\r')) {
+            wBuffer[charsRead - 1] = L'\0';
+        } else {
+            wBuffer[charsRead] = L'\0'; // Đảm bảo kết thúc chuỗi
+        }
+
+        // --- Chuyển đổi từ wstring (Unicode) sang string (UTF-8) ---
+        
+        // B1: Tính độ dài cần thiết cho chuỗi UTF-8
+        int size_needed = WideCharToMultiByte(CP_UTF8, 0, wBuffer, -1, NULL, 0, NULL, NULL);
+        
+        // B2: Tạo chuỗi string đệm
+        string strTo(size_needed, 0);
+        
+        // B3: Thực hiện chuyển đổi
+        WideCharToMultiByte(CP_UTF8, 0, wBuffer, -1, &strTo[0], size_needed, NULL, NULL);
+        
+        // Loại bỏ ký tự null thừa ở cuối string do quá trình convert (rất quan trọng)
+        if (!strTo.empty() && strTo.back() == '\0') strTo.pop_back();
+        
+        return strTo;
+    }
+    return "";
+#else
+    // Nếu chạy trên Linux/Mac thì getline bình thường vẫn ổn
+    string s;
+    getline(cin, s);
+    return s;
+#endif
 }

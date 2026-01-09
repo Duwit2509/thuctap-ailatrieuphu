@@ -1,72 +1,12 @@
 [
     {
-        "level": 15,
-        "name": "duwit",
-        "score": 150000000
-    },
-    {
-        "level": 14,
-        "name": "Noname",
-        "score": 22000000
-    },
-    {
-        "level": 10,
-        "name": "duwit",
-        "score": 22000000
-    },
-    {
         "level": 8,
-        "name": "Noname",
+        "name": "duwit",
         "score": 2000000
     },
     {
-        "level": 2,
-        "name": "Duwit",
-        "score": 400000
-    },
-    {
-        "level": 1,
-        "name": "duwit",
-        "score": 200000
-    },
-    {
-        "level": 1,
+        "level": 3,
         "name": "duwit",
         "score": 0
-    },
-    {
-        "level": 0,
-        "name": "Noname",
-        "score": 0
-    },
-    {
-        "level": 0,
-        "name": "Duwit",
-        "score": 0
-    },
-    {
-        "level": 0,
-        "name": "duwit",
-        "score": 0
-    },
-    {
-        "level": 0,
-        "name": "duwit",
-        "score": 0
-    },
-    {
-        "level": 1,
-        "name": "duwit",
-        "score": 200000
-    },
-    {
-        "level": 0,
-        "name": "duwit",
-        "score": 0
-    },
-    {
-        "level": 13,
-        "name": "w",
-        "score": 22000000
     }
 ]

@@ -1,6 +1,8 @@
 #include "../include/helpers.h"
 #include "../include/admin.h"
 #include <iostream>
+#include <limits>
+#include <algorithm>    
 using namespace std;
 
 const string ADMIN_PASSWORD = "2509";
@@ -47,9 +49,10 @@ void adminMenu(vector<Question>& allQuestions) {
         cout << "  1. Xem tất cả câu hỏi" << endl;
         cout << "  2. Thêm câu hỏi mới" << endl;
         cout << "  3. Xóa câu hỏi" << endl;
-        cout << "  4. Quay lại Menu chính" << endl;
+        cout << "  4. Sửa câu hỏi" << endl;
+        cout << "  5. Quay lại Menu chính" << endl;
         cout << "----------------------------------------" << endl;
-        cout << "Nhập lựa chọn của bạn (1-4): ";
+        cout << "Nhập lựa chọn của bạn (1-5): ";
 
         int choice;
         cin >> choice;
@@ -58,7 +61,7 @@ void adminMenu(vector<Question>& allQuestions) {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             setColor(12);
-            cout << "Lựa chọn không hợp lệ. Vui lòng nhập số (1-4): ";
+            cout << "Lựa chọn không hợp lệ. Vui lòng nhập số (1-5): ";
             resetColor();
             cin >> choice;
         }
@@ -75,6 +78,9 @@ void adminMenu(vector<Question>& allQuestions) {
                 deleteQuestion(allQuestions);
                 break;
             case 4:
+                editQuestion(allQuestions);
+                break;
+            case 5:
                 isAdminRunning = false;
                 break;
             default:
@@ -90,14 +96,11 @@ void adminMenu(vector<Question>& allQuestions) {
 //Hien thi tat ca cau hoi
 void viewAllQuestions(const vector<Question>& allQuestions) {
     clearScreen();
-    setColor(14);
-    cout << "========================================" << endl;
-    cout << "        DANH SÁCH TẤT CẢ CÂU HỎI (" << allQuestions.size() << " câu)" << endl;
-    cout << "========================================" << endl;
-    resetColor();
 
-    if (allQuestions.empty()) {
-        cout << "Không có câu hỏi nào." << endl;
+   if (allQuestions.empty()) {
+        cout << "Danh sách trống." << endl;
+        pressEnterToContinue();
+        return;
     }
 
     int pageSize = 5; // So cau hoi hien thi tren 1 trang
@@ -120,7 +123,7 @@ void viewAllQuestions(const vector<Question>& allQuestions) {
             const Question& q = allQuestions[i]; 
             
             setColor(11);
-            cout << "\n--- Câu " << (i + 1) << " (Level: " << q.level << ") ---" << endl;
+            cout << "\n--- [STT: " << (i + 1) << "] (Level: " << q.level << ") ---" << endl;
             resetColor();
             cout << "Nội dung: " << q.questionText << endl;
             
@@ -130,7 +133,7 @@ void viewAllQuestions(const vector<Question>& allQuestions) {
             }
             
             setColor(10);
-            cout << "Đáp án đúng: " << q.answer << endl;
+            cout << "Đáp án: " << q.answer << endl;
             resetColor();
             cout << "----------------------------------------" << endl;
         }
@@ -301,5 +304,94 @@ void deleteQuestion(vector<Question>& allQuestions) {
         cout << "\nSố thứ tự không hợp lệ. Không có gì được xóa." << endl;
         resetColor();
     }
+    pressEnterToContinue();
+}
+
+
+// Ham sua cau hoi
+void editQuestion(vector<Question>& allQuestions) {
+    if (allQuestions.empty()) {
+        setColor(12); cout << "Danh sách trống!" << endl; resetColor();
+        pressEnterToContinue();
+        return;
+    }
+    clearScreen();
+    setColor(14);
+    cout << "========================================" << endl;
+    cout << "              SỬA CÂU HỎI" << endl;
+    cout << "========================================" << endl;
+    resetColor();
+
+    // Hiển thị danh sách tóm tắt để chọn ID
+    for (size_t i = 0; i < allQuestions.size(); ++i) {
+        cout << "[" << (i + 1) << "] Lv" << allQuestions[i].level << ": " << allQuestions[i].questionText.substr(0, 50) << endl;
+    }
+    
+    int index;
+    cout << "\nNhập số thứ tự câu hỏi muốn SỬA (0 để hủy): ";
+    cin >> index;
+    cin.ignore(); 
+
+    if (index <= 0 || index > allQuestions.size()) {
+        if (index != 0) cout << "Số thứ tự không hợp lệ!" << endl;
+        return;
+    }
+
+    Question& q = allQuestions[index - 1];
+    
+    setColor(11);
+    cout << "\n--- Đang sửa câu [" << index << "] ---" << endl;
+    resetColor();
+    
+    string input;
+    
+    // Sua noi dung
+    cout << "Nội dung cũ: " << q.questionText << endl;
+    cout << "Nhập mới (Enter để giữ nguyên): ";
+    getline(cin, input);
+    if (!input.empty()) q.questionText = input;
+
+   for (int i = 0; i < 4; i++) {
+        cout << "Đáp án " << (char)('A' + i) << " cũ: " << q.options[i] << endl;
+        cout << "Nhập mới (Enter để giữ nguyên): ";
+        getline(cin, input);
+        if (!input.empty()) {
+            // SỬA LỖI: Tự động thêm lại "A. " nếu người dùng chỉ nhập nội dung
+            q.options[i] = string(1, 'A' + i) + ". " + input;
+        }
+    }
+
+   // Sua dap an dung
+    cout << "Đáp án đúng cũ: " << q.answer << endl;
+    cout << "Nhập mới (A/B/C/D) (Enter để giữ nguyên): ";
+    getline(cin, input);
+    if (!input.empty()) {
+        char c = toupper(input[0]);
+        if (c >= 'A' && c <= 'D') q.answer = string(1, c);
+    }
+
+    // Sua Level
+    cout << "Level cũ: " << q.level << endl;
+    cout << "Nhập Level mới (0 để giữ nguyên): ";
+    int newLevel;
+    string levelInput;
+    getline(cin, levelInput);
+    if(!levelInput.empty()) {
+        try {
+            newLevel = stoi(levelInput);
+            if (newLevel >= 1 && newLevel <= 15) q.level = newLevel;
+        } catch (...) {}
+    }
+
+    // SỬA LỖI: Dùng lambda thay vì hàm chưa định nghĩa compareLevels
+    sort(allQuestions.begin(), allQuestions.end(), [](const Question& a, const Question& b) {
+        return a.level < b.level;
+    });
+    
+    saveQuestions(allQuestions);
+    
+    setColor(10);
+    cout << "Cập nhật câu hỏi thành công!" << endl;
+    resetColor();
     pressEnterToContinue();
 }
